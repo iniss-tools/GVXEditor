@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="GVXEditor/GVXEditor.csproj" />
+  <Project Path="GVXEditor.DocScreenshots/GVXEditor.DocScreenshots.csproj" />
+  <Project Path="GVXEditor.Tests/GVXEditor.Tests.csproj" />
+  <Project Path="IniSrvBridge/IniSrvBridge.csproj" />
+</Solution>

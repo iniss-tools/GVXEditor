@@ -1,0 +1,2067 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutAppDescription" xml:space="preserve">
+    <value>Editor dát servera INISS2: grafikon GV.XML a súbory staníc. Zmeny zapisuje len pri zastavenom serveri.</value>
+  </data>
+  <data name="AddStation_Title" xml:space="preserve">
+    <value>Pridať stanicu do grafikonu {0}</value>
+  </data>
+  <data name="Analysis_Errors" xml:space="preserve">
+    <value>Chyby: {0}</value>
+  </data>
+  <data name="Analysis_Infos" xml:space="preserve">
+    <value>Informácie: {0}</value>
+  </data>
+  <data name="Analysis_Warnings" xml:space="preserve">
+    <value>Upozornenia: {0}</value>
+  </data>
+  <data name="Analysis_WithServer" xml:space="preserve">
+    <value>Vrátane overenia kódom servera</value>
+  </data>
+  <data name="Board_Address" xml:space="preserve">
+    <value>adresa</value>
+  </data>
+  <data name="Board_BadArrow" xml:space="preserve">
+    <value>{0}: otočené šípky {1} nie sú číslo záznamu tabule, server to zapíše do logu.</value>
+  </data>
+  <data name="Board_BadBool" xml:space="preserve">
+    <value>{0}: {1} {2} nie je true ani false, server sa nespustí.</value>
+  </data>
+  <data name="Board_BadLightTime" xml:space="preserve">
+    <value>{0}: {1} {2} nie je čas HH:mm ani HH:mm:ss, server sa nespustí.</value>
+  </data>
+  <data name="Board_BadNumber" xml:space="preserve">
+    <value>{0}: {1} {2} nie je celé číslo, server sa nespustí.</value>
+  </data>
+  <data name="Board_BadWindows" xml:space="preserve">
+    <value>{0}: multiokná {1} sú chybné ({2}), server sa nespustí.</value>
+  </data>
+  <data name="Board_DuplicateKey" xml:space="preserve">
+    <value>{0}: kľúč je v stanici viackrát, server nájde len prvý.</value>
+  </data>
+  <data name="Board_ExtraTabTab" xml:space="preserve">
+    <value>{0}: pri preklade {2} je {1}. tabuľka TabTab navyše, server sa nespustí.</value>
+  </data>
+  <data name="Board_FontBankUnused" xml:space="preserve">
+    <value>{0}: pri druhu {1} server vyplnenú banku písem nenájde a nespustí sa, nechajte ju prázdnu.</value>
+  </data>
+  <data name="Board_MissingTabTab" xml:space="preserve">
+    <value>{0}: preklad {2} potrebuje {1}. tabuľku TabTab, server sa nespustí.</value>
+  </data>
+  <data name="Board_MixedClasses" xml:space="preserve">
+    <value>{0}: časti majú predlohy rôznych druhov ({1}), server sa nespustí.</value>
+  </data>
+  <data name="Board_NoFontBank" xml:space="preserve">
+    <value>{0}: druh {1} potrebuje banku písem, server sa nespustí.</value>
+  </data>
+  <data name="Board_NoFontFile" xml:space="preserve">
+    <value>{0}: banka písem {1} nie je medzi binárnymi písmami tabúľ, server sa nespustí.</value>
+  </data>
+  <data name="Board_NoKey" xml:space="preserve">
+    <value>{0}: chýba kľúč.</value>
+  </data>
+  <data name="Board_NoParts" xml:space="preserve">
+    <value>{0}: tabuľa nemá časti, server sa nespustí.</value>
+  </data>
+  <data name="Board_PreviousMismatch" xml:space="preserve">
+    <value>{0}: tabuľa {1} nie je v zozname skôr alebo nemá časť rovnakého druhu, staníc a koľají, nadväznosť nevznikne.</value>
+  </data>
+  <data name="Board_PreviousShared" xml:space="preserve">
+    <value>{0}: na tabuľu {1} už nadväzuje iná časť, server to zapíše do logu.</value>
+  </data>
+  <data name="Board_Priority" xml:space="preserve">
+    <value>priorita koľaje</value>
+  </data>
+  <data name="Board_Records" xml:space="preserve">
+    <value>počet záznamov</value>
+  </data>
+  <data name="Board_Stations" xml:space="preserve">
+    <value>stanica</value>
+  </data>
+  <data name="Board_UnknownLine" xml:space="preserve">
+    <value>{0}: linka {1} nie je medzi komunikačnými linkami, server sa nespustí.</value>
+  </data>
+  <data name="Board_UnknownPrevious" xml:space="preserve">
+    <value>{0}: predchádzajúcu tabuľu {1} server nenájde, nadväznosť nevznikne.</value>
+  </data>
+  <data name="Board_UnknownTabTab" xml:space="preserve">
+    <value>{0}: tabuľka TabTab {1} nie je v stanici ani medzi spoločnými, server sa nespustí.</value>
+  </data>
+  <data name="Board_UnknownTemplate" xml:space="preserve">
+    <value>{0}: predloha {1} v stanici nie je, server sa nespustí.</value>
+  </data>
+  <data name="Board_UnknownTrack" xml:space="preserve">
+    <value>{0}: koľaj {1} stanica nemá, časť na nej nezobrazí žiadny vlak.</value>
+  </data>
+  <data name="Board_UnknownValue" xml:space="preserve">
+    <value>{0}: hodnotu {1}="{2}" server nepozná, súbor nenačíta.</value>
+  </data>
+  <data name="Board_UnsupportedClass" xml:space="preserve">
+    <value>{0}: druh {1} server neobsluhuje, nespustí sa.</value>
+  </data>
+  <data name="Board_WebSourceNotInfo" xml:space="preserve">
+    <value>{0}: webový zdroj má zmysel len pri druhu INFO, server to zapíše do logu.</value>
+  </data>
+  <data name="Board_WindowNumber" xml:space="preserve">
+    <value>číslo multiokna {0} nie je od 0 do 7</value>
+  </data>
+  <data name="Board_WindowRecord" xml:space="preserve">
+    <value>záznam {0} nie je od 0 do {1}</value>
+  </data>
+  <data name="Board_WindowsUnused" xml:space="preserve">
+    <value>{0}: multiokná používa len druh HERMANMULTIOKNO, server ich nepoužije.</value>
+  </data>
+  <data name="Boards_ConfirmCompile" xml:space="preserve">
+    <value>Podmienka zobrazenia má chyby prekladu, server by sa s ňou nespustil. Potvrdiť zmeny aj tak?</value>
+  </data>
+  <data name="Boards_Errors" xml:space="preserve">
+    <value>Tabule majú chyby, opravte ich pred potvrdením.</value>
+  </data>
+  <data name="Boards_LoadFailed" xml:space="preserve">
+    <value>Tabule sa nepodarilo načítať: {0}</value>
+  </data>
+  <data name="Boards_NewTable" xml:space="preserve">
+    <value>Nová tabuľa</value>
+  </data>
+  <data name="Boards_NewTemplate" xml:space="preserve">
+    <value>Nová predloha</value>
+  </data>
+  <data name="Boards_NotFirst" xml:space="preserve">
+    <value>Server tabule tejto stanice nečíta, berie ich z grafikonu {0}.</value>
+  </data>
+  <data name="Boards_StationLine" xml:space="preserve">
+    <value>Stanica má linku tabúľ {0}, server ju použije namiesto tejto.</value>
+  </data>
+  <data name="Boards_StationsDefault" xml:space="preserve">
+    <value>Prázdne pole je stanica tabule.</value>
+  </data>
+  <data name="Check_AgvChanged" xml:space="preserve">
+    <value>AGV.xml je čerstvý a trasa vlaku {0} sa od otvorenia zmenila. Server pri štarte celý AGV.xml zahodí.</value>
+  </data>
+  <data name="Check_Backup" xml:space="preserve">
+    <value>Server kopíruje súbory na záložný stroj {0}. Zmeny z GVXEditora sa tam dostanú až pri jeho najbližšom zápise.</value>
+  </data>
+  <data name="Check_ConstReportMissing" xml:space="preserve">
+    <value>Hlásenie obsluhy {0} ({1}) má vzor {2}, ktorý skript hlásení nemá, server ho nevyhlási.</value>
+  </data>
+  <data name="Check_GroupFailed" xml:space="preserve">
+    <value>GV.XML sa nedá načítať, server sa nespustí: {0}</value>
+  </data>
+  <data name="Check_MissingFile" xml:space="preserve">
+    <value>Chýba {0}, server sa nespustí.</value>
+  </data>
+  <data name="Check_MissingReportKeys" xml:space="preserve">
+    <value>Chýba ReportKeys.xml. Server so zvukom sa bez neho nespustí.</value>
+  </data>
+  <data name="Check_NoStationNames" xml:space="preserve">
+    <value>Žiadny grafikon nemá GV.stanice.XML, server sa nespustí.</value>
+  </data>
+  <data name="Check_NoticesFailed" xml:space="preserve">
+    <value>Výluky alebo odklony sa nedajú načítať, server sa nespustí: {0}</value>
+  </data>
+  <data name="Check_Ppv" xml:space="preserve">
+    <value>Server pri štarte zosynchronizuje súbory z {0} a zmeny z GVXEditora môže prepísať.</value>
+  </data>
+  <data name="Check_RecordKey" xml:space="preserve">
+    <value>{0}: kľúč {1} pre číslo {2} nie je funkcia LogText ani hlásenie obsluhy.</value>
+  </data>
+  <data name="Check_RecordTrack" xml:space="preserve">
+    <value>Koľaje: koľaj {0} pre číslo {1} stanica nemá.</value>
+  </data>
+  <data name="Check_RecordValidity" xml:space="preserve">
+    <value>{0}: server poznámku {1} pre číslo {2} nerozvinie a záznam nebude platiť.</value>
+  </data>
+  <data name="Check_ReportKeyMissing" xml:space="preserve">
+    <value>Typ hlásenia {0} nemá funkciu v skripte hlásení, server ho nevyhlási.</value>
+  </data>
+  <data name="Check_SameNumber" xml:space="preserve">
+    <value>Dva vlaky s číslom {0} idú stanicou v rovnaký deň, napríklad {1}. Dostanú rovnaké záznamy stanice.</value>
+  </data>
+  <data name="Check_ServerCompile" xml:space="preserve">
+    <value>{0}, riadok {1}: {2} {3}</value>
+  </data>
+  <data name="Check_ServerFailed" xml:space="preserve">
+    <value>Overenie kódom servera zlyhalo, príčina je v logu programu.</value>
+  </data>
+  <data name="Check_ServerFatal" xml:space="preserve">
+    <value>Server by sa nespustil pri {0}: {1}</value>
+  </data>
+  <data name="Check_ServerLog" xml:space="preserve">
+    <value>Server zapíše do Error.log: {0}</value>
+  </data>
+  <data name="Check_ServerMissing" xml:space="preserve">
+    <value>Overenie kódom servera nie je možné, inštalácia nemá IniSrv.exe alebo chýba most IniSrvBridge.</value>
+  </data>
+  <data name="Check_StateReportMissing" xml:space="preserve">
+    <value>Stav {0} stavového diagramu hlási {1}, ktoré skript hlásení nemá.</value>
+  </data>
+  <data name="Check_StationFailed" xml:space="preserve">
+    <value>Súbory stanice sa nedajú načítať, server sa nespustí: {0}</value>
+  </data>
+  <data name="Check_StationName" xml:space="preserve">
+    <value>Stanice bez názvu v GV.stanice.XML ({0}): {1}</value>
+  </data>
+  <data name="Check_TrainType" xml:space="preserve">
+    <value>Druh {0} nie je v TrTypes.xml (vlaky s ním: {1}, napríklad {2}).</value>
+  </data>
+  <data name="Check_UnusedBasicReport" xml:space="preserve">
+    <value>Základné hlásenie {0} nespúšťa žiadny stav stavového diagramu ani typ hlásenia.</value>
+  </data>
+  <data name="Check_UnusedRecord" xml:space="preserve">
+    <value>{0}: záznamy pre číslo {1}, s ktorým žiadny vlak stanicou nejde ({2}). Server ich nepoužije.</value>
+  </data>
+  <data name="Cmd_AddStation" xml:space="preserve">
+    <value>Pridať stanicu...</value>
+  </data>
+  <data name="Cmd_AppSettings" xml:space="preserve">
+    <value>Nastavenia programu...</value>
+  </data>
+  <data name="Cmd_Boards" xml:space="preserve">
+    <value>Tabule...</value>
+  </data>
+  <data name="Cmd_Check" xml:space="preserve">
+    <value>Skontrolovať inštaláciu</value>
+  </data>
+  <data name="Cmd_ConstReports" xml:space="preserve">
+    <value>Hlásenia obsluhy...</value>
+  </data>
+  <data name="Cmd_Copy" xml:space="preserve">
+    <value>Kopírovať vlak</value>
+  </data>
+  <data name="Cmd_Delete" xml:space="preserve">
+    <value>Zmazať vlak</value>
+  </data>
+  <data name="Cmd_Edit" xml:space="preserve">
+    <value>Upraviť vlak...</value>
+  </data>
+  <data name="Cmd_GenerateTexts" xml:space="preserve">
+    <value>Generovať texty tabúľ...</value>
+  </data>
+  <data name="Cmd_GroupSetup" xml:space="preserve">
+    <value>Nastavenie grafikonu...</value>
+  </data>
+  <data name="Cmd_LogText" xml:space="preserve">
+    <value>Skript hlásení...</value>
+  </data>
+  <data name="Cmd_New" xml:space="preserve">
+    <value>Nový vlak...</value>
+  </data>
+  <data name="Cmd_NewGroup" xml:space="preserve">
+    <value>Nový grafikon...</value>
+  </data>
+  <data name="Cmd_Open" xml:space="preserve">
+    <value>Otvoriť inštaláciu...</value>
+  </data>
+  <data name="Cmd_Redo" xml:space="preserve">
+    <value>Znova</value>
+  </data>
+  <data name="Cmd_Reload" xml:space="preserve">
+    <value>Obnoviť</value>
+  </data>
+  <data name="Cmd_RenameNumber" xml:space="preserve">
+    <value>Premenovať číslo vlaku...</value>
+  </data>
+  <data name="Cmd_Reports" xml:space="preserve">
+    <value>Hlásenia...</value>
+  </data>
+  <data name="Cmd_ResetLayout" xml:space="preserve">
+    <value>Obnoviť rozloženie okna</value>
+  </data>
+  <data name="Cmd_Save" xml:space="preserve">
+    <value>Uložiť</value>
+  </data>
+  <data name="Cmd_ShiftValidity" xml:space="preserve">
+    <value>Posunúť platnosť grafikonu...</value>
+  </data>
+  <data name="Cmd_StateDiagram" xml:space="preserve">
+    <value>Stavový diagram...</value>
+  </data>
+  <data name="Cmd_TabTab" xml:space="preserve">
+    <value>Tabuľky TabTab...</value>
+  </data>
+  <data name="Cmd_Undo" xml:space="preserve">
+    <value>Späť</value>
+  </data>
+  <data name="Cmd_VerifyServer" xml:space="preserve">
+    <value>Overiť kódom servera</value>
+  </data>
+  <data name="Cmd_ViewAnalysis" xml:space="preserve">
+    <value>Zobraziť panel Kontrola inštalácie</value>
+  </data>
+  <data name="Cmd_ViewInstallation" xml:space="preserve">
+    <value>Zobraziť panel Inštalácia</value>
+  </data>
+  <data name="Code_BadFont" xml:space="preserve">
+    <value>{0}: písmo {1} nie je číslo, prázdne ani *.</value>
+  </data>
+  <data name="Code_BadPosition" xml:space="preserve">
+    <value>{0}: poradie tlačidla {1} nie je číslo.</value>
+  </data>
+  <data name="Code_CheckFailed" xml:space="preserve">
+    <value>Kód sa nepodarilo preložiť kódom servera: {0}</value>
+  </data>
+  <data name="Code_CheckFatal" xml:space="preserve">
+    <value>Server by sa nespustil pri {0}: {1}</value>
+  </data>
+  <data name="Code_Checking" xml:space="preserve">
+    <value>Kód sa prekladá kódom servera...</value>
+  </data>
+  <data name="Code_CheckOk" xml:space="preserve">
+    <value>Kód sa preložil bez chyby.</value>
+  </data>
+  <data name="Code_CheckUnavailable" xml:space="preserve">
+    <value>Preklad kódom servera nie je k dispozícii, chýba program servera alebo most.</value>
+  </data>
+  <data name="Code_Compile" xml:space="preserve">
+    <value>{0}: {1} {2}</value>
+  </data>
+  <data name="Code_ConfirmCompile" xml:space="preserve">
+    <value>Kód má chyby prekladu, server by sa s ním nespustil. Potvrdiť zmeny aj tak?</value>
+  </data>
+  <data name="Code_DuplicateEntry" xml:space="preserve">
+    <value>{0}: kľúč {1} s týmto písmom je v slovníku viackrát, server súbor nenačíta.</value>
+  </data>
+  <data name="Code_DuplicateNode" xml:space="preserve">
+    <value>{0}: kľúč stavu je v grafe viackrát.</value>
+  </data>
+  <data name="Code_DuplicateTable" xml:space="preserve">
+    <value>{0}: názov tabuľky je v súbore viackrát.</value>
+  </data>
+  <data name="Code_Errors" xml:space="preserve">
+    <value>Kód má chyby, opravte ich pred potvrdením.</value>
+  </data>
+  <data name="Code_GlobalTables" xml:space="preserve">
+    <value>Spoločné tabuľky grafikonu</value>
+  </data>
+  <data name="Code_LoadFailed" xml:space="preserve">
+    <value>Kód sa nepodarilo načítať: {0}</value>
+  </data>
+  <data name="Code_NewGraph" xml:space="preserve">
+    <value>Nový graf</value>
+  </data>
+  <data name="Code_NewNode" xml:space="preserve">
+    <value>Nový stav</value>
+  </data>
+  <data name="Code_NewTable" xml:space="preserve">
+    <value>NovaTabulka</value>
+  </data>
+  <data name="Code_NoGraphIndex" xml:space="preserve">
+    <value>{0}: chýba výraz čísla grafu.</value>
+  </data>
+  <data name="Code_NoLogText" xml:space="preserve">
+    <value>Inštalácia nemá skript hlásení alebo sa nedá načítať.</value>
+  </data>
+  <data name="Code_NoNodeKey" xml:space="preserve">
+    <value>{0}: stav nemá kľúč.</value>
+  </data>
+  <data name="Code_NoTableName" xml:space="preserve">
+    <value>{0}: tabuľka nemá názov.</value>
+  </data>
+  <data name="Code_NoTime" xml:space="preserve">
+    <value>{0}: automatika nemá čas spustenia.</value>
+  </data>
+  <data name="Code_PositionOrder" xml:space="preserve">
+    <value>{0}: poradie tlačidla {1} nie je väčšie ako pri skoršom stave, klient zapíše chybu do logu.</value>
+  </data>
+  <data name="Code_StationTables" xml:space="preserve">
+    <value>Tabuľky stanice {0}</value>
+  </data>
+  <data name="Code_TableInGlobal" xml:space="preserve">
+    <value>{0}: rovnaký názov má spoločná tabuľka grafikonu, server sa nespustí.</value>
+  </data>
+  <data name="Code_Unencodable" xml:space="preserve">
+    <value>Text obsahuje znaky, ktoré kódovanie súboru nevie zapísať: {0}</value>
+  </data>
+  <data name="Code_UnknownFlag" xml:space="preserve">
+    <value>{0}: príznak {1} server nepozná, súbor nenačíta.</value>
+  </data>
+  <data name="Code_UnknownReport" xml:space="preserve">
+    <value>{0}: hlásenie {1} nie je funkcia skriptu hlásení, server ho nevyhlási.</value>
+  </data>
+  <data name="Code_VariantAuto" xml:space="preserve">
+    <value>server zvolí</value>
+  </data>
+  <data name="Code_VariantLong" xml:space="preserve">
+    <value>dlhé hlásenie</value>
+  </data>
+  <data name="Code_VariantShort" xml:space="preserve">
+    <value>krátke hlásenie</value>
+  </data>
+  <data name="ConstReports_Errors" xml:space="preserve">
+    <value>Hlásenia obsluhy majú chyby, opravte ich pred potvrdením.</value>
+  </data>
+  <data name="Edit_Diversions" xml:space="preserve">
+    <value>Odklony vlaku v staniciach</value>
+  </data>
+  <data name="Edit_Errors" xml:space="preserve">
+    <value>Vlak má chyby, opravte ich pred uložením.</value>
+  </data>
+  <data name="Edit_Lockouts" xml:space="preserve">
+    <value>Výluky vlaku {0} v grafikone</value>
+  </data>
+  <data name="Edit_NoLockoutNumber" xml:space="preserve">
+    <value>Vlak nejde stanicou grafikonu, výluky nemá.</value>
+  </data>
+  <data name="Edit_NoStations" xml:space="preserve">
+    <value>Vlak nezastavuje s časom v žiadnej stanici grafikonu.</value>
+  </data>
+  <data name="Edit_NoTextSets" xml:space="preserve">
+    <value>Stanica nemá sady textov tabúľ.</value>
+  </data>
+  <data name="Edit_NoticesFailed" xml:space="preserve">
+    <value>Výluky alebo odklony sa nepodarilo načítať: {0}</value>
+  </data>
+  <data name="Edit_StationFailed" xml:space="preserve">
+    <value>Súbory stanice sa nepodarilo načítať: {0}</value>
+  </data>
+  <data name="Edit_StationInfo" xml:space="preserve">
+    <value>Záznamy pre číslo {0}. Server použije prvý platný záznam, dodatky všetky platné.</value>
+  </data>
+  <data name="Edit_StationsNeedTrain" xml:space="preserve">
+    <value>Najprv opravte chyby vlaku. Stanice a čísla vlaku v nich sa určia z trasy.</value>
+  </data>
+  <data name="Edit_Title" xml:space="preserve">
+    <value>Upraviť vlak {0}</value>
+  </data>
+  <data name="Edit_TitleNew" xml:space="preserve">
+    <value>Nový vlak</value>
+  </data>
+  <data name="File_Additions" xml:space="preserve">
+    <value>Dodatky</value>
+  </data>
+  <data name="File_Compositions" xml:space="preserve">
+    <value>Radenie</value>
+  </data>
+  <data name="File_Diversions" xml:space="preserve">
+    <value>Odklony</value>
+  </data>
+  <data name="File_Languages" xml:space="preserve">
+    <value>Jazyky</value>
+  </data>
+  <data name="File_Lockouts" xml:space="preserve">
+    <value>Výluky</value>
+  </data>
+  <data name="File_Mos" xml:space="preserve">
+    <value>MOs</value>
+  </data>
+  <data name="File_Positions" xml:space="preserve">
+    <value>Koľaje</value>
+  </data>
+  <data name="File_ReportStations" xml:space="preserve">
+    <value>Stanice v hlásení</value>
+  </data>
+  <data name="File_Texts" xml:space="preserve">
+    <value>Texty tabúľ</value>
+  </data>
+  <data name="Flag_Node_AUXSTATE" xml:space="preserve">
+    <value>Pomocný stav</value>
+  </data>
+  <data name="Flag_Node_BLIKA" xml:space="preserve">
+    <value>Bliká</value>
+  </data>
+  <data name="Flag_Node_JENAODJEZDOVE" xml:space="preserve">
+    <value>Na odchodových tabuliach</value>
+  </data>
+  <data name="Flag_Node_JENAPRIJEZDOVE" xml:space="preserve">
+    <value>Na príchodových tabuliach</value>
+  </data>
+  <data name="Flag_Node_JENASMEROVYCH" xml:space="preserve">
+    <value>Na nástupištných tabuliach</value>
+  </data>
+  <data name="Flag_Node_JENPRONENASTUPOVAT" xml:space="preserve">
+    <value>Len pre nenastupovať</value>
+  </data>
+  <data name="Flag_Node_JEZOBRAZENAKOLEJ" xml:space="preserve">
+    <value>Ukázať aj koľaj a sektor</value>
+  </data>
+  <data name="Flag_Node_JEZOBRAZENAPOZICE" xml:space="preserve">
+    <value>Ukázať nástupište</value>
+  </data>
+  <data name="Flag_Node_JEZOBRAZENAPOZICEODJ" xml:space="preserve">
+    <value>Ukázať nástupište odchodu</value>
+  </data>
+  <data name="Flag_Node_JEZOBRAZENAPOZICEPRIJ" xml:space="preserve">
+    <value>Ukázať nástupište príchodu</value>
+  </data>
+  <data name="Flag_Node_NEAKTIVNIPRONENASTUPOVAT" xml:space="preserve">
+    <value>Bez automatiky pri nenastupovať</value>
+  </data>
+  <data name="Flag_Node_NENASTUPOVAT" xml:space="preserve">
+    <value>Nenastupovať</value>
+  </data>
+  <data name="Flag_Node_NEVYPINATBEZKLIENTA" xml:space="preserve">
+    <value>Beží aj bez klienta</value>
+  </data>
+  <data name="Flag_Node_NEVYPINATPOSTARTU" xml:space="preserve">
+    <value>Nevypínať po štarte</value>
+  </data>
+  <data name="Flag_Node_NYNISTOJI" xml:space="preserve">
+    <value>Práve stojí</value>
+  </data>
+  <data name="Flag_Node_ODBAVEN" xml:space="preserve">
+    <value>Vybavený</value>
+  </data>
+  <data name="Flag_Node_POTVRZENAKOLEJ" xml:space="preserve">
+    <value>Koľaj potvrdená</value>
+  </data>
+  <data name="Flag_Node_SHADOW" xml:space="preserve">
+    <value>Skryť v zozname obsluhy</value>
+  </data>
+  <data name="Flag_Node_STOJI" xml:space="preserve">
+    <value>Stojí v stanici</value>
+  </data>
+  <data name="Flag_Stop_Interest" xml:space="preserve">
+    <value>Záujmová</value>
+  </data>
+  <data name="Flag_Stop_OnRequest" xml:space="preserve">
+    <value>Na znamenie</value>
+  </data>
+  <data name="Flag_Stop_OperatingPoint" xml:space="preserve">
+    <value>Dopr. bod</value>
+  </data>
+  <data name="Flag_Stop_Passing" xml:space="preserve">
+    <value>Prejazd</value>
+  </data>
+  <data name="Flag_Stop_Pr" xml:space="preserve">
+    <value>Prestup</value>
+  </data>
+  <data name="Flag_StopShort_Interest" xml:space="preserve">
+    <value>záujmová</value>
+  </data>
+  <data name="Flag_StopShort_OnRequest" xml:space="preserve">
+    <value>na znamenie</value>
+  </data>
+  <data name="Flag_StopShort_OperatingPoint" xml:space="preserve">
+    <value>dopravný bod</value>
+  </data>
+  <data name="Flag_StopShort_Passing" xml:space="preserve">
+    <value>prejazd</value>
+  </data>
+  <data name="Flag_StopShort_Pr" xml:space="preserve">
+    <value>prestup</value>
+  </data>
+  <data name="Flag_StopTip_Interest" xml:space="preserve">
+    <value>Vlak v stanici riadi INISS.</value>
+  </data>
+  <data name="Flag_StopTip_OnRequest" xml:space="preserve">
+    <value>Zastávka na znamenie.</value>
+  </data>
+  <data name="Flag_StopTip_OperatingPoint" xml:space="preserve">
+    <value>Dopravný bod, v dátach vždy spolu s prejazdom.</value>
+  </data>
+  <data name="Flag_StopTip_Passing" xml:space="preserve">
+    <value>Vlak bodom prechádza bez zastavenia.</value>
+  </data>
+  <data name="Flag_StopTip_Pr" xml:space="preserve">
+    <value>Nutný prestup, koľaj zo správy GTN sa neprenáša medzi príchodom a odchodom.</value>
+  </data>
+  <data name="Flag_Variant_D" xml:space="preserve">
+    <value>Diaľkový</value>
+  </data>
+  <data name="Flag_Variant_L" xml:space="preserve">
+    <value>Lôžkový a ležadlový</value>
+  </data>
+  <data name="Flag_Variant_M" xml:space="preserve">
+    <value>Medzištátny</value>
+  </data>
+  <data name="Flag_Variant_N" xml:space="preserve">
+    <value>Nízkopodlažný</value>
+  </data>
+  <data name="Flag_Variant_NP" xml:space="preserve">
+    <value>Symbol v inom písme</value>
+  </data>
+  <data name="Flag_Variant_O" xml:space="preserve">
+    <value>Bez známeho účinku</value>
+  </data>
+  <data name="Flag_Variant_R" xml:space="preserve">
+    <value>Povinne miestenkový</value>
+  </data>
+  <data name="Flag_Variant_X" xml:space="preserve">
+    <value>Mimoriadny</value>
+  </data>
+  <data name="Flag_VariantShort_D" xml:space="preserve">
+    <value>diaľkový</value>
+  </data>
+  <data name="Flag_VariantShort_L" xml:space="preserve">
+    <value>lôžkový</value>
+  </data>
+  <data name="Flag_VariantShort_M" xml:space="preserve">
+    <value>medzištátny</value>
+  </data>
+  <data name="Flag_VariantShort_N" xml:space="preserve">
+    <value>nízkopodlažný</value>
+  </data>
+  <data name="Flag_VariantShort_NP" xml:space="preserve">
+    <value>iný symbol</value>
+  </data>
+  <data name="Flag_VariantShort_O" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="Flag_VariantShort_R" xml:space="preserve">
+    <value>miestenkový</value>
+  </data>
+  <data name="Flag_VariantShort_X" xml:space="preserve">
+    <value>mimoriadny</value>
+  </data>
+  <data name="Flag_VariantTip_D" xml:space="preserve">
+    <value>Server s takou variantou nepáruje správy GTN ani autobusy z webových zdrojov.</value>
+  </data>
+  <data name="Flag_VariantTip_L" xml:space="preserve">
+    <value>Server ani dáta ho nepoužívajú.</value>
+  </data>
+  <data name="Flag_VariantTip_M" xml:space="preserve">
+    <value>Server ani dáta ho nepoužívajú.</value>
+  </data>
+  <data name="Flag_VariantTip_N" xml:space="preserve">
+    <value>Výraz v dátach podľa neho zobrazí symbol na tabuli.</value>
+  </data>
+  <data name="Flag_VariantTip_NP" xml:space="preserve">
+    <value>Výraz v dátach podľa neho zobrazí rovnaký symbol v inom písme, presný význam nie je známy.</value>
+  </data>
+  <data name="Flag_VariantTip_O" xml:space="preserve">
+    <value>Server ani dáta ho nepoužívajú.</value>
+  </data>
+  <data name="Flag_VariantTip_R" xml:space="preserve">
+    <value>Server ani dáta ho nepoužívajú.</value>
+  </data>
+  <data name="Flag_VariantTip_X" xml:space="preserve">
+    <value>Výrazy v dátach podľa neho menia ohlásenie druhu a nepripájajú linku.</value>
+  </data>
+  <data name="History_Boards" xml:space="preserve">
+    <value>tabule grafikonu {0}</value>
+  </data>
+  <data name="History_ConstReports" xml:space="preserve">
+    <value>hlásenia obsluhy</value>
+  </data>
+  <data name="History_Copy" xml:space="preserve">
+    <value>kópia vlaku {0}</value>
+  </data>
+  <data name="History_CopyMany" xml:space="preserve">
+    <value>kópia vlakov ({0})</value>
+  </data>
+  <data name="History_Delete" xml:space="preserve">
+    <value>zmazanie vlaku {0}</value>
+  </data>
+  <data name="History_DeleteMany" xml:space="preserve">
+    <value>zmazanie vlakov ({0})</value>
+  </data>
+  <data name="History_Edit" xml:space="preserve">
+    <value>úprava vlaku {0}</value>
+  </data>
+  <data name="History_GenerateTexts" xml:space="preserve">
+    <value>texty tabúľ {0}, sada {1}</value>
+  </data>
+  <data name="History_GroupSetup" xml:space="preserve">
+    <value>nastavenie grafikonu {0}</value>
+  </data>
+  <data name="History_LogText" xml:space="preserve">
+    <value>skript hlásení</value>
+  </data>
+  <data name="History_New" xml:space="preserve">
+    <value>nový vlak {0}</value>
+  </data>
+  <data name="History_RedoItem" xml:space="preserve">
+    <value>Znova: {0}</value>
+  </data>
+  <data name="History_Rename" xml:space="preserve">
+    <value>premenovanie čísla {0} na {1}</value>
+  </data>
+  <data name="History_Reports" xml:space="preserve">
+    <value>hlásenia skriptu</value>
+  </data>
+  <data name="History_Shift" xml:space="preserve">
+    <value>posun platnosti o {0} dní</value>
+  </data>
+  <data name="History_ShiftSelected" xml:space="preserve">
+    <value>posun platnosti vlakov ({0}) o {1} dní</value>
+  </data>
+  <data name="History_StateDiagram" xml:space="preserve">
+    <value>stavový diagram {0}</value>
+  </data>
+  <data name="History_TabTab" xml:space="preserve">
+    <value>tabuľky TabTab grafikonu {0}</value>
+  </data>
+  <data name="History_UndoItem" xml:space="preserve">
+    <value>Späť: {0}</value>
+  </data>
+  <data name="Key_Choice" xml:space="preserve">
+    <value>{0}: {1}</value>
+  </data>
+  <data name="Key_Function" xml:space="preserve">
+    <value>funkcia LogText {0}</value>
+  </data>
+  <data name="Key_Unknown" xml:space="preserve">
+    <value>neznámy kľúč</value>
+  </data>
+  <data name="Kind_Junction" xml:space="preserve">
+    <value>odbočka</value>
+  </data>
+  <data name="Kind_Station" xml:space="preserve">
+    <value>železničná stanica</value>
+  </data>
+  <data name="Kind_Stop" xml:space="preserve">
+    <value>zastávka</value>
+  </data>
+  <data name="Kind_StopJunction" xml:space="preserve">
+    <value>zastávka aj odbočka</value>
+  </data>
+  <data name="Loc_Board" xml:space="preserve">
+    <value>{0}, tabuľa {1}</value>
+  </data>
+  <data name="Loc_Column" xml:space="preserve">
+    <value>{0}, údaj {1}</value>
+  </data>
+  <data name="Loc_Condition" xml:space="preserve">
+    <value>{0}, podmienka zobrazenia</value>
+  </data>
+  <data name="Loc_Graph" xml:space="preserve">
+    <value>{0}, graf {1}</value>
+  </data>
+  <data name="Loc_Line" xml:space="preserve">
+    <value>{0}, riadok {1}</value>
+  </data>
+  <data name="Loc_Node" xml:space="preserve">
+    <value>{0}, stav {1}</value>
+  </data>
+  <data name="Loc_Part" xml:space="preserve">
+    <value>{0}, časť {1}</value>
+  </data>
+  <data name="Loc_Pattern" xml:space="preserve">
+    <value>{0}, vzor {1}</value>
+  </data>
+  <data name="Loc_Row" xml:space="preserve">
+    <value>{0}, riadok {1}</value>
+  </data>
+  <data name="Loc_Set" xml:space="preserve">
+    <value>{0}, sada {1}</value>
+  </data>
+  <data name="Loc_Station" xml:space="preserve">
+    <value>{0} v stanici {1}</value>
+  </data>
+  <data name="Loc_Table" xml:space="preserve">
+    <value>{0}, tabuľka {1}</value>
+  </data>
+  <data name="Loc_Template" xml:space="preserve">
+    <value>{0}, predloha {1}</value>
+  </data>
+  <data name="Loc_Text" xml:space="preserve">
+    <value>{0}, text {1}</value>
+  </data>
+  <data name="Main_DeleteRecords" xml:space="preserve">
+    <value>Vlak má v súboroch staníc, výlukách a odklonoch záznamy, ktoré iný vlak nepoužíva ({0}). Zmazať ich tiež?</value>
+  </data>
+  <data name="Main_DeleteRecordsMany" xml:space="preserve">
+    <value>Vlaky majú v súboroch staníc, výlukách a odklonoch záznamy, ktoré iný vlak nepoužíva ({0}). Zmazať ich tiež?</value>
+  </data>
+  <data name="Main_DeleteTrain" xml:space="preserve">
+    <value>Zmazať vlak {0}?</value>
+  </data>
+  <data name="Main_DeleteTrains" xml:space="preserve">
+    <value>Zmazať vybrané vlaky ({0})?</value>
+  </data>
+  <data name="Main_Empty" xml:space="preserve">
+    <value>Otvorte inštaláciu INISS2 cez Súbor, Otvoriť inštaláciu.</value>
+  </data>
+  <data name="Main_GroupFailed" xml:space="preserve">
+    <value>Grafikon {0} sa nepodarilo načítať: {1}</value>
+  </data>
+  <data name="Main_GroupNodeFailed" xml:space="preserve">
+    <value>{0} (nenačítaný)</value>
+  </data>
+  <data name="Main_NotIniss2" xml:space="preserve">
+    <value>Priečinok {0} nie je inštalácia INISS2.</value>
+  </data>
+  <data name="Main_OpenFailed" xml:space="preserve">
+    <value>Inštaláciu {0} sa nepodarilo otvoriť.</value>
+  </data>
+  <data name="Main_OpenFolder" xml:space="preserve">
+    <value>Vyberte priečinok inštalácie INISS2, servera alebo dát.</value>
+  </data>
+  <data name="Main_ReloadDirty" xml:space="preserve">
+    <value>Obnovenie zahodí neuložené zmeny. Pokračovať?</value>
+  </data>
+  <data name="Main_SaveChangedOnDisk" xml:space="preserve">
+    <value>Tieto súbory po otvorení zmenil iný program, napríklad server:
+{0}
+
+Prepísať ich zmenami z GVXEditora? Pri Nie ostanú bez zmeny.</value>
+  </data>
+  <data name="Main_SaveChanges" xml:space="preserve">
+    <value>Inštalácia má neuložené zmeny. Uložiť ich?</value>
+  </data>
+  <data name="Main_SaveFailedBackup" xml:space="preserve">
+    <value>Uloženie zlyhalo a súbory sa nepodarilo vrátiť. Pôvodné súbory sú v {0}: {1}</value>
+  </data>
+  <data name="Main_SaveFailedRolledBack" xml:space="preserve">
+    <value>Uloženie zlyhalo, súbory ostali bez zmeny: {0}</value>
+  </data>
+  <data name="Main_SaveServerRunning" xml:space="preserve">
+    <value>Server tejto inštalácie beží. Zastavte ho a uložte znova, inak by zmeny pri ďalšej úprave vlaku v klientovi prepísal.</value>
+  </data>
+  <data name="Main_SaveWithErrors" xml:space="preserve">
+    <value>Inštalácia má chyby, pre ktoré by sa server nespustil ({0}). Uložiť aj tak?</value>
+  </data>
+  <data name="Main_ShiftPrompt" xml:space="preserve">
+    <value>O koľko dní posunúť platnosť všetkých vlakov grafikonu {0}? Záporné číslo posunie späť, 364 dní je 52 týždňov.</value>
+  </data>
+  <data name="Main_ShiftSelectedPrompt" xml:space="preserve">
+    <value>O koľko dní posunúť platnosť vybraných vlakov ({0})? Záporné číslo posunie späť, 364 dní je 52 týždňov.</value>
+  </data>
+  <data name="Main_StationFailed" xml:space="preserve">
+    <value>Vlaky stanice {0} sa nepodarilo načítať: {1}</value>
+  </data>
+  <data name="Main_Verifying" xml:space="preserve">
+    <value>Overujem kódom servera…</value>
+  </data>
+  <data name="Page_Boards" xml:space="preserve">
+    <value>Tabule</value>
+  </data>
+  <data name="Page_ConstReports" xml:space="preserve">
+    <value>Hlásenia obsluhy</value>
+  </data>
+  <data name="Page_Defaults" xml:space="preserve">
+    <value>Predvolené stanice hlásenia</value>
+  </data>
+  <data name="Page_LogText" xml:space="preserve">
+    <value>Skript hlásení</value>
+  </data>
+  <data name="Page_LongPatterns" xml:space="preserve">
+    <value>Vzory dlhého hlásenia</value>
+  </data>
+  <data name="Page_Names" xml:space="preserve">
+    <value>Názvy staníc</value>
+  </data>
+  <data name="Page_ReportKeys" xml:space="preserve">
+    <value>Typy hlásení</value>
+  </data>
+  <data name="Page_RouteTexts" xml:space="preserve">
+    <value>Texty podľa trasy</value>
+  </data>
+  <data name="Page_ShortPatterns" xml:space="preserve">
+    <value>Vzory krátkeho hlásenia</value>
+  </data>
+  <data name="Page_StateDiagram" xml:space="preserve">
+    <value>Stavový diagram</value>
+  </data>
+  <data name="Page_StationTexts" xml:space="preserve">
+    <value>Texty podľa stanice</value>
+  </data>
+  <data name="Page_TabTab" xml:space="preserve">
+    <value>Tabuľky TabTab</value>
+  </data>
+  <data name="Page_Tracks" xml:space="preserve">
+    <value>Koľaje</value>
+  </data>
+  <data name="Panel_Analysis" xml:space="preserve">
+    <value>Kontrola inštalácie</value>
+  </data>
+  <data name="Panel_Installation" xml:space="preserve">
+    <value>Inštalácia</value>
+  </data>
+  <data name="Pick_AllLanguages" xml:space="preserve">
+    <value>Všetky jazyky banky</value>
+  </data>
+  <data name="Pick_AllReports" xml:space="preserve">
+    <value>všetky typy</value>
+  </data>
+  <data name="Pick_CategoriesHint" xml:space="preserve">
+    <value>Kategórie, pre ktoré klient typ hlásenia ponúkne.</value>
+  </data>
+  <data name="Pick_CategoriesTitle" xml:space="preserve">
+    <value>Kategórie vlakov</value>
+  </data>
+  <data name="Pick_Filter" xml:space="preserve">
+    <value>Hľadať</value>
+  </data>
+  <data name="Pick_LanguagesTitle" xml:space="preserve">
+    <value>Jazyky hlásenia</value>
+  </data>
+  <data name="Pick_NoReport" xml:space="preserve">
+    <value>Žiadny typ hlásenia</value>
+  </data>
+  <data name="Pick_PlayFailed" xml:space="preserve">
+    <value>Zvuk {0} sa nepodarilo prehrať.</value>
+  </data>
+  <data name="Pick_ReportsHint" xml:space="preserve">
+    <value>Bez výberu platí záznam pre všetky typy hlásenia.</value>
+  </data>
+  <data name="Pick_ReportsTitle" xml:space="preserve">
+    <value>Typy hlásenia</value>
+  </data>
+  <data name="Pick_SoundsTitle" xml:space="preserve">
+    <value>Zvuky radenia</value>
+  </data>
+  <data name="Pick_StationsTitle" xml:space="preserve">
+    <value>Stanice</value>
+  </data>
+  <data name="Pick_TrackSoundTitle" xml:space="preserve">
+    <value>Zvuk</value>
+  </data>
+  <data name="Place_Data" xml:space="preserve">
+    <value>priečinok dát</value>
+  </data>
+  <data name="Place_Group" xml:space="preserve">
+    <value>grafikon {0}</value>
+  </data>
+  <data name="Place_Server" xml:space="preserve">
+    <value>kód servera</value>
+  </data>
+  <data name="Place_Station" xml:space="preserve">
+    <value>{0}, {1}</value>
+  </data>
+  <data name="Place_Train" xml:space="preserve">
+    <value>{0}, vlak {1}</value>
+  </data>
+  <data name="Rename_AllTrains" xml:space="preserve">
+    <value>Premenovať aj ďalšie vlaky grafikonu s týmto číslom ({0})</value>
+  </data>
+  <data name="Rename_Copy" xml:space="preserve">
+    <value>Ostatné vlaky si záznamy ponechajú, vlak dostane ich kópiu pod novým číslom.</value>
+  </data>
+  <data name="Rename_Exists" xml:space="preserve">
+    <value>Číslo {0} už má iný vlak grafikonu, ich záznamy staníc sa spoja. Premenovať aj tak?</value>
+  </data>
+  <data name="Rename_Info" xml:space="preserve">
+    <value>Číslo sa zmení aj v záznamoch súborov staníc, výluk a odklonov ({0}).</value>
+  </data>
+  <data name="Reports_AllKinds" xml:space="preserve">
+    <value>Všetky druhy</value>
+  </data>
+  <data name="Reports_AllLanguages" xml:space="preserve">
+    <value>všetky jazyky</value>
+  </data>
+  <data name="Reports_AnyBlock" xml:space="preserve">
+    <value>všetky</value>
+  </data>
+  <data name="Reports_BadBuiltin" xml:space="preserve">
+    <value>{0}: argumenty {1} editor neopíše alebo nesedia s metódou {2} ({3}). Argument je text, číslo, True, False, Nothing alebo hodnota VlakS.</value>
+  </data>
+  <data name="Reports_BadCall" xml:space="preserve">
+    <value>{0}: {1} nie je volanie funkcie skriptu s jednoduchými argumentmi, napríklad Funkcia() alebo Vzor(aiStanice).</value>
+  </data>
+  <data name="Reports_BadCondition" xml:space="preserve">
+    <value>{0}: podmienka {1} má prázdnu časť medzi », napríklad VlakS.JeProjizdejici » Else DlouheHlaseni.</value>
+  </data>
+  <data name="Reports_BadExclusionStations" xml:space="preserve">
+    <value>{0}: stanice výluky musia byť čísla oddelené čiarkou.</value>
+  </data>
+  <data name="Reports_BadLanguage" xml:space="preserve">
+    <value>{0}: {1} nie je kľúč jazyka (písmená a číslice).</value>
+  </data>
+  <data name="Reports_BadName" xml:space="preserve">
+    <value>{0}: {1} nie je platný názov funkcie VB.NET (písmená, číslice a podčiarkovník, na začiatku nie číslica).</value>
+  </data>
+  <data name="Reports_BadPause" xml:space="preserve">
+    <value>{0}: pauza {1} nie je nezáporné celé číslo milisekúnd.</value>
+  </data>
+  <data name="Reports_BadSound" xml:space="preserve">
+    <value>{0}: kľúč zvuku {1} nemá tvar jazyk/skupina/zvuk ani skupina/zvuk.</value>
+  </data>
+  <data name="Reports_BadStations" xml:space="preserve">
+    <value>{0}: {1} nie sú čísla staníc oddelené čiarkou, server použije len čísla.</value>
+  </data>
+  <data name="Reports_BuiltinCislo" xml:space="preserve">
+    <value>Číslo</value>
+  </data>
+  <data name="Reports_BuiltinCisloVlaku" xml:space="preserve">
+    <value>Číslo vlaku</value>
+  </data>
+  <data name="Reports_BuiltinDodatky" xml:space="preserve">
+    <value>Radenie, dodatky a výluky</value>
+  </data>
+  <data name="Reports_BuiltinDopravce" xml:space="preserve">
+    <value>Dopravca</value>
+  </data>
+  <data name="Reports_BuiltinDruhVlaku" xml:space="preserve">
+    <value>Druh vlaku</value>
+  </data>
+  <data name="Reports_BuiltinDruhVlaku_BezZpozdeny" xml:space="preserve">
+    <value>Druh vlaku bez meškania</value>
+  </data>
+  <data name="Reports_BuiltinDuvodZpozdeni" xml:space="preserve">
+    <value>Dôvod meškania</value>
+  </data>
+  <data name="Reports_BuiltinHodiny" xml:space="preserve">
+    <value>Hodiny času</value>
+  </data>
+  <data name="Reports_BuiltinLinkaIDS" xml:space="preserve">
+    <value>Linka IDS</value>
+  </data>
+  <data name="Reports_BuiltinLinkaND" xml:space="preserve">
+    <value>Linka náhradnej dopravy</value>
+  </data>
+  <data name="Reports_BuiltinMinuty" xml:space="preserve">
+    <value>Minúty času</value>
+  </data>
+  <data name="Reports_BuiltinNazevVlaku" xml:space="preserve">
+    <value>Názov vlaku</value>
+  </data>
+  <data name="Reports_BuiltinOdklonovaTrasa" xml:space="preserve">
+    <value>Hlásenie odklonu vlaku</value>
+  </data>
+  <data name="Reports_BuiltinPoziceKolej" xml:space="preserve">
+    <value>Koľaj</value>
+  </data>
+  <data name="Reports_BuiltinPoziceNastupiste" xml:space="preserve">
+    <value>Nástupište</value>
+  </data>
+  <data name="Reports_BuiltinPoziceSektor" xml:space="preserve">
+    <value>Sektor</value>
+  </data>
+  <data name="Reports_BuiltinPripoje" xml:space="preserve">
+    <value>Prípoje</value>
+  </data>
+  <data name="Reports_BuiltinRazeni" xml:space="preserve">
+    <value>Radenie vlaku</value>
+  </data>
+  <data name="Reports_BuiltinSeznamStanic" xml:space="preserve">
+    <value>Zoznam staníc</value>
+  </data>
+  <data name="Reports_BuiltinSeznamStanicCIL" xml:space="preserve">
+    <value>Cieľová stanica</value>
+  </data>
+  <data name="Reports_BuiltinSeznamStanicVYCH" xml:space="preserve">
+    <value>Východzia stanica</value>
+  </data>
+  <data name="Reports_BuiltinTextProNahled" xml:space="preserve">
+    <value>Text pre náhľad</value>
+  </data>
+  <data name="Reports_BuiltinVylukaVlaku" xml:space="preserve">
+    <value>Hlásenie výluky vlaku</value>
+  </data>
+  <data name="Reports_BuiltinZpozdeni" xml:space="preserve">
+    <value>Meškanie v minútach</value>
+  </data>
+  <data name="Reports_CallHelper" xml:space="preserve">
+    <value>pomocná funkcia skriptu</value>
+  </data>
+  <data name="Reports_CallMissing" xml:space="preserve">
+    <value>funkcia v skripte nie je</value>
+  </data>
+  <data name="Reports_CallReport" xml:space="preserve">
+    <value>hlásenie: {0}</value>
+  </data>
+  <data name="Reports_CondAddition" xml:space="preserve">
+    <value>hlási sa dodatok</value>
+  </data>
+  <data name="Reports_CondAutomatic" xml:space="preserve">
+    <value>hlásenie spustila automatika</value>
+  </data>
+  <data name="Reports_CondDeparting" xml:space="preserve">
+    <value>východzí alebo prechádzajúci vlak</value>
+  </data>
+  <data name="Reports_CondDiverted" xml:space="preserve">
+    <value>vlak je odklonený</value>
+  </data>
+  <data name="Reports_CondEnding" xml:space="preserve">
+    <value>končiaci vlak</value>
+  </data>
+  <data name="Reports_CondExclusionArrival" xml:space="preserve">
+    <value>výluka pri príchode</value>
+  </data>
+  <data name="Reports_CondExclusionDeparture" xml:space="preserve">
+    <value>výluka pri odchode</value>
+  </data>
+  <data name="Reports_CondLong" xml:space="preserve">
+    <value>dlhé hlásenie</value>
+  </data>
+  <data name="Reports_CondMoreStations" xml:space="preserve">
+    <value>vzor má viac staníc</value>
+  </data>
+  <data name="Reports_CondNotEnding" xml:space="preserve">
+    <value>nie končiaci vlak</value>
+  </data>
+  <data name="Reports_CondNotStarting" xml:space="preserve">
+    <value>nie východzí vlak</value>
+  </data>
+  <data name="Reports_CondOneStation" xml:space="preserve">
+    <value>vzor má jednu stanicu</value>
+  </data>
+  <data name="Reports_CondPassing" xml:space="preserve">
+    <value>prechádzajúci vlak</value>
+  </data>
+  <data name="Reports_CondShort" xml:space="preserve">
+    <value>krátke hlásenie</value>
+  </data>
+  <data name="Reports_CondStarting" xml:space="preserve">
+    <value>východzí vlak</value>
+  </data>
+  <data name="Reports_CondTransfer" xml:space="preserve">
+    <value>stanica s prestupom</value>
+  </data>
+  <data name="Reports_ConfirmNotWritten" xml:space="preserve">
+    <value>Hlásenie {0} má chyby a posledná úprava sa do skriptu nezapísala. Potvrdiť zmeny s jeho poslednou platnou podobou?</value>
+  </data>
+  <data name="Reports_CopySuffix" xml:space="preserve">
+    <value>_kopia</value>
+  </data>
+  <data name="Reports_DeleteConfirm" xml:space="preserve">
+    <value>Zmazať hlásenie {0}?</value>
+  </data>
+  <data name="Reports_DeleteManual" xml:space="preserve">
+    <value>Funkcia {0} je ručný kód. Zmazať ju zo skriptu?</value>
+  </data>
+  <data name="Reports_DeleteUsed" xml:space="preserve">
+    <value>Hlásenie {0} používajú dáta ({1}). Po zmazaní ho server nevyhlási. Zmazať ho?</value>
+  </data>
+  <data name="Reports_DuplicateName" xml:space="preserve">
+    <value>{0}: funkcia {1} už v skripte je (VB.NET nerozlišuje veľkosť písmen).</value>
+  </data>
+  <data name="Reports_Editable" xml:space="preserve">
+    <value>v editore</value>
+  </data>
+  <data name="Reports_ElseBranch" xml:space="preserve">
+    <value>Opačná vetva (Else)</value>
+  </data>
+  <data name="Reports_ExclusionAUTO" xml:space="preserve">
+    <value>podľa vlaku</value>
+  </data>
+  <data name="Reports_ExclusionNONE" xml:space="preserve">
+    <value>bez typu</value>
+  </data>
+  <data name="Reports_ExclusionODJEZD" xml:space="preserve">
+    <value>odchod</value>
+  </data>
+  <data name="Reports_ExclusionPRIJEZD" xml:space="preserve">
+    <value>príchod</value>
+  </data>
+  <data name="Reports_ExclusionPRIJODJ" xml:space="preserve">
+    <value>príchod aj odchod</value>
+  </data>
+  <data name="Reports_ExclusionStations" xml:space="preserve">
+    <value>Stanice výluky:</value>
+  </data>
+  <data name="Reports_ExclusionTRATOVA" xml:space="preserve">
+    <value>traťová</value>
+  </data>
+  <data name="Reports_Filter" xml:space="preserve">
+    <value>Hľadať názov alebo popis</value>
+  </data>
+  <data name="Reports_ForStations" xml:space="preserve">
+    <value>Len pre stanice:</value>
+  </data>
+  <data name="Reports_KeywordName" xml:space="preserve">
+    <value>{0}: {1} je kľúčové slovo VB.NET.</value>
+  </data>
+  <data name="Reports_KindAddition" xml:space="preserve">
+    <value>Dodatok</value>
+  </data>
+  <data name="Reports_KindAdditionPattern" xml:space="preserve">
+    <value>Vzor dodatku</value>
+  </data>
+  <data name="Reports_KindBasic" xml:space="preserve">
+    <value>Základné</value>
+  </data>
+  <data name="Reports_KindDiversion" xml:space="preserve">
+    <value>Odklon</value>
+  </data>
+  <data name="Reports_KindDiversionPattern" xml:space="preserve">
+    <value>Vzor odklonu</value>
+  </data>
+  <data name="Reports_KindExclusion" xml:space="preserve">
+    <value>Výluka</value>
+  </data>
+  <data name="Reports_KindExclusionPattern" xml:space="preserve">
+    <value>Vzor výluky</value>
+  </data>
+  <data name="Reports_KindGeneric" xml:space="preserve">
+    <value>Bez druhu (znelka)</value>
+  </data>
+  <data name="Reports_KindOther" xml:space="preserve">
+    <value>Ostatné</value>
+  </data>
+  <data name="Reports_KindSupplementary" xml:space="preserve">
+    <value>Doplnkové</value>
+  </data>
+  <data name="Reports_LanguageNeverSpoken" xml:space="preserve">
+    <value>{0}: blok jazyka {1} sa nevyhlási, hlásenie je len pre jazyk {2}.</value>
+  </data>
+  <data name="Reports_LineBreak" xml:space="preserve">
+    <value>{0}: popis musí byť na jednom riadku.</value>
+  </data>
+  <data name="Reports_Manual" xml:space="preserve">
+    <value>ručný kód</value>
+  </data>
+  <data name="Reports_ManualAttribute" xml:space="preserve">
+    <value>označenie má argument, ktorý editor nepozná</value>
+  </data>
+  <data name="Reports_ManualLayout" xml:space="preserve">
+    <value>zápis, ktorý by editor zmenil</value>
+  </data>
+  <data name="Reports_ManualNotReport" xml:space="preserve">
+    <value>funkcia má viac označení</value>
+  </data>
+  <data name="Reports_ManualSignature" xml:space="preserve">
+    <value>podpis nie je Public Sub bez parametrov alebo so zoznamom staníc</value>
+  </data>
+  <data name="Reports_ManualStatement" xml:space="preserve">
+    <value>príkaz, ktorý editor neopíše (podmienka, volanie, premenná)</value>
+  </data>
+  <data name="Reports_ManualText" xml:space="preserve">
+    <value>Funkcia {0} je ručný kód: {1} (riadok {2}). Upravíte ju v skripte hlásení.</value>
+  </data>
+  <data name="Reports_NewAddition" xml:space="preserve">
+    <value>Nový dodatok v skripte hlásení</value>
+  </data>
+  <data name="Reports_NewDescription" xml:space="preserve">
+    <value>Nové hlásenie</value>
+  </data>
+  <data name="Reports_NewName" xml:space="preserve">
+    <value>Nove_hlasenie</value>
+  </data>
+  <data name="Reports_NoCondition" xml:space="preserve">
+    <value>Bez podmienky</value>
+  </data>
+  <data name="Reports_NoDescription" xml:space="preserve">
+    <value>{0}: hlásenie nemá popis, klient ukáže prázdny riadok.</value>
+  </data>
+  <data name="Reports_NoExclusionType" xml:space="preserve">
+    <value>{0}: chýba typ výluky.</value>
+  </data>
+  <data name="Reports_NoName" xml:space="preserve">
+    <value>{0}: chýba názov funkcie.</value>
+  </data>
+  <data name="Reports_NoSound" xml:space="preserve">
+    <value>{0}: chýba kľúč zvuku.</value>
+  </data>
+  <data name="Reports_NotInBank" xml:space="preserve">
+    <value>jazyk nie je v banke zvukov, server ho nevyhlási</value>
+  </data>
+  <data name="Reports_NotWritten" xml:space="preserve">
+    <value>Hlásenie {0} má chyby a posledná úprava sa do skriptu nezapísala. Skript má jeho poslednú platnú podobu.</value>
+  </data>
+  <data name="Reports_OtherLanguage" xml:space="preserve">
+    <value>{0}: zvuk jazyka {1} je v bloku jazyka {2}, server ho nikdy neprehrá.</value>
+  </data>
+  <data name="Reports_ParamaiStanice" xml:space="preserve">
+    <value>stanice</value>
+  </data>
+  <data name="Reports_ParambMezinarodni" xml:space="preserve">
+    <value>medzinárodný</value>
+  </data>
+  <data name="Reports_ParambPovinneMistenkovy" xml:space="preserve">
+    <value>povinne miestenkový</value>
+  </data>
+  <data name="Reports_ParambPrijezd" xml:space="preserve">
+    <value>príchod</value>
+  </data>
+  <data name="Reports_ParamiCislo" xml:space="preserve">
+    <value>číslo</value>
+  </data>
+  <data name="Reports_ParamiIndexDo" xml:space="preserve">
+    <value>po poradie</value>
+  </data>
+  <data name="Reports_ParamiIndexOd" xml:space="preserve">
+    <value>od poradia</value>
+  </data>
+  <data name="Reports_ParamiLimitZpozdeni" xml:space="preserve">
+    <value>od meškania (min)</value>
+  </data>
+  <data name="Reports_ParamiPocetMinut" xml:space="preserve">
+    <value>minúty</value>
+  </data>
+  <data name="Reports_ParamiTime" xml:space="preserve">
+    <value>čas</value>
+  </data>
+  <data name="Reports_ParamoPosition" xml:space="preserve">
+    <value>koľaj vlaku</value>
+  </data>
+  <data name="Reports_ParamPrefixPosl" xml:space="preserve">
+    <value>funkcia pred poslednou</value>
+  </data>
+  <data name="Reports_ParamPripoj" xml:space="preserve">
+    <value>funkcia prípoja</value>
+  </data>
+  <data name="Reports_ParamsDruhVlaku" xml:space="preserve">
+    <value>druh</value>
+  </data>
+  <data name="Reports_ParamsGroupJedina" xml:space="preserve">
+    <value>skupina jedinej</value>
+  </data>
+  <data name="Reports_ParamsGroupName" xml:space="preserve">
+    <value>skupina</value>
+  </data>
+  <data name="Reports_ParamsGroupNePosledni" xml:space="preserve">
+    <value>skupina staníc</value>
+  </data>
+  <data name="Reports_ParamsGroupPosledni" xml:space="preserve">
+    <value>skupina poslednej</value>
+  </data>
+  <data name="Reports_ParamsGroupTypVlaku" xml:space="preserve">
+    <value>skupina druhu vlaku</value>
+  </data>
+  <data name="Reports_ParamsNahled" xml:space="preserve">
+    <value>text náhľadu</value>
+  </data>
+  <data name="Reports_ParamsText" xml:space="preserve">
+    <value>text</value>
+  </data>
+  <data name="Reports_PickSounds" xml:space="preserve">
+    <value>Zvuky hlásenia</value>
+  </data>
+  <data name="Reports_RefAdditions" xml:space="preserve">
+    <value>dodatky {0}</value>
+  </data>
+  <data name="Reports_RefConstReports" xml:space="preserve">
+    <value>hlásenia obsluhy {0}</value>
+  </data>
+  <data name="Reports_RefDiversions" xml:space="preserve">
+    <value>odklony {0}</value>
+  </data>
+  <data name="Reports_RefLockouts" xml:space="preserve">
+    <value>výluky {0}</value>
+  </data>
+  <data name="Reports_RefReportKeys" xml:space="preserve">
+    <value>typy hlásení {0}</value>
+  </data>
+  <data name="Reports_RefStateNodes" xml:space="preserve">
+    <value>stavy {0}</value>
+  </data>
+  <data name="Reports_RenamedUsed" xml:space="preserve">
+    <value>{0}: dáta odkazujú na pôvodný názov {1} ({2}), po premenovaní ho server nenájde.</value>
+  </data>
+  <data name="Reports_ScriptFunctions" xml:space="preserve">
+    <value>Funkcie skriptu</value>
+  </data>
+  <data name="Reports_StepCall" xml:space="preserve">
+    <value>Volanie funkcie</value>
+  </data>
+  <data name="Reports_StepOff" xml:space="preserve">
+    <value>Vypnutý riadok</value>
+  </data>
+  <data name="Reports_StepPause" xml:space="preserve">
+    <value>Pauza</value>
+  </data>
+  <data name="Reports_StepSound" xml:space="preserve">
+    <value>Zvuk</value>
+  </data>
+  <data name="Reports_StepWhere" xml:space="preserve">
+    <value>{0}, krok {1}</value>
+  </data>
+  <data name="Reports_Unencodable" xml:space="preserve">
+    <value>{0}: znaky {1} sa v kódovaní skriptu nedajú zapísať.</value>
+  </data>
+  <data name="Reports_UnknownFunction" xml:space="preserve">
+    <value>{0}: funkcia {1} v skripte nie je.</value>
+  </data>
+  <data name="Reports_UnknownGroup" xml:space="preserve">
+    <value>{0}: skupina {1} v banke nie je, server zvuk nenájde.</value>
+  </data>
+  <data name="Reports_UnknownSound" xml:space="preserve">
+    <value>{0}: zvuk {1} v banke nie je, server ho neprehrá.</value>
+  </data>
+  <data name="Reports_UpdateReferences" xml:space="preserve">
+    <value>Dáta odkazujú na pôvodné názvy premenovaných hlásení ({0}). Upraviť odkazy v dátach na nové názvy?</value>
+  </data>
+  <data name="Reports_Where" xml:space="preserve">
+    <value>Hlásenie {0}</value>
+  </data>
+  <data name="Rule_BadStation" xml:space="preserve">
+    <value>Varianta {0}, bod {1}: číslo stanice {2} nie je platné.</value>
+  </data>
+  <data name="Rule_BadTime" xml:space="preserve">
+    <value>Varianta {0}, bod {1}: čas {2} nie je platný, zadajte ho napríklad ako 8:15.</value>
+  </data>
+  <data name="Rule_DiversionStation" xml:space="preserve">
+    <value>Odklony, záznam {0}: vyberte stanicu.</value>
+  </data>
+  <data name="Rule_FewStops" xml:space="preserve">
+    <value>Varianta {0} má menej ako dva body trasy.</value>
+  </data>
+  <data name="Rule_InterestWithoutTime" xml:space="preserve">
+    <value>Varianta {0}: vlak v stanici {1} nemá čas, server ho v nej nebude riadiť.</value>
+  </data>
+  <data name="Rule_NoInterestStop" xml:space="preserve">
+    <value>Vlak nemá v žiadnej stanici grafikonu zastavenie s časom, server ho nezaradí medzi vlaky dňa.</value>
+  </data>
+  <data name="Rule_NoNumber" xml:space="preserve">
+    <value>Varianta {0} nemá v prvom bode číslo vlaku.</value>
+  </data>
+  <data name="Rule_NoticeDate" xml:space="preserve">
+    <value>{0}, záznam {1}: dátum nie je platný.</value>
+  </data>
+  <data name="Rule_NoticeValidity" xml:space="preserve">
+    <value>{0}, záznam {1}: server poznámku {2} v období záznamu nerozvinie a záznam nebude platiť.</value>
+  </data>
+  <data name="Rule_NoVariant" xml:space="preserve">
+    <value>Vlak nemá žiadnu variantu.</value>
+  </data>
+  <data name="Rule_NumberChanged" xml:space="preserve">
+    <value>V stanici {0} má vlak teraz číslo {1}. Záznamy staníc pre {2} ostali pri pôvodnom čísle, na zmenu čísla vo všetkých súboroch použite Premenovať číslo vlaku.</value>
+  </data>
+  <data name="Rule_PeriodReversed" xml:space="preserve">
+    <value>Koniec platnosti je pred začiatkom.</value>
+  </data>
+  <data name="Rule_RecordKey" xml:space="preserve">
+    <value>{0}, záznam {1}: kľúč {2} nie je funkcia LogText ani hlásenie obsluhy.</value>
+  </data>
+  <data name="Rule_RecordNumber" xml:space="preserve">
+    <value>{0} v stanici {1}, záznam {2}: {3} nie je číslo.</value>
+  </data>
+  <data name="Rule_RecordSet" xml:space="preserve">
+    <value>Texty tabúľ v stanici {0}, záznam {1}: vyberte sadu.</value>
+  </data>
+  <data name="Rule_RecordTrack" xml:space="preserve">
+    <value>Koľaje v stanici {0}, záznam {1}: koľaj {2} stanica nemá.</value>
+  </data>
+  <data name="Rule_RecordValidity" xml:space="preserve">
+    <value>{0} v stanici {1}, záznam {2}: server poznámku {3} nerozvinie a záznam nebude platiť.</value>
+  </data>
+  <data name="Rule_ValidityInvalid" xml:space="preserve">
+    <value>Varianta {0}: server poznámku {1} nerozvinie a varianta nepôjde v žiadny deň.</value>
+  </data>
+  <data name="Rule_ValidityTooLong" xml:space="preserve">
+    <value>Varianta {0}: obdobie je dlhšie ako 400 dní, server poznámku nerozvinie a varianta nepôjde v žiadny deň.</value>
+  </data>
+  <data name="Rule_VariantNeverActive" xml:space="preserve">
+    <value>Varianta {0} nepôjde v žiadny deň, všetky jej dni patria skorším variantom.</value>
+  </data>
+  <data name="Scheme_TrainType" xml:space="preserve">
+    <value>Druh vlaku</value>
+  </data>
+  <data name="Scheme_TrainTypeOs" xml:space="preserve">
+    <value>Osobné a ostatné</value>
+  </data>
+  <data name="Scheme_TrainTypeR" xml:space="preserve">
+    <value>Rýchliky (R, Rx, Ex, REx...)</value>
+  </data>
+  <data name="Scheme_TrainTypeSl" xml:space="preserve">
+    <value>Služobné a nákladné (Sl, Nákl...)</value>
+  </data>
+  <data name="Scheme_TrainTypeX" xml:space="preserve">
+    <value>Vyššia kvalita (EC, IC, RJ, EN...)</value>
+  </data>
+  <data name="Server_Other" xml:space="preserve">
+    <value>Server je zastavený, beží iný server INISS2</value>
+  </data>
+  <data name="Server_Running" xml:space="preserve">
+    <value>Server beží</value>
+  </data>
+  <data name="Server_RunningHint" xml:space="preserve">
+    <value>Server drží dáta v pamäti a pri úprave vlaku ich prepíše. Zmeny sa dajú ukladať len pri zastavenom serveri.</value>
+  </data>
+  <data name="Server_Stopped" xml:space="preserve">
+    <value>Server je zastavený</value>
+  </data>
+  <data name="Settings_EditorFontHint" xml:space="preserve">
+    <value>Editory kódu: stavový diagram, tabuľky TabTab a skript hlásení.</value>
+  </data>
+  <data name="Settings_ReopenLast" xml:space="preserve">
+    <value>Pri spustení otvoriť poslednú inštaláciu</value>
+  </data>
+  <data name="Setup_BadFont" xml:space="preserve">
+    <value>{0}: písmo {1} nie je číslo.</value>
+  </data>
+  <data name="Setup_BadReportKey" xml:space="preserve">
+    <value>{0}: číslo hlásenia {1} nie je kladné číslo.</value>
+  </data>
+  <data name="Setup_BadStation" xml:space="preserve">
+    <value>{0}: {1} nie je číslo stanice.</value>
+  </data>
+  <data name="Setup_BadStations" xml:space="preserve">
+    <value>{0}: stanice musia byť čísla oddelené medzerou.</value>
+  </data>
+  <data name="Setup_Categories" xml:space="preserve">
+    <value>{0}: kategórie vlakov môžu byť len V, P a K oddelené medzerou.</value>
+  </data>
+  <data name="Setup_DuplicateName" xml:space="preserve">
+    <value>{0}: stanica {1} je viackrát. V prvom grafikone s názvami staníc server pri hľadaní názvu zlyhá, inak použije prvý.</value>
+  </data>
+  <data name="Setup_DuplicatePattern" xml:space="preserve">
+    <value>{0}: má rovnaké stanice ako vzor {1}, server ho nepoužije.</value>
+  </data>
+  <data name="Setup_DuplicateReport" xml:space="preserve">
+    <value>{0}: hlásenie {1} je viackrát, server použije len prvý riadok.</value>
+  </data>
+  <data name="Setup_DuplicateReportKey" xml:space="preserve">
+    <value>{0}: číslo {1} je viackrát, server použije len prvé hlásenie.</value>
+  </data>
+  <data name="Setup_DuplicateStation" xml:space="preserve">
+    <value>{0}: stanica {1} je viackrát, server sa nespustí.</value>
+  </data>
+  <data name="Setup_DuplicateStationText" xml:space="preserve">
+    <value>{0}: stanica {1} je viackrát, server použije len prvý text.</value>
+  </data>
+  <data name="Setup_DuplicateTrack" xml:space="preserve">
+    <value>{0}: kľúč {1} je viackrát, server použije len prvú koľaj s ním.</value>
+  </data>
+  <data name="Setup_Errors" xml:space="preserve">
+    <value>Nastavenie má chyby, opravte ich pred potvrdením.</value>
+  </data>
+  <data name="Setup_GroupFailed" xml:space="preserve">
+    <value>Názvy staníc alebo predvolené stanice sa nepodarilo načítať: {0}</value>
+  </data>
+  <data name="Setup_LongPatterns" xml:space="preserve">
+    <value>Dlhé hlásenie</value>
+  </data>
+  <data name="Setup_NoFunction" xml:space="preserve">
+    <value>{0}: vyplňte vzor hlásenia.</value>
+  </data>
+  <data name="Setup_NoName" xml:space="preserve">
+    <value>{0}: stanica {1} nemá názov.</value>
+  </data>
+  <data name="Setup_NoSetName" xml:space="preserve">
+    <value>{0}: sada nemá názov.</value>
+  </data>
+  <data name="Setup_NoStations" xml:space="preserve">
+    <value>{0}: nemá žiadnu stanicu, server ho nepoužije.</value>
+  </data>
+  <data name="Setup_NoTrackKey" xml:space="preserve">
+    <value>{0}: koľaj nemá kľúč.</value>
+  </data>
+  <data name="Setup_ReportKeyIncomplete" xml:space="preserve">
+    <value>{0}: vyplňte názov hlásenia aj písmeno.</value>
+  </data>
+  <data name="Setup_ReportKeyLetter" xml:space="preserve">
+    <value>{0}: písmeno {1} má viac znakov, server použije len prvý.</value>
+  </data>
+  <data name="Setup_ReportStillUsed" xml:space="preserve">
+    <value>Hlásenie obsluhy číslo {0} v zozname už nie je, ale odkazujú sa naň záznamy vlakov.</value>
+  </data>
+  <data name="Setup_ShortPatterns" xml:space="preserve">
+    <value>Krátke hlásenie</value>
+  </data>
+  <data name="Setup_StationFailed" xml:space="preserve">
+    <value>Nastavenie stanice sa nepodarilo načítať: {0}</value>
+  </data>
+  <data name="Setup_StationInfo" xml:space="preserve">
+    <value>Priečinok {0}, číslo stanice {1}</value>
+  </data>
+  <data name="Setup_TargetIncomplete" xml:space="preserve">
+    <value>{0}: údaj tabule bez predlohy alebo bez údaja server nepoužije.</value>
+  </data>
+  <data name="Setup_Title" xml:space="preserve">
+    <value>Nastavenie grafikonu {0}</value>
+  </data>
+  <data name="Setup_UnknownFunction" xml:space="preserve">
+    <value>{0}: vzor {1} nie je funkcia LogText.</value>
+  </data>
+  <data name="Severity_Error" xml:space="preserve">
+    <value>Chyba</value>
+  </data>
+  <data name="Severity_Info" xml:space="preserve">
+    <value>Informácia</value>
+  </data>
+  <data name="Severity_Warning" xml:space="preserve">
+    <value>Upozornenie</value>
+  </data>
+  <data name="Status_Calls" xml:space="preserve">
+    <value>Vlaky v stanici: {0}</value>
+  </data>
+  <data name="Status_Trains" xml:space="preserve">
+    <value>Vlaky: {0}</value>
+  </data>
+  <data name="Status_TrainsSelected" xml:space="preserve">
+    <value>Vlaky: {0}, vybrané: {1}</value>
+  </data>
+  <data name="Structure_BadFolder" xml:space="preserve">
+    <value>Text {0} nemôže byť názvom priečinka.</value>
+  </data>
+  <data name="Structure_BadStation" xml:space="preserve">
+    <value>Číslo stanice musí byť kladné číslo.</value>
+  </data>
+  <data name="Structure_Dirty" xml:space="preserve">
+    <value>Inštalácia má neuložené zmeny. Uložte ich alebo ich vráťte, nový grafikon a nová stanica sa zapíšu hneď.</value>
+  </data>
+  <data name="Structure_Failed" xml:space="preserve">
+    <value>Zápis sa nepodaril, inštalácia ostala bez zmeny: {0}</value>
+  </data>
+  <data name="Structure_FolderExists" xml:space="preserve">
+    <value>Priečinok {0} už existuje.</value>
+  </data>
+  <data name="Structure_GroupExists" xml:space="preserve">
+    <value>Grafikon {0} už v inštalácii je.</value>
+  </data>
+  <data name="Structure_NoDirectory" xml:space="preserve">
+    <value>Zadajte priečinok stanice.</value>
+  </data>
+  <data name="Structure_NoGroupName" xml:space="preserve">
+    <value>Zadajte názov grafikonu.</value>
+  </data>
+  <data name="Structure_NoStationName" xml:space="preserve">
+    <value>Grafikon stanicu ešte nemá v názvoch staníc, zadajte jej názov.</value>
+  </data>
+  <data name="Structure_NoStations" xml:space="preserve">
+    <value>Inštalácia nemá žiadnu stanicu, z ktorej by sa dalo skopírovať nastavenie.</value>
+  </data>
+  <data name="Structure_NoTemplate" xml:space="preserve">
+    <value>Vyberte stanicu, z ktorej sa skopíruje nastavenie.</value>
+  </data>
+  <data name="Structure_ServerRunning" xml:space="preserve">
+    <value>Server inštalácie beží. Nový grafikon a novú stanicu možno pridať len pri zastavenom serveri.</value>
+  </data>
+  <data name="Structure_StationExists" xml:space="preserve">
+    <value>Grafikon už stanicu {0} má.</value>
+  </data>
+  <data name="Texts_ChangeAdd" xml:space="preserve">
+    <value>pribudne</value>
+  </data>
+  <data name="Texts_ChangeEmpty" xml:space="preserve">
+    <value>bez textu</value>
+  </data>
+  <data name="Texts_ChangeFileText" xml:space="preserve">
+    <value>ostane text trasy alebo stanice</value>
+  </data>
+  <data name="Texts_ChangeKeep" xml:space="preserve">
+    <value>ostane</value>
+  </data>
+  <data name="Texts_ChangeReplace" xml:space="preserve">
+    <value>nahradí</value>
+  </data>
+  <data name="Texts_ChangeSame" xml:space="preserve">
+    <value>server ukáže aj bez neho</value>
+  </data>
+  <data name="Texts_KindDestination" xml:space="preserve">
+    <value>Cieľová stanica</value>
+  </data>
+  <data name="Texts_KindFrom" xml:space="preserve">
+    <value>Stanice zo smeru (bez východzej)</value>
+  </data>
+  <data name="Texts_KindOrigin" xml:space="preserve">
+    <value>Východzia stanica</value>
+  </data>
+  <data name="Texts_KindTo" xml:space="preserve">
+    <value>Stanice do smeru (bez cieľovej)</value>
+  </data>
+  <data name="Texts_NewSet" xml:space="preserve">
+    <value>{0} (nová sada pre {1})</value>
+  </data>
+  <data name="Texts_NoSets" xml:space="preserve">
+    <value>Stanica nemá sadu textov ani údaj tabule s názvom stanice, do ktorého sa dajú texty generovať.</value>
+  </data>
+  <data name="Texts_Set" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="Texts_Summary" xml:space="preserve">
+    <value>Zmení sa textov: {0}.</value>
+  </data>
+  <data name="Track_Unknown" xml:space="preserve">
+    <value>neznáma koľaj</value>
+  </data>
+  <data name="Validity_Daily" xml:space="preserve">
+    <value>každý deň</value>
+  </data>
+  <data name="Validity_From" xml:space="preserve">
+    <value>od {0}</value>
+  </data>
+  <data name="Validity_Never" xml:space="preserve">
+    <value>nikdy</value>
+  </data>
+  <data name="Validity_Range" xml:space="preserve">
+    <value>{0} – {1}</value>
+  </data>
+  <data name="Value_Align_CENTER" xml:space="preserve">
+    <value>Na stred</value>
+  </data>
+  <data name="Value_Align_LEFT" xml:space="preserve">
+    <value>Vľavo</value>
+  </data>
+  <data name="Value_Align_RIGHT" xml:space="preserve">
+    <value>Vpravo</value>
+  </data>
+  <data name="Value_Category_K" xml:space="preserve">
+    <value>Končiaci</value>
+  </data>
+  <data name="Value_Category_P" xml:space="preserve">
+    <value>Prechádzajúci</value>
+  </data>
+  <data name="Value_Category_V" xml:space="preserve">
+    <value>Východiskový</value>
+  </data>
+  <data name="Value_Class_APEL" xml:space="preserve">
+    <value>Apel, server nepodporuje</value>
+  </data>
+  <data name="Value_Class_APEL_AN" xml:space="preserve">
+    <value>Apel AN, server nepodporuje</value>
+  </data>
+  <data name="Value_Class_ELEKON" xml:space="preserve">
+    <value>Elekon, kód Windows</value>
+  </data>
+  <data name="Value_Class_ELEKONKAM" xml:space="preserve">
+    <value>Elekon, kód Kamenických</value>
+  </data>
+  <data name="Value_Class_ELEN" xml:space="preserve">
+    <value>ELEN, kód Kamenických</value>
+  </data>
+  <data name="Value_Class_ELEN10" xml:space="preserve">
+    <value>ELEN 10, kód Windows</value>
+  </data>
+  <data name="Value_Class_ELEN16" xml:space="preserve">
+    <value>ELEN 16, kód Windows</value>
+  </data>
+  <data name="Value_Class_ELEN16KAM" xml:space="preserve">
+    <value>ELEN 16, kód Kamenických</value>
+  </data>
+  <data name="Value_Class_ELENOLD" xml:space="preserve">
+    <value>ELEN, starší firmvér</value>
+  </data>
+  <data name="Value_Class_ELENWIN" xml:space="preserve">
+    <value>ELEN, kód Windows</value>
+  </data>
+  <data name="Value_Class_ELSVO" xml:space="preserve">
+    <value>ELSVO, server nepodporuje</value>
+  </data>
+  <data name="Value_Class_ERP" xml:space="preserve">
+    <value>ERP, protokol LCD</value>
+  </data>
+  <data name="Value_Class_ERP2" xml:space="preserve">
+    <value>ERP, nový protokol</value>
+  </data>
+  <data name="Value_Class_ERP_ELEN" xml:space="preserve">
+    <value>ERP, protokol ELEN</value>
+  </data>
+  <data name="Value_Class_ERS" xml:space="preserve">
+    <value>Listová ERS, server nepodporuje</value>
+  </data>
+  <data name="Value_Class_FERS" xml:space="preserve">
+    <value>Listová FERS</value>
+  </data>
+  <data name="Value_Class_HERMAN" xml:space="preserve">
+    <value>Herman</value>
+  </data>
+  <data name="Value_Class_HERMAN_LCD" xml:space="preserve">
+    <value>Herman LCD</value>
+  </data>
+  <data name="Value_Class_HERMANMULTIOKNO" xml:space="preserve">
+    <value>Herman s multioknami</value>
+  </data>
+  <data name="Value_Class_INTERNET" xml:space="preserve">
+    <value>Bez zariadenia, len súbor</value>
+  </data>
+  <data name="Value_Class_LCD" xml:space="preserve">
+    <value>LCD bez vrstiev</value>
+  </data>
+  <data name="Value_Class_LCD1" xml:space="preserve">
+    <value>LCD s vrstvami</value>
+  </data>
+  <data name="Value_Class_LCD2" xml:space="preserve">
+    <value>LCD, nový protokol</value>
+  </data>
+  <data name="Value_Class_MSVRADOM" xml:space="preserve">
+    <value>MSV Radom</value>
+  </data>
+  <data name="Value_Class_RGPLUS" xml:space="preserve">
+    <value>RG Plus</value>
+  </data>
+  <data name="Value_Class_RGPLUS_COLOR" xml:space="preserve">
+    <value>RG Plus farebná</value>
+  </data>
+  <data name="Value_Content_CasOdjezdu" xml:space="preserve">
+    <value>Čas odchodu</value>
+  </data>
+  <data name="Value_Content_CasOdjezduAktualni" xml:space="preserve">
+    <value>Čas odchodu s meškaním</value>
+  </data>
+  <data name="Value_Content_CasPrijezdu" xml:space="preserve">
+    <value>Čas príchodu</value>
+  </data>
+  <data name="Value_Content_CasPrijezduAktualni" xml:space="preserve">
+    <value>Čas príchodu s meškaním</value>
+  </data>
+  <data name="Value_Content_CilNazev" xml:space="preserve">
+    <value>Cieľová stanica</value>
+  </data>
+  <data name="Value_Content_CilNazevNastupiste" xml:space="preserve">
+    <value>Cieľová stanica, nástupište</value>
+  </data>
+  <data name="Value_Content_CilNazevPodchod" xml:space="preserve">
+    <value>Cieľová stanica, podchod</value>
+  </data>
+  <data name="Value_Content_CisloVlaku" xml:space="preserve">
+    <value>Číslo vlaku</value>
+  </data>
+  <data name="Value_Content_Dopravce" xml:space="preserve">
+    <value>Dopravca</value>
+  </data>
+  <data name="Value_Content_Free" xml:space="preserve">
+    <value>Voľný text</value>
+  </data>
+  <data name="Value_Content_HermanLedMp3" xml:space="preserve">
+    <value>Zvuky pre Herman</value>
+  </data>
+  <data name="Value_Content_HexTypVlakuEx" xml:space="preserve">
+    <value>Príznaky šestnástkovo</value>
+  </data>
+  <data name="Value_Content_KolejAltOdjezd" xml:space="preserve">
+    <value>Náhradný text koľaje odchodu</value>
+  </data>
+  <data name="Value_Content_KolejAltPrijezd" xml:space="preserve">
+    <value>Náhradný text koľaje príchodu</value>
+  </data>
+  <data name="Value_Content_KolejOdjezd" xml:space="preserve">
+    <value>Koľaj odchodu</value>
+  </data>
+  <data name="Value_Content_KolejPrijezd" xml:space="preserve">
+    <value>Koľaj príchodu</value>
+  </data>
+  <data name="Value_Content_Linka" xml:space="preserve">
+    <value>Linka IDS</value>
+  </data>
+  <data name="Value_Content_MinutyDoOdjezdu" xml:space="preserve">
+    <value>Minúty do odchodu</value>
+  </data>
+  <data name="Value_Content_NastKolejOdjezd" xml:space="preserve">
+    <value>Nástupište a koľaj odchodu</value>
+  </data>
+  <data name="Value_Content_NastKolejPrijezd" xml:space="preserve">
+    <value>Nástupište a koľaj príchodu</value>
+  </data>
+  <data name="Value_Content_NastupisteOdjezd" xml:space="preserve">
+    <value>Nástupište odchodu</value>
+  </data>
+  <data name="Value_Content_NastupistePrijezd" xml:space="preserve">
+    <value>Nástupište príchodu</value>
+  </data>
+  <data name="Value_Content_NazevVlaku" xml:space="preserve">
+    <value>Názov vlaku</value>
+  </data>
+  <data name="Value_Content_NoDef" xml:space="preserve">
+    <value>Bez obsahu</value>
+  </data>
+  <data name="Value_Content_Not" xml:space="preserve">
+    <value>Bez obsahu</value>
+  </data>
+  <data name="Value_Content_PoNazev" xml:space="preserve">
+    <value>Stanice do smeru</value>
+  </data>
+  <data name="Value_Content_PoNazevNastupiste" xml:space="preserve">
+    <value>Stanice do smeru, nástupište</value>
+  </data>
+  <data name="Value_Content_PredNazev" xml:space="preserve">
+    <value>Stanice zo smeru</value>
+  </data>
+  <data name="Value_Content_PriznakyVlaku" xml:space="preserve">
+    <value>Príznaky varianty</value>
+  </data>
+  <data name="Value_Content_SektorOdjezd" xml:space="preserve">
+    <value>Sektor odchodu</value>
+  </data>
+  <data name="Value_Content_SektorPrijezd" xml:space="preserve">
+    <value>Sektor príchodu</value>
+  </data>
+  <data name="Value_Content_TabName" xml:space="preserve">
+    <value>Význam neznámy</value>
+  </data>
+  <data name="Value_Content_TextLine1" xml:space="preserve">
+    <value>Informačný text, 1. riadok</value>
+  </data>
+  <data name="Value_Content_TextLine2" xml:space="preserve">
+    <value>Informačný text, 2. riadok</value>
+  </data>
+  <data name="Value_Content_TypCisloVlaku" xml:space="preserve">
+    <value>Druh a číslo</value>
+  </data>
+  <data name="Value_Content_TypCisloVlaku6" xml:space="preserve">
+    <value>Druh a číslo na 6 znakov</value>
+  </data>
+  <data name="Value_Content_TypCisloVlakuKompr" xml:space="preserve">
+    <value>Druh a číslo s medzerou</value>
+  </data>
+  <data name="Value_Content_TypNazevOrCislo" xml:space="preserve">
+    <value>Druh a názov alebo číslo</value>
+  </data>
+  <data name="Value_Content_TypVlaku" xml:space="preserve">
+    <value>Druh vlaku</value>
+  </data>
+  <data name="Value_Content_VlakStojiVeStanici" xml:space="preserve">
+    <value>Vlak stojí v stanici</value>
+  </data>
+  <data name="Value_Content_VychoziNazev" xml:space="preserve">
+    <value>Východisková stanica</value>
+  </data>
+  <data name="Value_Content_ZobrazenoNast" xml:space="preserve">
+    <value>Počet nástupištných častí</value>
+  </data>
+  <data name="Value_Content_ZobrazenoOdjezd" xml:space="preserve">
+    <value>Počet odchodových častí</value>
+  </data>
+  <data name="Value_Content_ZobrazenoPodch" xml:space="preserve">
+    <value>Počet podchodových častí</value>
+  </data>
+  <data name="Value_Content_ZobrazenoPrijezd" xml:space="preserve">
+    <value>Počet príchodových častí</value>
+  </data>
+  <data name="Value_Content_ZpozdeniOdjezd" xml:space="preserve">
+    <value>Meškanie odchodu</value>
+  </data>
+  <data name="Value_Content_ZpozdeniOdjezdPopis" xml:space="preserve">
+    <value>Popis meškania odchodu</value>
+  </data>
+  <data name="Value_Content_ZpozdeniPrijezd" xml:space="preserve">
+    <value>Meškanie príchodu</value>
+  </data>
+  <data name="Value_Content_ZpozdeniPrijezdPopis" xml:space="preserve">
+    <value>Popis meškania príchodu</value>
+  </data>
+  <data name="Value_Default" xml:space="preserve">
+    <value>Predvolene: {0}</value>
+  </data>
+  <data name="Value_FromLine" xml:space="preserve">
+    <value>Podľa linky</value>
+  </data>
+  <data name="Value_FromLineHint" xml:space="preserve">
+    <value>z linky</value>
+  </data>
+  <data name="Value_Kind_ARRIVAL" xml:space="preserve">
+    <value>Príchodová</value>
+  </data>
+  <data name="Value_Kind_DEPARTURE" xml:space="preserve">
+    <value>Odchodová</value>
+  </data>
+  <data name="Value_Kind_INFO" xml:space="preserve">
+    <value>Informačné texty</value>
+  </data>
+  <data name="Value_Kind_NODEF" xml:space="preserve">
+    <value>Bez vlakov</value>
+  </data>
+  <data name="Value_Kind_PLATFORM" xml:space="preserve">
+    <value>Nástupištná</value>
+  </data>
+  <data name="Value_Kind_SUBWAY" xml:space="preserve">
+    <value>Podchodová</value>
+  </data>
+  <data name="Value_No" xml:space="preserve">
+    <value>Nie</value>
+  </data>
+  <data name="Value_Translation_CHAR" xml:space="preserve">
+    <value>Po znakoch</value>
+  </data>
+  <data name="Value_Translation_FREE" xml:space="preserve">
+    <value>Bez prekladu</value>
+  </data>
+  <data name="Value_Translation_TABLE" xml:space="preserve">
+    <value>Tabuľkou, inak prázdne</value>
+  </data>
+  <data name="Value_Translation_TABLETIME" xml:space="preserve">
+    <value>Čas po častiach</value>
+  </data>
+  <data name="Value_Translation_TRANSLATE" xml:space="preserve">
+    <value>Tabuľkou, inak pôvodný</value>
+  </data>
+  <data name="Value_WithKey" xml:space="preserve">
+    <value>{0} ({1})</value>
+  </data>
+  <data name="Value_Yes" xml:space="preserve">
+    <value>Áno</value>
+  </data>
+  <data name="gvx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gvx.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

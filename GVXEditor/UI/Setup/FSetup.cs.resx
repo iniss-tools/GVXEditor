@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tpNames.Text" xml:space="preserve">
+    <value>Názvy stanic</value>
+  </data>
+  <data name="cNameStation.HeaderText" xml:space="preserve">
+    <value>Číslo stanice</value>
+  </data>
+  <data name="cNameName.HeaderText" xml:space="preserve">
+    <value>Název</value>
+  </data>
+  <data name="tsNames.Text" xml:space="preserve">
+    <value>tsNames</value>
+  </data>
+  <data name="tsbNamesAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbNamesDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbNamesUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbNamesDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lNames.Text" xml:space="preserve">
+    <value>Názvy stanic grafikonu. Server použije první grafikon v pořadí, který stanici má.</value>
+  </data>
+  <data name="tpDefaults.Text" xml:space="preserve">
+    <value>Výchozí stanice hlášení</value>
+  </data>
+  <data name="cDefStation.HeaderText" xml:space="preserve">
+    <value>Číslo stanice</value>
+  </data>
+  <data name="cDefStationName.HeaderText" xml:space="preserve">
+    <value>Název stanice</value>
+  </data>
+  <data name="cDefName.HeaderText" xml:space="preserve">
+    <value>Název v souboru</value>
+  </data>
+  <data name="cDefShort.HeaderText" xml:space="preserve">
+    <value>Krátké hlášení</value>
+  </data>
+  <data name="cDefLong.HeaderText" xml:space="preserve">
+    <value>Dlouhé hlášení</value>
+  </data>
+  <data name="tsDefaults.Text" xml:space="preserve">
+    <value>tsDefaults</value>
+  </data>
+  <data name="tsbDefaultsAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbDefaultsDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbDefaultsUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbDefaultsDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lDefaults.Text" xml:space="preserve">
+    <value>Stanice, které se ve výchozím stavu řeknou v hlášení do směru. Název v souboru server nepoužívá.</value>
+  </data>
+  <data name="tpStations.Text" xml:space="preserve">
+    <value>Stanice</value>
+  </data>
+  <data name="tpTracks.Text" xml:space="preserve">
+    <value>Koleje</value>
+  </data>
+  <data name="cTrackKey.HeaderText" xml:space="preserve">
+    <value>Klíč</value>
+  </data>
+  <data name="cTrackName.HeaderText" xml:space="preserve">
+    <value>Název</value>
+  </data>
+  <data name="cTrackSector.HeaderText" xml:space="preserve">
+    <value>Sektor</value>
+  </data>
+  <data name="cTrackText.HeaderText" xml:space="preserve">
+    <value>Tabule: kolej</value>
+  </data>
+  <data name="cTrackSectorText.HeaderText" xml:space="preserve">
+    <value>Tabule: sektor</value>
+  </data>
+  <data name="cTrackPlatform.HeaderText" xml:space="preserve">
+    <value>Tabule: nástupiště</value>
+  </data>
+  <data name="cTrackPlatformTrack.HeaderText" xml:space="preserve">
+    <value>Tabule: nástupiště a kolej</value>
+  </data>
+  <data name="cTrackAlt.HeaderText" xml:space="preserve">
+    <value>Tabule: náhradní text</value>
+  </data>
+  <data name="cTrackSound.HeaderText" xml:space="preserve">
+    <value>Zvuk koleje</value>
+  </data>
+  <data name="cTrackPlatformSound.HeaderText" xml:space="preserve">
+    <value>Zvuk nástupiště</value>
+  </data>
+  <data name="cTrackSectorSound.HeaderText" xml:space="preserve">
+    <value>Zvuk sektoru</value>
+  </data>
+  <data name="cTrackSeparator.HeaderText" xml:space="preserve">
+    <value>Oddělovač</value>
+  </data>
+  <data name="cTrackCommon.HeaderText" xml:space="preserve">
+    <value>Není kolej</value>
+  </data>
+  <data name="cTrackNoAudio.HeaderText" xml:space="preserve">
+    <value>Bez hlášení</value>
+  </data>
+  <data name="cTrackAlterTran.HeaderText" xml:space="preserve">
+    <value>ALTERTRAN</value>
+  </data>
+  <data name="tsTracks.Text" xml:space="preserve">
+    <value>tsTracks</value>
+  </data>
+  <data name="tsbTracksAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbTracksDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbTracksUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbTracksDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lTracks.Text" xml:space="preserve">
+    <value>Koleje v pořadí nabídky obsluhy. Vlaky se na kolej odkazují klíčem.</value>
+  </data>
+  <data name="tpReportKeys.Text" xml:space="preserve">
+    <value>Typy hlášení</value>
+  </data>
+  <data name="cKeyName.HeaderText" xml:space="preserve">
+    <value>Hlášení</value>
+  </data>
+  <data name="cKeyLetter.HeaderText" xml:space="preserve">
+    <value>Písmeno</value>
+  </data>
+  <data name="cKeyCategories.HeaderText" xml:space="preserve">
+    <value>Kategorie vlaků</value>
+  </data>
+  <data name="tsReportKeys.Text" xml:space="preserve">
+    <value>tsReportKeys</value>
+  </data>
+  <data name="tsbReportKeysAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbReportKeysDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbReportKeysUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbReportKeysDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lReportKeys.Text" xml:space="preserve">
+    <value>Písmeno hlášení vybírá dodatky a řazení vlaku. Kategorie jsou V, P a K oddělené mezerou.</value>
+  </data>
+  <data name="tpPatterns.Text" xml:space="preserve">
+    <value>Stanice v hlášení</value>
+  </data>
+  <data name="cPatIndex.HeaderText" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="cPatStations.HeaderText" xml:space="preserve">
+    <value>Stanice vzoru</value>
+  </data>
+  <data name="tsPatterns.Text" xml:space="preserve">
+    <value>tsPatterns</value>
+  </data>
+  <data name="tsbPatternsAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbPatternsDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbPatternsUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbPatternsDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lPatterns.Text" xml:space="preserve">
+    <value>Vzory</value>
+  </data>
+  <data name="cPatStop.HeaderText" xml:space="preserve">
+    <value>Číslo stanice</value>
+  </data>
+  <data name="cPatStopName.HeaderText" xml:space="preserve">
+    <value>Název stanice</value>
+  </data>
+  <data name="cPatStopReported.HeaderText" xml:space="preserve">
+    <value>Řekne se</value>
+  </data>
+  <data name="tsPatternStops.Text" xml:space="preserve">
+    <value>tsPatternStops</value>
+  </data>
+  <data name="tsbPatternStopsAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbPatternStopsDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbPatternStopsUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbPatternStopsDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lPatternStops.Text" xml:space="preserve">
+    <value>Stanice vybraného vzoru v pořadí jízdy</value>
+  </data>
+  <data name="rbShortPatterns.Text" xml:space="preserve">
+    <value>Krátké hlášení</value>
+  </data>
+  <data name="rbLongPatterns.Text" xml:space="preserve">
+    <value>Dlouhé hlášení</value>
+  </data>
+  <data name="lPatternsHint.Text" xml:space="preserve">
+    <value>Server použije první vzor se stanicemi vlaku ve stejném pořadí. Řeknou se označené stanice.</value>
+  </data>
+  <data name="tpRouteTexts.Text" xml:space="preserve">
+    <value>Texty podle trasy</value>
+  </data>
+  <data name="cRouteSetName.HeaderText" xml:space="preserve">
+    <value>Sada</value>
+  </data>
+  <data name="cRouteSetFonet.HeaderText" xml:space="preserve">
+    <value>Tyfloservis</value>
+  </data>
+  <data name="tsRouteSets.Text" xml:space="preserve">
+    <value>tsRouteSets</value>
+  </data>
+  <data name="tsbRouteSetsAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbRouteSetsDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbRouteSetsUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbRouteSetsDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lRouteSets.Text" xml:space="preserve">
+    <value>Sady textů</value>
+  </data>
+  <data name="cRouteTargetCatalog.HeaderText" xml:space="preserve">
+    <value>Předloha tabule</value>
+  </data>
+  <data name="cRouteTargetColumn.HeaderText" xml:space="preserve">
+    <value>Údaj</value>
+  </data>
+  <data name="tsRouteTargets.Text" xml:space="preserve">
+    <value>tsRouteTargets</value>
+  </data>
+  <data name="tsbRouteTargetsAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbRouteTargetsDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbRouteTargetsUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbRouteTargetsDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lRouteTargets.Text" xml:space="preserve">
+    <value>Údaje tabulí, ve kterých se texty sady projeví</value>
+  </data>
+  <data name="cRouteText.HeaderText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="cRouteFont.HeaderText" xml:space="preserve">
+    <value>Písmo</value>
+  </data>
+  <data name="cRouteStations.HeaderText" xml:space="preserve">
+    <value>Stanice trasy</value>
+  </data>
+  <data name="tsRoutes.Text" xml:space="preserve">
+    <value>tsRoutes</value>
+  </data>
+  <data name="tsbRoutesAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbRoutesDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbRoutesUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbRoutesDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lRoutes.Text" xml:space="preserve">
+    <value>Texty sady. Server použije první text se stanicemi trasy vlaku ve stejném pořadí.</value>
+  </data>
+  <data name="cRouteStop.HeaderText" xml:space="preserve">
+    <value>Číslo stanice</value>
+  </data>
+  <data name="cRouteStopName.HeaderText" xml:space="preserve">
+    <value>Název stanice</value>
+  </data>
+  <data name="cRouteStopSelected.HeaderText" xml:space="preserve">
+    <value>Vybraná do textu</value>
+  </data>
+  <data name="tsRouteStops.Text" xml:space="preserve">
+    <value>tsRouteStops</value>
+  </data>
+  <data name="tsbRouteStopsAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbRouteStopsDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbRouteStopsUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbRouteStopsDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lRouteStops.Text" xml:space="preserve">
+    <value>Stanice trasy vybraného textu v pořadí jízdy</value>
+  </data>
+  <data name="tpStationTexts.Text" xml:space="preserve">
+    <value>Texty podle stanice</value>
+  </data>
+  <data name="cStationSetName.HeaderText" xml:space="preserve">
+    <value>Sada</value>
+  </data>
+  <data name="cStationSetFonet.HeaderText" xml:space="preserve">
+    <value>Tyfloservis</value>
+  </data>
+  <data name="tsStationSets.Text" xml:space="preserve">
+    <value>tsStationSets</value>
+  </data>
+  <data name="tsbStationSetsAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbStationSetsDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbStationSetsUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbStationSetsDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lStationSets.Text" xml:space="preserve">
+    <value>Sady textů</value>
+  </data>
+  <data name="cStationTargetCatalog.HeaderText" xml:space="preserve">
+    <value>Předloha tabule</value>
+  </data>
+  <data name="cStationTargetColumn.HeaderText" xml:space="preserve">
+    <value>Údaj</value>
+  </data>
+  <data name="tsStationTargets.Text" xml:space="preserve">
+    <value>tsStationTargets</value>
+  </data>
+  <data name="tsbStationTargetsAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbStationTargetsDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbStationTargetsUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbStationTargetsDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lStationTargets.Text" xml:space="preserve">
+    <value>Údaje tabulí, ve kterých se texty sady projeví</value>
+  </data>
+  <data name="cStationTextStation.HeaderText" xml:space="preserve">
+    <value>Číslo stanice</value>
+  </data>
+  <data name="cStationTextName.HeaderText" xml:space="preserve">
+    <value>Název stanice</value>
+  </data>
+  <data name="cStationTextText.HeaderText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="cStationTextFont.HeaderText" xml:space="preserve">
+    <value>Písmo</value>
+  </data>
+  <data name="tsStationTexts.Text" xml:space="preserve">
+    <value>tsStationTexts</value>
+  </data>
+  <data name="tsbStationTextsAdd.Text" xml:space="preserve">
+    <value>Přidat</value>
+  </data>
+  <data name="tsbStationTextsDelete.Text" xml:space="preserve">
+    <value>Smazat</value>
+  </data>
+  <data name="tsbStationTextsUp.Text" xml:space="preserve">
+    <value>Posunout výš</value>
+  </data>
+  <data name="tsbStationTextsDown.Text" xml:space="preserve">
+    <value>Posunout níž</value>
+  </data>
+  <data name="lStationTexts.Text" xml:space="preserve">
+    <value>Texty stanic v sadě. Server použije první text stanice.</value>
+  </data>
+  <data name="lStation.Text" xml:space="preserve">
+    <value>Stanice:</value>
+  </data>
+  <data name="bCancel.Text" xml:space="preserve">
+    <value>Zrušit</value>
+  </data>
+  <data name="bOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+</root>

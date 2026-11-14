@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<!-- IniSrv.exe je .NET Framework a prekladá VB.NET kompilátorom z .NET Framework 4 -->
+		<TargetFramework>net48</TargetFramework>
+		<OutputType>Exe</OutputType>
+		<!-- IniSrv.exe je 32-bitový (32BITREQ), most ho načíta do vlastného procesu -->
+		<PlatformTarget>x86</PlatformTarget>
+		<LangVersion>latest</LangVersion>
+		<!-- implicitné usingy .NET Framework odkazujú System.Net.Http, ktorý tu nie je -->
+		<ImplicitUsings>disable</ImplicitUsings>
+		<RootNamespace>IniSrvBridge</RootNamespace>
+		<AssemblyName>IniSrvBridge</AssemblyName>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="System.Windows.Forms" />
+	</ItemGroup>
+</Project>

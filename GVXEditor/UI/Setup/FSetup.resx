@@ -1,0 +1,3357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tcMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tcMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tcMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 548</value>
+  </data>
+  <data name="tcMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tpNames.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpNames.Size" type="System.Drawing.Size, System.Drawing">
+    <value>972, 520</value>
+  </data>
+  <data name="tpNames.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tpNames.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpNames.Text" xml:space="preserve">
+    <value>Názvy staníc</value>
+  </data>
+  <data name="dgvNames.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvNames.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvNames.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvNames.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cNameStation.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="cNameStation.HeaderText" xml:space="preserve">
+    <value>Číslo stanice</value>
+  </data>
+  <data name="cNameName.Width" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
+  <data name="cNameName.HeaderText" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="tsNames.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsNames.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsNames.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsNames.Text" xml:space="preserve">
+    <value>tsNames</value>
+  </data>
+  <data name="tsbNamesAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbNamesDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbNamesUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbNamesDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lNames.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lNames.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lNames.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lNames.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lNames.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lNames.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lNames.Text" xml:space="preserve">
+    <value>Názvy staníc grafikonu. Server použije prvý grafikon v poradí, ktorý stanicu má.</value>
+  </data>
+  <data name="tpDefaults.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpDefaults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>972, 520</value>
+  </data>
+  <data name="tpDefaults.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tpDefaults.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpDefaults.Text" xml:space="preserve">
+    <value>Predvolené stanice hlásenia</value>
+  </data>
+  <data name="dgvDefaults.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvDefaults.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvDefaults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvDefaults.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cDefStation.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="cDefStation.HeaderText" xml:space="preserve">
+    <value>Číslo stanice</value>
+  </data>
+  <data name="cDefStationName.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="cDefStationName.HeaderText" xml:space="preserve">
+    <value>Názov stanice</value>
+  </data>
+  <data name="cDefName.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="cDefName.HeaderText" xml:space="preserve">
+    <value>Názov v súbore</value>
+  </data>
+  <data name="cDefShort.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="cDefShort.HeaderText" xml:space="preserve">
+    <value>Krátke hlásenie</value>
+  </data>
+  <data name="cDefLong.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="cDefLong.HeaderText" xml:space="preserve">
+    <value>Dlhé hlásenie</value>
+  </data>
+  <data name="tsDefaults.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsDefaults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsDefaults.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsDefaults.Text" xml:space="preserve">
+    <value>tsDefaults</value>
+  </data>
+  <data name="tsbDefaultsAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbDefaultsDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbDefaultsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbDefaultsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lDefaults.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lDefaults.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lDefaults.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lDefaults.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lDefaults.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lDefaults.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lDefaults.Text" xml:space="preserve">
+    <value>Stanice, ktoré sa predvolene povedia v hlásení do smeru. Názov v súbore server nepoužíva.</value>
+  </data>
+  <data name="tpStations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpStations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>972, 520</value>
+  </data>
+  <data name="tpStations.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tpStations.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpStations.Text" xml:space="preserve">
+    <value>Stanice</value>
+  </data>
+  <data name="tcStation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tcStation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 32</value>
+  </data>
+  <data name="tcStation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>966, 485</value>
+  </data>
+  <data name="tcStation.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tpTracks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpTracks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>972, 520</value>
+  </data>
+  <data name="tpTracks.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tpTracks.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpTracks.Text" xml:space="preserve">
+    <value>Koľaje</value>
+  </data>
+  <data name="dgvTracks.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvTracks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvTracks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvTracks.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cTrackKey.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="cTrackKey.HeaderText" xml:space="preserve">
+    <value>Kľúč</value>
+  </data>
+  <data name="cTrackName.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="cTrackName.HeaderText" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="cTrackSector.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="cTrackSector.HeaderText" xml:space="preserve">
+    <value>Sektor</value>
+  </data>
+  <data name="cTrackText.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="cTrackText.HeaderText" xml:space="preserve">
+    <value>Tabuľa: koľaj</value>
+  </data>
+  <data name="cTrackSectorText.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="cTrackSectorText.HeaderText" xml:space="preserve">
+    <value>Tabuľa: sektor</value>
+  </data>
+  <data name="cTrackPlatform.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="cTrackPlatform.HeaderText" xml:space="preserve">
+    <value>Tabuľa: nástupište</value>
+  </data>
+  <data name="cTrackPlatformTrack.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="cTrackPlatformTrack.HeaderText" xml:space="preserve">
+    <value>Tabuľa: nástupište a koľaj</value>
+  </data>
+  <data name="cTrackAlt.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="cTrackAlt.HeaderText" xml:space="preserve">
+    <value>Tabuľa: náhradný text</value>
+  </data>
+  <data name="cTrackSound.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="cTrackSound.HeaderText" xml:space="preserve">
+    <value>Zvuk koľaje</value>
+  </data>
+  <data name="cTrackPlatformSound.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="cTrackPlatformSound.HeaderText" xml:space="preserve">
+    <value>Zvuk nástupišťa</value>
+  </data>
+  <data name="cTrackSectorSound.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="cTrackSectorSound.HeaderText" xml:space="preserve">
+    <value>Zvuk sektora</value>
+  </data>
+  <data name="cTrackSeparator.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="cTrackSeparator.HeaderText" xml:space="preserve">
+    <value>Oddeľovač</value>
+  </data>
+  <data name="cTrackCommon.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="cTrackCommon.HeaderText" xml:space="preserve">
+    <value>Nie je koľaj</value>
+  </data>
+  <data name="cTrackNoAudio.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="cTrackNoAudio.HeaderText" xml:space="preserve">
+    <value>Bez hlásenia</value>
+  </data>
+  <data name="cTrackAlterTran.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="cTrackAlterTran.HeaderText" xml:space="preserve">
+    <value>ALTERTRAN</value>
+  </data>
+  <data name="tsTracks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsTracks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsTracks.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsTracks.Text" xml:space="preserve">
+    <value>tsTracks</value>
+  </data>
+  <data name="tsbTracksAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbTracksDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbTracksUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbTracksDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lTracks.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lTracks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lTracks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lTracks.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lTracks.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lTracks.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lTracks.Text" xml:space="preserve">
+    <value>Koľaje v poradí ponuky obsluhy. Vlaky sa na koľaj odkazujú kľúčom.</value>
+  </data>
+  <data name="tpReportKeys.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpReportKeys.Size" type="System.Drawing.Size, System.Drawing">
+    <value>972, 520</value>
+  </data>
+  <data name="tpReportKeys.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tpReportKeys.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpReportKeys.Text" xml:space="preserve">
+    <value>Typy hlásení</value>
+  </data>
+  <data name="dgvReportKeys.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvReportKeys.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvReportKeys.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvReportKeys.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cKeyName.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="cKeyName.HeaderText" xml:space="preserve">
+    <value>Hlásenie</value>
+  </data>
+  <data name="cKeyLetter.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="cKeyLetter.HeaderText" xml:space="preserve">
+    <value>Písmeno</value>
+  </data>
+  <data name="cKeyCategories.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="cKeyCategories.HeaderText" xml:space="preserve">
+    <value>Kategórie vlakov</value>
+  </data>
+  <data name="tsReportKeys.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsReportKeys.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsReportKeys.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsReportKeys.Text" xml:space="preserve">
+    <value>tsReportKeys</value>
+  </data>
+  <data name="tsbReportKeysAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbReportKeysDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbReportKeysUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbReportKeysDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lReportKeys.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lReportKeys.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lReportKeys.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lReportKeys.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lReportKeys.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lReportKeys.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lReportKeys.Text" xml:space="preserve">
+    <value>Písmeno hlásenia vyberá dodatky a radenie vlaku. Kategórie sú V, P a K oddelené medzerou.</value>
+  </data>
+  <data name="tpPatterns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpPatterns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>972, 520</value>
+  </data>
+  <data name="tpPatterns.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tpPatterns.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpPatterns.Text" xml:space="preserve">
+    <value>Stanice v hlásení</value>
+  </data>
+  <data name="splitPatterns.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitPatterns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitPatterns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 520</value>
+  </data>
+  <data name="splitPatterns.SplitterDistance" type="System.Int32, mscorlib">
+    <value>480</value>
+  </data>
+  <data name="splitPatterns.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitPatterns.Panel1.Name" xml:space="preserve">
+    <value>splitPatterns.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitPatterns.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitPatterns.Panel1.Parent" xml:space="preserve">
+    <value>splitPatterns</value>
+  </data>
+  <data name="&gt;&gt;splitPatterns.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitPatterns.Panel2.Name" xml:space="preserve">
+    <value>splitPatterns.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitPatterns.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitPatterns.Panel2.Parent" xml:space="preserve">
+    <value>splitPatterns</value>
+  </data>
+  <data name="&gt;&gt;splitPatterns.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dgvPatterns.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvPatterns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvPatterns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvPatterns.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cPatIndex.Width" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="cPatIndex.HeaderText" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="cPatStations.Width" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
+  <data name="cPatStations.HeaderText" xml:space="preserve">
+    <value>Stanice vzoru</value>
+  </data>
+  <data name="tsPatterns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsPatterns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsPatterns.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsPatterns.Text" xml:space="preserve">
+    <value>tsPatterns</value>
+  </data>
+  <data name="tsbPatternsAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbPatternsDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbPatternsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbPatternsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lPatterns.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lPatterns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lPatterns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lPatterns.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lPatterns.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lPatterns.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lPatterns.Text" xml:space="preserve">
+    <value>Vzory</value>
+  </data>
+  <data name="dgvPatternStops.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvPatternStops.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvPatternStops.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvPatternStops.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cPatStop.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="cPatStop.HeaderText" xml:space="preserve">
+    <value>Číslo stanice</value>
+  </data>
+  <data name="cPatStopName.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="cPatStopName.HeaderText" xml:space="preserve">
+    <value>Názov stanice</value>
+  </data>
+  <data name="cPatStopReported.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="cPatStopReported.HeaderText" xml:space="preserve">
+    <value>Povie sa</value>
+  </data>
+  <data name="tsPatternStops.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsPatternStops.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsPatternStops.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsPatternStops.Text" xml:space="preserve">
+    <value>tsPatternStops</value>
+  </data>
+  <data name="tsbPatternStopsAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbPatternStopsDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbPatternStopsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbPatternStopsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lPatternStops.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lPatternStops.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lPatternStops.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lPatternStops.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lPatternStops.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lPatternStops.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lPatternStops.Text" xml:space="preserve">
+    <value>Stanice vybraného vzoru v poradí jazdy</value>
+  </data>
+  <data name="flpPatterns.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flpPatterns.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="flpPatterns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="flpPatterns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>966, 29</value>
+  </data>
+  <data name="flpPatterns.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rbShortPatterns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="rbShortPatterns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 19</value>
+  </data>
+  <data name="rbShortPatterns.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rbShortPatterns.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbShortPatterns.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 0</value>
+  </data>
+  <data name="rbShortPatterns.Text" xml:space="preserve">
+    <value>Krátke hlásenie</value>
+  </data>
+  <data name="rbLongPatterns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 3</value>
+  </data>
+  <data name="rbLongPatterns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 19</value>
+  </data>
+  <data name="rbLongPatterns.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rbLongPatterns.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbLongPatterns.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 5, 3, 0</value>
+  </data>
+  <data name="rbLongPatterns.Text" xml:space="preserve">
+    <value>Dlhé hlásenie</value>
+  </data>
+  <data name="lPatternsHint.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 7</value>
+  </data>
+  <data name="lPatternsHint.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 15</value>
+  </data>
+  <data name="lPatternsHint.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lPatternsHint.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lPatternsHint.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>12, 7, 3, 0</value>
+  </data>
+  <data name="lPatternsHint.Text" xml:space="preserve">
+    <value>Server použije prvý vzor so stanicami vlaku v rovnakom poradí. Povedia sa označené stanice.</value>
+  </data>
+  <data name="tpRouteTexts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpRouteTexts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>972, 520</value>
+  </data>
+  <data name="tpRouteTexts.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tpRouteTexts.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpRouteTexts.Text" xml:space="preserve">
+    <value>Texty podľa trasy</value>
+  </data>
+  <data name="splitRoutes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitRoutes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitRoutes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 520</value>
+  </data>
+  <data name="splitRoutes.SplitterDistance" type="System.Int32, mscorlib">
+    <value>330</value>
+  </data>
+  <data name="splitRoutes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitRoutes.Panel1.Name" xml:space="preserve">
+    <value>splitRoutes.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitRoutes.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitRoutes.Panel1.Parent" xml:space="preserve">
+    <value>splitRoutes</value>
+  </data>
+  <data name="&gt;&gt;splitRoutes.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitRoutes.Panel2.Name" xml:space="preserve">
+    <value>splitRoutes.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitRoutes.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitRoutes.Panel2.Parent" xml:space="preserve">
+    <value>splitRoutes</value>
+  </data>
+  <data name="&gt;&gt;splitRoutes.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitRouteSets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitRouteSets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitRouteSets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 520</value>
+  </data>
+  <data name="splitRouteSets.SplitterDistance" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="splitRouteSets.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="splitRouteSets.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;splitRouteSets.Panel1.Name" xml:space="preserve">
+    <value>splitRouteSets.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitRouteSets.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitRouteSets.Panel1.Parent" xml:space="preserve">
+    <value>splitRouteSets</value>
+  </data>
+  <data name="&gt;&gt;splitRouteSets.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitRouteSets.Panel2.Name" xml:space="preserve">
+    <value>splitRouteSets.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitRouteSets.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitRouteSets.Panel2.Parent" xml:space="preserve">
+    <value>splitRouteSets</value>
+  </data>
+  <data name="&gt;&gt;splitRouteSets.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dgvRouteSets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvRouteSets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvRouteSets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvRouteSets.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cRouteSetName.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="cRouteSetName.HeaderText" xml:space="preserve">
+    <value>Sada</value>
+  </data>
+  <data name="cRouteSetFonet.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="cRouteSetFonet.HeaderText" xml:space="preserve">
+    <value>Tyfloservis</value>
+  </data>
+  <data name="tsRouteSets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsRouteSets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsRouteSets.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsRouteSets.Text" xml:space="preserve">
+    <value>tsRouteSets</value>
+  </data>
+  <data name="tsbRouteSetsAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbRouteSetsDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbRouteSetsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbRouteSetsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lRouteSets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lRouteSets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lRouteSets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lRouteSets.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lRouteSets.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lRouteSets.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lRouteSets.Text" xml:space="preserve">
+    <value>Sady textov</value>
+  </data>
+  <data name="dgvRouteTargets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvRouteTargets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvRouteTargets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvRouteTargets.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cRouteTargetCatalog.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="cRouteTargetCatalog.HeaderText" xml:space="preserve">
+    <value>Predloha tabule</value>
+  </data>
+  <data name="cRouteTargetColumn.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="cRouteTargetColumn.HeaderText" xml:space="preserve">
+    <value>Údaj</value>
+  </data>
+  <data name="tsRouteTargets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsRouteTargets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsRouteTargets.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsRouteTargets.Text" xml:space="preserve">
+    <value>tsRouteTargets</value>
+  </data>
+  <data name="tsbRouteTargetsAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbRouteTargetsDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbRouteTargetsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbRouteTargetsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lRouteTargets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lRouteTargets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lRouteTargets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lRouteTargets.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lRouteTargets.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lRouteTargets.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lRouteTargets.Text" xml:space="preserve">
+    <value>Údaje tabúľ, v ktorých sa texty sady prejavia</value>
+  </data>
+  <data name="splitRouteTexts.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitRouteTexts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitRouteTexts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 520</value>
+  </data>
+  <data name="splitRouteTexts.SplitterDistance" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="splitRouteTexts.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="splitRouteTexts.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;splitRouteTexts.Panel1.Name" xml:space="preserve">
+    <value>splitRouteTexts.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitRouteTexts.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitRouteTexts.Panel1.Parent" xml:space="preserve">
+    <value>splitRouteTexts</value>
+  </data>
+  <data name="&gt;&gt;splitRouteTexts.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitRouteTexts.Panel2.Name" xml:space="preserve">
+    <value>splitRouteTexts.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitRouteTexts.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitRouteTexts.Panel2.Parent" xml:space="preserve">
+    <value>splitRouteTexts</value>
+  </data>
+  <data name="&gt;&gt;splitRouteTexts.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dgvRoutes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvRoutes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvRoutes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvRoutes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cRouteText.Width" type="System.Int32, mscorlib">
+    <value>260</value>
+  </data>
+  <data name="cRouteText.HeaderText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="cRouteFont.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="cRouteFont.HeaderText" xml:space="preserve">
+    <value>Písmo</value>
+  </data>
+  <data name="cRouteStations.Width" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
+  <data name="cRouteStations.HeaderText" xml:space="preserve">
+    <value>Stanice trasy</value>
+  </data>
+  <data name="tsRoutes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsRoutes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsRoutes.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsRoutes.Text" xml:space="preserve">
+    <value>tsRoutes</value>
+  </data>
+  <data name="tsbRoutesAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbRoutesDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbRoutesUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbRoutesDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lRoutes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lRoutes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lRoutes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lRoutes.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lRoutes.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lRoutes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lRoutes.Text" xml:space="preserve">
+    <value>Texty sady. Server použije prvý text so stanicami trasy vlaku v rovnakom poradí.</value>
+  </data>
+  <data name="dgvRouteStops.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvRouteStops.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvRouteStops.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvRouteStops.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cRouteStop.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="cRouteStop.HeaderText" xml:space="preserve">
+    <value>Číslo stanice</value>
+  </data>
+  <data name="cRouteStopName.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="cRouteStopName.HeaderText" xml:space="preserve">
+    <value>Názov stanice</value>
+  </data>
+  <data name="cRouteStopSelected.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="cRouteStopSelected.HeaderText" xml:space="preserve">
+    <value>Vybraná do textu</value>
+  </data>
+  <data name="tsRouteStops.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsRouteStops.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsRouteStops.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsRouteStops.Text" xml:space="preserve">
+    <value>tsRouteStops</value>
+  </data>
+  <data name="tsbRouteStopsAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbRouteStopsDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbRouteStopsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbRouteStopsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lRouteStops.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lRouteStops.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lRouteStops.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lRouteStops.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lRouteStops.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lRouteStops.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lRouteStops.Text" xml:space="preserve">
+    <value>Stanice trasy vybraného textu v poradí jazdy</value>
+  </data>
+  <data name="tpStationTexts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpStationTexts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>972, 520</value>
+  </data>
+  <data name="tpStationTexts.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tpStationTexts.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpStationTexts.Text" xml:space="preserve">
+    <value>Texty podľa stanice</value>
+  </data>
+  <data name="splitStationTexts.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitStationTexts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitStationTexts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 520</value>
+  </data>
+  <data name="splitStationTexts.SplitterDistance" type="System.Int32, mscorlib">
+    <value>330</value>
+  </data>
+  <data name="splitStationTexts.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitStationTexts.Panel1.Name" xml:space="preserve">
+    <value>splitStationTexts.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitStationTexts.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitStationTexts.Panel1.Parent" xml:space="preserve">
+    <value>splitStationTexts</value>
+  </data>
+  <data name="&gt;&gt;splitStationTexts.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitStationTexts.Panel2.Name" xml:space="preserve">
+    <value>splitStationTexts.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitStationTexts.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitStationTexts.Panel2.Parent" xml:space="preserve">
+    <value>splitStationTexts</value>
+  </data>
+  <data name="&gt;&gt;splitStationTexts.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitStationSets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitStationSets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitStationSets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 520</value>
+  </data>
+  <data name="splitStationSets.SplitterDistance" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="splitStationSets.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="splitStationSets.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;splitStationSets.Panel1.Name" xml:space="preserve">
+    <value>splitStationSets.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitStationSets.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitStationSets.Panel1.Parent" xml:space="preserve">
+    <value>splitStationSets</value>
+  </data>
+  <data name="&gt;&gt;splitStationSets.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitStationSets.Panel2.Name" xml:space="preserve">
+    <value>splitStationSets.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitStationSets.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitStationSets.Panel2.Parent" xml:space="preserve">
+    <value>splitStationSets</value>
+  </data>
+  <data name="&gt;&gt;splitStationSets.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dgvStationSets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvStationSets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvStationSets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvStationSets.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cStationSetName.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="cStationSetName.HeaderText" xml:space="preserve">
+    <value>Sada</value>
+  </data>
+  <data name="cStationSetFonet.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="cStationSetFonet.HeaderText" xml:space="preserve">
+    <value>Tyfloservis</value>
+  </data>
+  <data name="tsStationSets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsStationSets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsStationSets.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsStationSets.Text" xml:space="preserve">
+    <value>tsStationSets</value>
+  </data>
+  <data name="tsbStationSetsAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbStationSetsDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbStationSetsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbStationSetsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lStationSets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lStationSets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lStationSets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lStationSets.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lStationSets.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lStationSets.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lStationSets.Text" xml:space="preserve">
+    <value>Sady textov</value>
+  </data>
+  <data name="dgvStationTargets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvStationTargets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvStationTargets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvStationTargets.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cStationTargetCatalog.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="cStationTargetCatalog.HeaderText" xml:space="preserve">
+    <value>Predloha tabule</value>
+  </data>
+  <data name="cStationTargetColumn.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="cStationTargetColumn.HeaderText" xml:space="preserve">
+    <value>Údaj</value>
+  </data>
+  <data name="tsStationTargets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsStationTargets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsStationTargets.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsStationTargets.Text" xml:space="preserve">
+    <value>tsStationTargets</value>
+  </data>
+  <data name="tsbStationTargetsAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbStationTargetsDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbStationTargetsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbStationTargetsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lStationTargets.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lStationTargets.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lStationTargets.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lStationTargets.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lStationTargets.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lStationTargets.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lStationTargets.Text" xml:space="preserve">
+    <value>Údaje tabúľ, v ktorých sa texty sady prejavia</value>
+  </data>
+  <data name="dgvStationTexts.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvStationTexts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvStationTexts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvStationTexts.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cStationTextStation.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="cStationTextStation.HeaderText" xml:space="preserve">
+    <value>Číslo stanice</value>
+  </data>
+  <data name="cStationTextName.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="cStationTextName.HeaderText" xml:space="preserve">
+    <value>Názov stanice</value>
+  </data>
+  <data name="cStationTextText.Width" type="System.Int32, mscorlib">
+    <value>220</value>
+  </data>
+  <data name="cStationTextText.HeaderText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="cStationTextFont.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="cStationTextFont.HeaderText" xml:space="preserve">
+    <value>Písmo</value>
+  </data>
+  <data name="tsStationTexts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsStationTexts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsStationTexts.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsStationTexts.Text" xml:space="preserve">
+    <value>tsStationTexts</value>
+  </data>
+  <data name="tsbStationTextsAdd.Text" xml:space="preserve">
+    <value>Pridať</value>
+  </data>
+  <data name="tsbStationTextsDelete.Text" xml:space="preserve">
+    <value>Zmazať</value>
+  </data>
+  <data name="tsbStationTextsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbStationTextsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lStationTexts.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lStationTexts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lStationTexts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 24</value>
+  </data>
+  <data name="lStationTexts.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lStationTexts.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lStationTexts.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lStationTexts.Text" xml:space="preserve">
+    <value>Texty staníc v sade. Server použije prvý text stanice.</value>
+  </data>
+  <data name="flpStation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flpStation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="flpStation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="flpStation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>966, 29</value>
+  </data>
+  <data name="flpStation.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lStation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 7</value>
+  </data>
+  <data name="lStation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 15</value>
+  </data>
+  <data name="lStation.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lStation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lStation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 7, 3, 0</value>
+  </data>
+  <data name="lStation.Text" xml:space="preserve">
+    <value>Stanica:</value>
+  </data>
+  <data name="cboStation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 3</value>
+  </data>
+  <data name="cboStation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 23</value>
+  </data>
+  <data name="cboStation.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lStationInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 7</value>
+  </data>
+  <data name="lStationInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 15</value>
+  </data>
+  <data name="lStationInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lStationInfo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lStationInfo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 7, 3, 0</value>
+  </data>
+  <data name="lStationInfo.Text" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="lbProblems.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="lbProblems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 548</value>
+  </data>
+  <data name="lbProblems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 80</value>
+  </data>
+  <data name="lbProblems.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="flpButtons.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flpButtons.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="flpButtons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 628</value>
+  </data>
+  <data name="flpButtons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>980, 39</value>
+  </data>
+  <data name="flpButtons.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="flpButtons.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="bCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>889, 6</value>
+  </data>
+  <data name="bCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 27</value>
+  </data>
+  <data name="bCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="bCancel.Text" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="bOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>795, 6</value>
+  </data>
+  <data name="bOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 27</value>
+  </data>
+  <data name="bOk.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="bOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Nastavenie grafikonu</value>
+  </data>
+  <data name="&gt;&gt;tcMain.Name" xml:space="preserve">
+    <value>tcMain</value>
+  </data>
+  <data name="&gt;&gt;tcMain.Type" xml:space="preserve">
+    <value>ExControls.ExTabControl, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tcMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tcMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tpNames.Name" xml:space="preserve">
+    <value>tpNames</value>
+  </data>
+  <data name="&gt;&gt;tpNames.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpNames.Parent" xml:space="preserve">
+    <value>tcMain</value>
+  </data>
+  <data name="&gt;&gt;tpNames.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvNames.Name" xml:space="preserve">
+    <value>dgvNames</value>
+  </data>
+  <data name="&gt;&gt;dgvNames.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvNames.Parent" xml:space="preserve">
+    <value>tpNames</value>
+  </data>
+  <data name="&gt;&gt;dgvNames.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cNameStation.Name" xml:space="preserve">
+    <value>cNameStation</value>
+  </data>
+  <data name="&gt;&gt;cNameStation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cNameName.Name" xml:space="preserve">
+    <value>cNameName</value>
+  </data>
+  <data name="&gt;&gt;cNameName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsNames.Name" xml:space="preserve">
+    <value>tsNames</value>
+  </data>
+  <data name="&gt;&gt;tsNames.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsNames.Parent" xml:space="preserve">
+    <value>tpNames</value>
+  </data>
+  <data name="&gt;&gt;tsNames.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbNamesAdd.Name" xml:space="preserve">
+    <value>tsbNamesAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbNamesAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbNamesDelete.Name" xml:space="preserve">
+    <value>tsbNamesDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbNamesDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssNames1.Name" xml:space="preserve">
+    <value>tssNames1</value>
+  </data>
+  <data name="&gt;&gt;tssNames1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbNamesUp.Name" xml:space="preserve">
+    <value>tsbNamesUp</value>
+  </data>
+  <data name="&gt;&gt;tsbNamesUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbNamesDown.Name" xml:space="preserve">
+    <value>tsbNamesDown</value>
+  </data>
+  <data name="&gt;&gt;tsbNamesDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lNames.Name" xml:space="preserve">
+    <value>lNames</value>
+  </data>
+  <data name="&gt;&gt;lNames.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lNames.Parent" xml:space="preserve">
+    <value>tpNames</value>
+  </data>
+  <data name="&gt;&gt;lNames.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tpDefaults.Name" xml:space="preserve">
+    <value>tpDefaults</value>
+  </data>
+  <data name="&gt;&gt;tpDefaults.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpDefaults.Parent" xml:space="preserve">
+    <value>tcMain</value>
+  </data>
+  <data name="&gt;&gt;tpDefaults.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dgvDefaults.Name" xml:space="preserve">
+    <value>dgvDefaults</value>
+  </data>
+  <data name="&gt;&gt;dgvDefaults.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvDefaults.Parent" xml:space="preserve">
+    <value>tpDefaults</value>
+  </data>
+  <data name="&gt;&gt;dgvDefaults.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cDefStation.Name" xml:space="preserve">
+    <value>cDefStation</value>
+  </data>
+  <data name="&gt;&gt;cDefStation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cDefStationName.Name" xml:space="preserve">
+    <value>cDefStationName</value>
+  </data>
+  <data name="&gt;&gt;cDefStationName.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cDefName.Name" xml:space="preserve">
+    <value>cDefName</value>
+  </data>
+  <data name="&gt;&gt;cDefName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cDefShort.Name" xml:space="preserve">
+    <value>cDefShort</value>
+  </data>
+  <data name="&gt;&gt;cDefShort.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cDefLong.Name" xml:space="preserve">
+    <value>cDefLong</value>
+  </data>
+  <data name="&gt;&gt;cDefLong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsDefaults.Name" xml:space="preserve">
+    <value>tsDefaults</value>
+  </data>
+  <data name="&gt;&gt;tsDefaults.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsDefaults.Parent" xml:space="preserve">
+    <value>tpDefaults</value>
+  </data>
+  <data name="&gt;&gt;tsDefaults.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbDefaultsAdd.Name" xml:space="preserve">
+    <value>tsbDefaultsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbDefaultsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbDefaultsDelete.Name" xml:space="preserve">
+    <value>tsbDefaultsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbDefaultsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssDefaults1.Name" xml:space="preserve">
+    <value>tssDefaults1</value>
+  </data>
+  <data name="&gt;&gt;tssDefaults1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbDefaultsUp.Name" xml:space="preserve">
+    <value>tsbDefaultsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbDefaultsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbDefaultsDown.Name" xml:space="preserve">
+    <value>tsbDefaultsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbDefaultsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lDefaults.Name" xml:space="preserve">
+    <value>lDefaults</value>
+  </data>
+  <data name="&gt;&gt;lDefaults.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDefaults.Parent" xml:space="preserve">
+    <value>tpDefaults</value>
+  </data>
+  <data name="&gt;&gt;lDefaults.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tpStations.Name" xml:space="preserve">
+    <value>tpStations</value>
+  </data>
+  <data name="&gt;&gt;tpStations.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpStations.Parent" xml:space="preserve">
+    <value>tcMain</value>
+  </data>
+  <data name="&gt;&gt;tpStations.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tcStation.Name" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tcStation.Type" xml:space="preserve">
+    <value>ExControls.ExTabControl, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tcStation.Parent" xml:space="preserve">
+    <value>tpStations</value>
+  </data>
+  <data name="&gt;&gt;tcStation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tpTracks.Name" xml:space="preserve">
+    <value>tpTracks</value>
+  </data>
+  <data name="&gt;&gt;tpTracks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpTracks.Parent" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tpTracks.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvTracks.Name" xml:space="preserve">
+    <value>dgvTracks</value>
+  </data>
+  <data name="&gt;&gt;dgvTracks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvTracks.Parent" xml:space="preserve">
+    <value>tpTracks</value>
+  </data>
+  <data name="&gt;&gt;dgvTracks.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cTrackKey.Name" xml:space="preserve">
+    <value>cTrackKey</value>
+  </data>
+  <data name="&gt;&gt;cTrackKey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackName.Name" xml:space="preserve">
+    <value>cTrackName</value>
+  </data>
+  <data name="&gt;&gt;cTrackName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackSector.Name" xml:space="preserve">
+    <value>cTrackSector</value>
+  </data>
+  <data name="&gt;&gt;cTrackSector.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackText.Name" xml:space="preserve">
+    <value>cTrackText</value>
+  </data>
+  <data name="&gt;&gt;cTrackText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackSectorText.Name" xml:space="preserve">
+    <value>cTrackSectorText</value>
+  </data>
+  <data name="&gt;&gt;cTrackSectorText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackPlatform.Name" xml:space="preserve">
+    <value>cTrackPlatform</value>
+  </data>
+  <data name="&gt;&gt;cTrackPlatform.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackPlatformTrack.Name" xml:space="preserve">
+    <value>cTrackPlatformTrack</value>
+  </data>
+  <data name="&gt;&gt;cTrackPlatformTrack.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackAlt.Name" xml:space="preserve">
+    <value>cTrackAlt</value>
+  </data>
+  <data name="&gt;&gt;cTrackAlt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackSound.Name" xml:space="preserve">
+    <value>cTrackSound</value>
+  </data>
+  <data name="&gt;&gt;cTrackSound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackPlatformSound.Name" xml:space="preserve">
+    <value>cTrackPlatformSound</value>
+  </data>
+  <data name="&gt;&gt;cTrackPlatformSound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackSectorSound.Name" xml:space="preserve">
+    <value>cTrackSectorSound</value>
+  </data>
+  <data name="&gt;&gt;cTrackSectorSound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackSeparator.Name" xml:space="preserve">
+    <value>cTrackSeparator</value>
+  </data>
+  <data name="&gt;&gt;cTrackSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackCommon.Name" xml:space="preserve">
+    <value>cTrackCommon</value>
+  </data>
+  <data name="&gt;&gt;cTrackCommon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackNoAudio.Name" xml:space="preserve">
+    <value>cTrackNoAudio</value>
+  </data>
+  <data name="&gt;&gt;cTrackNoAudio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTrackAlterTran.Name" xml:space="preserve">
+    <value>cTrackAlterTran</value>
+  </data>
+  <data name="&gt;&gt;cTrackAlterTran.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsTracks.Name" xml:space="preserve">
+    <value>tsTracks</value>
+  </data>
+  <data name="&gt;&gt;tsTracks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsTracks.Parent" xml:space="preserve">
+    <value>tpTracks</value>
+  </data>
+  <data name="&gt;&gt;tsTracks.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbTracksAdd.Name" xml:space="preserve">
+    <value>tsbTracksAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbTracksAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbTracksDelete.Name" xml:space="preserve">
+    <value>tsbTracksDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbTracksDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssTracks1.Name" xml:space="preserve">
+    <value>tssTracks1</value>
+  </data>
+  <data name="&gt;&gt;tssTracks1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbTracksUp.Name" xml:space="preserve">
+    <value>tsbTracksUp</value>
+  </data>
+  <data name="&gt;&gt;tsbTracksUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbTracksDown.Name" xml:space="preserve">
+    <value>tsbTracksDown</value>
+  </data>
+  <data name="&gt;&gt;tsbTracksDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lTracks.Name" xml:space="preserve">
+    <value>lTracks</value>
+  </data>
+  <data name="&gt;&gt;lTracks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lTracks.Parent" xml:space="preserve">
+    <value>tpTracks</value>
+  </data>
+  <data name="&gt;&gt;lTracks.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tpReportKeys.Name" xml:space="preserve">
+    <value>tpReportKeys</value>
+  </data>
+  <data name="&gt;&gt;tpReportKeys.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpReportKeys.Parent" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tpReportKeys.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dgvReportKeys.Name" xml:space="preserve">
+    <value>dgvReportKeys</value>
+  </data>
+  <data name="&gt;&gt;dgvReportKeys.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvReportKeys.Parent" xml:space="preserve">
+    <value>tpReportKeys</value>
+  </data>
+  <data name="&gt;&gt;dgvReportKeys.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cKeyName.Name" xml:space="preserve">
+    <value>cKeyName</value>
+  </data>
+  <data name="&gt;&gt;cKeyName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cKeyLetter.Name" xml:space="preserve">
+    <value>cKeyLetter</value>
+  </data>
+  <data name="&gt;&gt;cKeyLetter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cKeyCategories.Name" xml:space="preserve">
+    <value>cKeyCategories</value>
+  </data>
+  <data name="&gt;&gt;cKeyCategories.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsReportKeys.Name" xml:space="preserve">
+    <value>tsReportKeys</value>
+  </data>
+  <data name="&gt;&gt;tsReportKeys.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsReportKeys.Parent" xml:space="preserve">
+    <value>tpReportKeys</value>
+  </data>
+  <data name="&gt;&gt;tsReportKeys.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbReportKeysAdd.Name" xml:space="preserve">
+    <value>tsbReportKeysAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbReportKeysAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbReportKeysDelete.Name" xml:space="preserve">
+    <value>tsbReportKeysDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbReportKeysDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssReportKeys1.Name" xml:space="preserve">
+    <value>tssReportKeys1</value>
+  </data>
+  <data name="&gt;&gt;tssReportKeys1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbReportKeysUp.Name" xml:space="preserve">
+    <value>tsbReportKeysUp</value>
+  </data>
+  <data name="&gt;&gt;tsbReportKeysUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbReportKeysDown.Name" xml:space="preserve">
+    <value>tsbReportKeysDown</value>
+  </data>
+  <data name="&gt;&gt;tsbReportKeysDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lReportKeys.Name" xml:space="preserve">
+    <value>lReportKeys</value>
+  </data>
+  <data name="&gt;&gt;lReportKeys.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lReportKeys.Parent" xml:space="preserve">
+    <value>tpReportKeys</value>
+  </data>
+  <data name="&gt;&gt;lReportKeys.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tpPatterns.Name" xml:space="preserve">
+    <value>tpPatterns</value>
+  </data>
+  <data name="&gt;&gt;tpPatterns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpPatterns.Parent" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tpPatterns.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;splitPatterns.Name" xml:space="preserve">
+    <value>splitPatterns</value>
+  </data>
+  <data name="&gt;&gt;splitPatterns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitPatterns.Parent" xml:space="preserve">
+    <value>tpPatterns</value>
+  </data>
+  <data name="&gt;&gt;splitPatterns.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvPatterns.Name" xml:space="preserve">
+    <value>dgvPatterns</value>
+  </data>
+  <data name="&gt;&gt;dgvPatterns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvPatterns.Parent" xml:space="preserve">
+    <value>splitPatterns.Panel1</value>
+  </data>
+  <data name="&gt;&gt;dgvPatterns.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cPatIndex.Name" xml:space="preserve">
+    <value>cPatIndex</value>
+  </data>
+  <data name="&gt;&gt;cPatIndex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cPatStations.Name" xml:space="preserve">
+    <value>cPatStations</value>
+  </data>
+  <data name="&gt;&gt;cPatStations.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsPatterns.Name" xml:space="preserve">
+    <value>tsPatterns</value>
+  </data>
+  <data name="&gt;&gt;tsPatterns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsPatterns.Parent" xml:space="preserve">
+    <value>splitPatterns.Panel1</value>
+  </data>
+  <data name="&gt;&gt;tsPatterns.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternsAdd.Name" xml:space="preserve">
+    <value>tsbPatternsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternsDelete.Name" xml:space="preserve">
+    <value>tsbPatternsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssPatterns1.Name" xml:space="preserve">
+    <value>tssPatterns1</value>
+  </data>
+  <data name="&gt;&gt;tssPatterns1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternsUp.Name" xml:space="preserve">
+    <value>tsbPatternsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternsDown.Name" xml:space="preserve">
+    <value>tsbPatternsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lPatterns.Name" xml:space="preserve">
+    <value>lPatterns</value>
+  </data>
+  <data name="&gt;&gt;lPatterns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lPatterns.Parent" xml:space="preserve">
+    <value>splitPatterns.Panel1</value>
+  </data>
+  <data name="&gt;&gt;lPatterns.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dgvPatternStops.Name" xml:space="preserve">
+    <value>dgvPatternStops</value>
+  </data>
+  <data name="&gt;&gt;dgvPatternStops.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvPatternStops.Parent" xml:space="preserve">
+    <value>splitPatterns.Panel2</value>
+  </data>
+  <data name="&gt;&gt;dgvPatternStops.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cPatStop.Name" xml:space="preserve">
+    <value>cPatStop</value>
+  </data>
+  <data name="&gt;&gt;cPatStop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cPatStopName.Name" xml:space="preserve">
+    <value>cPatStopName</value>
+  </data>
+  <data name="&gt;&gt;cPatStopName.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cPatStopReported.Name" xml:space="preserve">
+    <value>cPatStopReported</value>
+  </data>
+  <data name="&gt;&gt;cPatStopReported.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsPatternStops.Name" xml:space="preserve">
+    <value>tsPatternStops</value>
+  </data>
+  <data name="&gt;&gt;tsPatternStops.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsPatternStops.Parent" xml:space="preserve">
+    <value>splitPatterns.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tsPatternStops.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternStopsAdd.Name" xml:space="preserve">
+    <value>tsbPatternStopsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternStopsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternStopsDelete.Name" xml:space="preserve">
+    <value>tsbPatternStopsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternStopsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssPatternStops1.Name" xml:space="preserve">
+    <value>tssPatternStops1</value>
+  </data>
+  <data name="&gt;&gt;tssPatternStops1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternStopsUp.Name" xml:space="preserve">
+    <value>tsbPatternStopsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternStopsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternStopsDown.Name" xml:space="preserve">
+    <value>tsbPatternStopsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbPatternStopsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lPatternStops.Name" xml:space="preserve">
+    <value>lPatternStops</value>
+  </data>
+  <data name="&gt;&gt;lPatternStops.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lPatternStops.Parent" xml:space="preserve">
+    <value>splitPatterns.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lPatternStops.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;flpPatterns.Name" xml:space="preserve">
+    <value>flpPatterns</value>
+  </data>
+  <data name="&gt;&gt;flpPatterns.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flpPatterns.Parent" xml:space="preserve">
+    <value>tpPatterns</value>
+  </data>
+  <data name="&gt;&gt;flpPatterns.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rbShortPatterns.Name" xml:space="preserve">
+    <value>rbShortPatterns</value>
+  </data>
+  <data name="&gt;&gt;rbShortPatterns.Type" xml:space="preserve">
+    <value>ExControls.ExRadioButton, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rbShortPatterns.Parent" xml:space="preserve">
+    <value>flpPatterns</value>
+  </data>
+  <data name="&gt;&gt;rbShortPatterns.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rbLongPatterns.Name" xml:space="preserve">
+    <value>rbLongPatterns</value>
+  </data>
+  <data name="&gt;&gt;rbLongPatterns.Type" xml:space="preserve">
+    <value>ExControls.ExRadioButton, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rbLongPatterns.Parent" xml:space="preserve">
+    <value>flpPatterns</value>
+  </data>
+  <data name="&gt;&gt;rbLongPatterns.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lPatternsHint.Name" xml:space="preserve">
+    <value>lPatternsHint</value>
+  </data>
+  <data name="&gt;&gt;lPatternsHint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lPatternsHint.Parent" xml:space="preserve">
+    <value>flpPatterns</value>
+  </data>
+  <data name="&gt;&gt;lPatternsHint.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tpRouteTexts.Name" xml:space="preserve">
+    <value>tpRouteTexts</value>
+  </data>
+  <data name="&gt;&gt;tpRouteTexts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpRouteTexts.Parent" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tpRouteTexts.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;splitRoutes.Name" xml:space="preserve">
+    <value>splitRoutes</value>
+  </data>
+  <data name="&gt;&gt;splitRoutes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitRoutes.Parent" xml:space="preserve">
+    <value>tpRouteTexts</value>
+  </data>
+  <data name="&gt;&gt;splitRoutes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitRouteSets.Name" xml:space="preserve">
+    <value>splitRouteSets</value>
+  </data>
+  <data name="&gt;&gt;splitRouteSets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitRouteSets.Parent" xml:space="preserve">
+    <value>splitRoutes.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitRouteSets.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvRouteSets.Name" xml:space="preserve">
+    <value>dgvRouteSets</value>
+  </data>
+  <data name="&gt;&gt;dgvRouteSets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvRouteSets.Parent" xml:space="preserve">
+    <value>splitRouteSets.Panel1</value>
+  </data>
+  <data name="&gt;&gt;dgvRouteSets.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cRouteSetName.Name" xml:space="preserve">
+    <value>cRouteSetName</value>
+  </data>
+  <data name="&gt;&gt;cRouteSetName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cRouteSetFonet.Name" xml:space="preserve">
+    <value>cRouteSetFonet</value>
+  </data>
+  <data name="&gt;&gt;cRouteSetFonet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsRouteSets.Name" xml:space="preserve">
+    <value>tsRouteSets</value>
+  </data>
+  <data name="&gt;&gt;tsRouteSets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsRouteSets.Parent" xml:space="preserve">
+    <value>splitRouteSets.Panel1</value>
+  </data>
+  <data name="&gt;&gt;tsRouteSets.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteSetsAdd.Name" xml:space="preserve">
+    <value>tsbRouteSetsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteSetsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteSetsDelete.Name" xml:space="preserve">
+    <value>tsbRouteSetsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteSetsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssRouteSets1.Name" xml:space="preserve">
+    <value>tssRouteSets1</value>
+  </data>
+  <data name="&gt;&gt;tssRouteSets1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteSetsUp.Name" xml:space="preserve">
+    <value>tsbRouteSetsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteSetsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteSetsDown.Name" xml:space="preserve">
+    <value>tsbRouteSetsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteSetsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lRouteSets.Name" xml:space="preserve">
+    <value>lRouteSets</value>
+  </data>
+  <data name="&gt;&gt;lRouteSets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lRouteSets.Parent" xml:space="preserve">
+    <value>splitRouteSets.Panel1</value>
+  </data>
+  <data name="&gt;&gt;lRouteSets.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dgvRouteTargets.Name" xml:space="preserve">
+    <value>dgvRouteTargets</value>
+  </data>
+  <data name="&gt;&gt;dgvRouteTargets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvRouteTargets.Parent" xml:space="preserve">
+    <value>splitRouteSets.Panel2</value>
+  </data>
+  <data name="&gt;&gt;dgvRouteTargets.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cRouteTargetCatalog.Name" xml:space="preserve">
+    <value>cRouteTargetCatalog</value>
+  </data>
+  <data name="&gt;&gt;cRouteTargetCatalog.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cRouteTargetColumn.Name" xml:space="preserve">
+    <value>cRouteTargetColumn</value>
+  </data>
+  <data name="&gt;&gt;cRouteTargetColumn.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsRouteTargets.Name" xml:space="preserve">
+    <value>tsRouteTargets</value>
+  </data>
+  <data name="&gt;&gt;tsRouteTargets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsRouteTargets.Parent" xml:space="preserve">
+    <value>splitRouteSets.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tsRouteTargets.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteTargetsAdd.Name" xml:space="preserve">
+    <value>tsbRouteTargetsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteTargetsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteTargetsDelete.Name" xml:space="preserve">
+    <value>tsbRouteTargetsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteTargetsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssRouteTargets1.Name" xml:space="preserve">
+    <value>tssRouteTargets1</value>
+  </data>
+  <data name="&gt;&gt;tssRouteTargets1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteTargetsUp.Name" xml:space="preserve">
+    <value>tsbRouteTargetsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteTargetsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteTargetsDown.Name" xml:space="preserve">
+    <value>tsbRouteTargetsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteTargetsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lRouteTargets.Name" xml:space="preserve">
+    <value>lRouteTargets</value>
+  </data>
+  <data name="&gt;&gt;lRouteTargets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lRouteTargets.Parent" xml:space="preserve">
+    <value>splitRouteSets.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lRouteTargets.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;splitRouteTexts.Name" xml:space="preserve">
+    <value>splitRouteTexts</value>
+  </data>
+  <data name="&gt;&gt;splitRouteTexts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitRouteTexts.Parent" xml:space="preserve">
+    <value>splitRoutes.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitRouteTexts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvRoutes.Name" xml:space="preserve">
+    <value>dgvRoutes</value>
+  </data>
+  <data name="&gt;&gt;dgvRoutes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvRoutes.Parent" xml:space="preserve">
+    <value>splitRouteTexts.Panel1</value>
+  </data>
+  <data name="&gt;&gt;dgvRoutes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cRouteText.Name" xml:space="preserve">
+    <value>cRouteText</value>
+  </data>
+  <data name="&gt;&gt;cRouteText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cRouteFont.Name" xml:space="preserve">
+    <value>cRouteFont</value>
+  </data>
+  <data name="&gt;&gt;cRouteFont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cRouteStations.Name" xml:space="preserve">
+    <value>cRouteStations</value>
+  </data>
+  <data name="&gt;&gt;cRouteStations.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsRoutes.Name" xml:space="preserve">
+    <value>tsRoutes</value>
+  </data>
+  <data name="&gt;&gt;tsRoutes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsRoutes.Parent" xml:space="preserve">
+    <value>splitRouteTexts.Panel1</value>
+  </data>
+  <data name="&gt;&gt;tsRoutes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbRoutesAdd.Name" xml:space="preserve">
+    <value>tsbRoutesAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbRoutesAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbRoutesDelete.Name" xml:space="preserve">
+    <value>tsbRoutesDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbRoutesDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssRoutes1.Name" xml:space="preserve">
+    <value>tssRoutes1</value>
+  </data>
+  <data name="&gt;&gt;tssRoutes1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbRoutesUp.Name" xml:space="preserve">
+    <value>tsbRoutesUp</value>
+  </data>
+  <data name="&gt;&gt;tsbRoutesUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbRoutesDown.Name" xml:space="preserve">
+    <value>tsbRoutesDown</value>
+  </data>
+  <data name="&gt;&gt;tsbRoutesDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lRoutes.Name" xml:space="preserve">
+    <value>lRoutes</value>
+  </data>
+  <data name="&gt;&gt;lRoutes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lRoutes.Parent" xml:space="preserve">
+    <value>splitRouteTexts.Panel1</value>
+  </data>
+  <data name="&gt;&gt;lRoutes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dgvRouteStops.Name" xml:space="preserve">
+    <value>dgvRouteStops</value>
+  </data>
+  <data name="&gt;&gt;dgvRouteStops.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvRouteStops.Parent" xml:space="preserve">
+    <value>splitRouteTexts.Panel2</value>
+  </data>
+  <data name="&gt;&gt;dgvRouteStops.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cRouteStop.Name" xml:space="preserve">
+    <value>cRouteStop</value>
+  </data>
+  <data name="&gt;&gt;cRouteStop.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cRouteStopName.Name" xml:space="preserve">
+    <value>cRouteStopName</value>
+  </data>
+  <data name="&gt;&gt;cRouteStopName.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cRouteStopSelected.Name" xml:space="preserve">
+    <value>cRouteStopSelected</value>
+  </data>
+  <data name="&gt;&gt;cRouteStopSelected.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsRouteStops.Name" xml:space="preserve">
+    <value>tsRouteStops</value>
+  </data>
+  <data name="&gt;&gt;tsRouteStops.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsRouteStops.Parent" xml:space="preserve">
+    <value>splitRouteTexts.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tsRouteStops.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteStopsAdd.Name" xml:space="preserve">
+    <value>tsbRouteStopsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteStopsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteStopsDelete.Name" xml:space="preserve">
+    <value>tsbRouteStopsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteStopsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssRouteStops1.Name" xml:space="preserve">
+    <value>tssRouteStops1</value>
+  </data>
+  <data name="&gt;&gt;tssRouteStops1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteStopsUp.Name" xml:space="preserve">
+    <value>tsbRouteStopsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteStopsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteStopsDown.Name" xml:space="preserve">
+    <value>tsbRouteStopsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbRouteStopsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lRouteStops.Name" xml:space="preserve">
+    <value>lRouteStops</value>
+  </data>
+  <data name="&gt;&gt;lRouteStops.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lRouteStops.Parent" xml:space="preserve">
+    <value>splitRouteTexts.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lRouteStops.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tpStationTexts.Name" xml:space="preserve">
+    <value>tpStationTexts</value>
+  </data>
+  <data name="&gt;&gt;tpStationTexts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpStationTexts.Parent" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tpStationTexts.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;splitStationTexts.Name" xml:space="preserve">
+    <value>splitStationTexts</value>
+  </data>
+  <data name="&gt;&gt;splitStationTexts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitStationTexts.Parent" xml:space="preserve">
+    <value>tpStationTexts</value>
+  </data>
+  <data name="&gt;&gt;splitStationTexts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitStationSets.Name" xml:space="preserve">
+    <value>splitStationSets</value>
+  </data>
+  <data name="&gt;&gt;splitStationSets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitStationSets.Parent" xml:space="preserve">
+    <value>splitStationTexts.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitStationSets.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvStationSets.Name" xml:space="preserve">
+    <value>dgvStationSets</value>
+  </data>
+  <data name="&gt;&gt;dgvStationSets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvStationSets.Parent" xml:space="preserve">
+    <value>splitStationSets.Panel1</value>
+  </data>
+  <data name="&gt;&gt;dgvStationSets.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cStationSetName.Name" xml:space="preserve">
+    <value>cStationSetName</value>
+  </data>
+  <data name="&gt;&gt;cStationSetName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cStationSetFonet.Name" xml:space="preserve">
+    <value>cStationSetFonet</value>
+  </data>
+  <data name="&gt;&gt;cStationSetFonet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsStationSets.Name" xml:space="preserve">
+    <value>tsStationSets</value>
+  </data>
+  <data name="&gt;&gt;tsStationSets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsStationSets.Parent" xml:space="preserve">
+    <value>splitStationSets.Panel1</value>
+  </data>
+  <data name="&gt;&gt;tsStationSets.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbStationSetsAdd.Name" xml:space="preserve">
+    <value>tsbStationSetsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbStationSetsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbStationSetsDelete.Name" xml:space="preserve">
+    <value>tsbStationSetsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbStationSetsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssStationSets1.Name" xml:space="preserve">
+    <value>tssStationSets1</value>
+  </data>
+  <data name="&gt;&gt;tssStationSets1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbStationSetsUp.Name" xml:space="preserve">
+    <value>tsbStationSetsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbStationSetsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbStationSetsDown.Name" xml:space="preserve">
+    <value>tsbStationSetsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbStationSetsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lStationSets.Name" xml:space="preserve">
+    <value>lStationSets</value>
+  </data>
+  <data name="&gt;&gt;lStationSets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lStationSets.Parent" xml:space="preserve">
+    <value>splitStationSets.Panel1</value>
+  </data>
+  <data name="&gt;&gt;lStationSets.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dgvStationTargets.Name" xml:space="preserve">
+    <value>dgvStationTargets</value>
+  </data>
+  <data name="&gt;&gt;dgvStationTargets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvStationTargets.Parent" xml:space="preserve">
+    <value>splitStationSets.Panel2</value>
+  </data>
+  <data name="&gt;&gt;dgvStationTargets.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cStationTargetCatalog.Name" xml:space="preserve">
+    <value>cStationTargetCatalog</value>
+  </data>
+  <data name="&gt;&gt;cStationTargetCatalog.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cStationTargetColumn.Name" xml:space="preserve">
+    <value>cStationTargetColumn</value>
+  </data>
+  <data name="&gt;&gt;cStationTargetColumn.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsStationTargets.Name" xml:space="preserve">
+    <value>tsStationTargets</value>
+  </data>
+  <data name="&gt;&gt;tsStationTargets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsStationTargets.Parent" xml:space="preserve">
+    <value>splitStationSets.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tsStationTargets.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTargetsAdd.Name" xml:space="preserve">
+    <value>tsbStationTargetsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTargetsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTargetsDelete.Name" xml:space="preserve">
+    <value>tsbStationTargetsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTargetsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssStationTargets1.Name" xml:space="preserve">
+    <value>tssStationTargets1</value>
+  </data>
+  <data name="&gt;&gt;tssStationTargets1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTargetsUp.Name" xml:space="preserve">
+    <value>tsbStationTargetsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTargetsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTargetsDown.Name" xml:space="preserve">
+    <value>tsbStationTargetsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTargetsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lStationTargets.Name" xml:space="preserve">
+    <value>lStationTargets</value>
+  </data>
+  <data name="&gt;&gt;lStationTargets.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lStationTargets.Parent" xml:space="preserve">
+    <value>splitStationSets.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lStationTargets.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dgvStationTexts.Name" xml:space="preserve">
+    <value>dgvStationTexts</value>
+  </data>
+  <data name="&gt;&gt;dgvStationTexts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvStationTexts.Parent" xml:space="preserve">
+    <value>splitStationTexts.Panel2</value>
+  </data>
+  <data name="&gt;&gt;dgvStationTexts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cStationTextStation.Name" xml:space="preserve">
+    <value>cStationTextStation</value>
+  </data>
+  <data name="&gt;&gt;cStationTextStation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cStationTextName.Name" xml:space="preserve">
+    <value>cStationTextName</value>
+  </data>
+  <data name="&gt;&gt;cStationTextName.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cStationTextText.Name" xml:space="preserve">
+    <value>cStationTextText</value>
+  </data>
+  <data name="&gt;&gt;cStationTextText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cStationTextFont.Name" xml:space="preserve">
+    <value>cStationTextFont</value>
+  </data>
+  <data name="&gt;&gt;cStationTextFont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsStationTexts.Name" xml:space="preserve">
+    <value>tsStationTexts</value>
+  </data>
+  <data name="&gt;&gt;tsStationTexts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsStationTexts.Parent" xml:space="preserve">
+    <value>splitStationTexts.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tsStationTexts.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTextsAdd.Name" xml:space="preserve">
+    <value>tsbStationTextsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTextsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTextsDelete.Name" xml:space="preserve">
+    <value>tsbStationTextsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTextsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssStationTexts1.Name" xml:space="preserve">
+    <value>tssStationTexts1</value>
+  </data>
+  <data name="&gt;&gt;tssStationTexts1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTextsUp.Name" xml:space="preserve">
+    <value>tsbStationTextsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTextsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTextsDown.Name" xml:space="preserve">
+    <value>tsbStationTextsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbStationTextsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lStationTexts.Name" xml:space="preserve">
+    <value>lStationTexts</value>
+  </data>
+  <data name="&gt;&gt;lStationTexts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lStationTexts.Parent" xml:space="preserve">
+    <value>splitStationTexts.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lStationTexts.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;flpStation.Name" xml:space="preserve">
+    <value>flpStation</value>
+  </data>
+  <data name="&gt;&gt;flpStation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flpStation.Parent" xml:space="preserve">
+    <value>tpStations</value>
+  </data>
+  <data name="&gt;&gt;flpStation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lStation.Name" xml:space="preserve">
+    <value>lStation</value>
+  </data>
+  <data name="&gt;&gt;lStation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lStation.Parent" xml:space="preserve">
+    <value>flpStation</value>
+  </data>
+  <data name="&gt;&gt;lStation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cboStation.Name" xml:space="preserve">
+    <value>cboStation</value>
+  </data>
+  <data name="&gt;&gt;cboStation.Type" xml:space="preserve">
+    <value>ExControls.ExComboBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboStation.Parent" xml:space="preserve">
+    <value>flpStation</value>
+  </data>
+  <data name="&gt;&gt;cboStation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lStationInfo.Name" xml:space="preserve">
+    <value>lStationInfo</value>
+  </data>
+  <data name="&gt;&gt;lStationInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lStationInfo.Parent" xml:space="preserve">
+    <value>flpStation</value>
+  </data>
+  <data name="&gt;&gt;lStationInfo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lbProblems.Name" xml:space="preserve">
+    <value>lbProblems</value>
+  </data>
+  <data name="&gt;&gt;lbProblems.Type" xml:space="preserve">
+    <value>GVXEditor.UI.Controls.ProblemList, GVXEditor, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lbProblems.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbProblems.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;flpButtons.Name" xml:space="preserve">
+    <value>flpButtons</value>
+  </data>
+  <data name="&gt;&gt;flpButtons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flpButtons.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flpButtons.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bCancel.Name" xml:space="preserve">
+    <value>bCancel</value>
+  </data>
+  <data name="&gt;&gt;bCancel.Type" xml:space="preserve">
+    <value>ExControls.ExButton, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bCancel.Parent" xml:space="preserve">
+    <value>flpButtons</value>
+  </data>
+  <data name="&gt;&gt;bCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bOk.Name" xml:space="preserve">
+    <value>bOk</value>
+  </data>
+  <data name="&gt;&gt;bOk.Type" xml:space="preserve">
+    <value>ExControls.ExButton, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bOk.Parent" xml:space="preserve">
+    <value>flpButtons</value>
+  </data>
+  <data name="&gt;&gt;bOk.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FSetup</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="cNameStation.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cNameName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDefStation.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDefStationName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDefName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDefShort.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDefLong.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackKey.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackSector.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackText.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackSectorText.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackPlatform.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackPlatformTrack.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackAlt.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackSound.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackPlatformSound.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackSectorSound.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackSeparator.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackCommon.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackNoAudio.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTrackAlterTran.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cKeyName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cKeyLetter.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cKeyCategories.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cPatIndex.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cPatStations.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cPatStop.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cPatStopName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cPatStopReported.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRouteSetName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRouteSetFonet.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRouteTargetCatalog.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRouteTargetColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRouteText.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRouteFont.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRouteStations.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRouteStop.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRouteStopName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRouteStopSelected.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cStationSetName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cStationSetFonet.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cStationTargetCatalog.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cStationTargetColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cStationTextStation.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cStationTextName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cStationTextText.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cStationTextFont.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

@@ -1,0 +1,3414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="tcMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tcMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tcMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1100, 590</value>
+  </data>
+  <data name="tcMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tpTrain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpTrain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 562</value>
+  </data>
+  <data name="tpTrain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tpTrain.Text" xml:space="preserve">
+    <value>Vlak</value>
+  </data>
+  <data name="splitMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1100, 560</value>
+  </data>
+  <data name="splitMain.SplitterDistance" type="System.Int32, mscorlib">
+    <value>260</value>
+  </data>
+  <data name="splitMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="splitMain.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel1.Name" xml:space="preserve">
+    <value>splitMain.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel1.Parent" xml:space="preserve">
+    <value>splitMain</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel2.Name" xml:space="preserve">
+    <value>splitMain.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel2.Parent" xml:space="preserve">
+    <value>splitMain</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitVariants.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitVariants.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitVariants.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1100, 560</value>
+  </data>
+  <data name="splitVariants.SplitterDistance" type="System.Int32, mscorlib">
+    <value>440</value>
+  </data>
+  <data name="splitVariants.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitVariants.Panel1.Name" xml:space="preserve">
+    <value>splitVariants.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitVariants.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitVariants.Panel1.Parent" xml:space="preserve">
+    <value>splitVariants</value>
+  </data>
+  <data name="&gt;&gt;splitVariants.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitVariants.Panel2.Name" xml:space="preserve">
+    <value>splitVariants.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitVariants.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitVariants.Panel2.Parent" xml:space="preserve">
+    <value>splitVariants</value>
+  </data>
+  <data name="&gt;&gt;splitVariants.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dgvVariants.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvVariants.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvVariants.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvVariants.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cVarIndex.Width" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="cVarIndex.HeaderText" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="cVarValidity.Width" type="System.Int32, mscorlib">
+    <value>240</value>
+  </data>
+  <data name="cVarValidity.HeaderText" xml:space="preserve">
+    <value>Jazdí</value>
+  </data>
+  <data name="cVarDays.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="cVarDays.HeaderText" xml:space="preserve">
+    <value>Dní</value>
+  </data>
+  <data name="tsVariants.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsVariants.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsVariants.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsVariants.Text" xml:space="preserve">
+    <value>tsVariants</value>
+  </data>
+  <data name="tsbVarAdd.Text" xml:space="preserve">
+    <value>Pridať variantu</value>
+  </data>
+  <data name="tsbVarCopy.Text" xml:space="preserve">
+    <value>Kopírovať variantu pred vybranú</value>
+  </data>
+  <data name="tsbVarDelete.Text" xml:space="preserve">
+    <value>Zmazať variantu</value>
+  </data>
+  <data name="tsbVarUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbVarDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="pVariant.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pVariant.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pVariant.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="pVariant.Size" type="System.Drawing.Size, System.Drawing">
+    <value>630, 300</value>
+  </data>
+  <data name="pVariant.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lValidity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 9</value>
+  </data>
+  <data name="lValidity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 15</value>
+  </data>
+  <data name="lValidity.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lValidity.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lValidity.Text" xml:space="preserve">
+    <value>Jazdí:</value>
+  </data>
+  <data name="tbValidity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 5</value>
+  </data>
+  <data name="tbValidity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 23</value>
+  </data>
+  <data name="tbValidity.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tbValidity.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="bValidity.Location" type="System.Drawing.Point, System.Drawing">
+    <value>536, 4</value>
+  </data>
+  <data name="bValidity.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 27</value>
+  </data>
+  <data name="bValidity.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="bValidity.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="bValidity.Text" xml:space="preserve">
+    <value>Kalendár...</value>
+  </data>
+  <data name="lOperator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 38</value>
+  </data>
+  <data name="lOperator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 15</value>
+  </data>
+  <data name="lOperator.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lOperator.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lOperator.Text" xml:space="preserve">
+    <value>Dopravca:</value>
+  </data>
+  <data name="tbOperator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 34</value>
+  </data>
+  <data name="tbOperator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 23</value>
+  </data>
+  <data name="tbOperator.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tbOperator.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lFlags.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 67</value>
+  </data>
+  <data name="lFlags.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 15</value>
+  </data>
+  <data name="lFlags.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lFlags.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lFlags.Text" xml:space="preserve">
+    <value>Príznaky:</value>
+  </data>
+  <data name="flpFlags.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 63</value>
+  </data>
+  <data name="flpFlags.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 50</value>
+  </data>
+  <data name="flpFlags.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="flpFlags.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="flpFlags.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cboxFlagD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="cboxFlagD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 19</value>
+  </data>
+  <data name="cboxFlagD.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cboxFlagD.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cboxFlagD.Text" xml:space="preserve">
+    <value>D</value>
+  </data>
+  <data name="cboxFlagX.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="cboxFlagX.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 19</value>
+  </data>
+  <data name="cboxFlagX.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cboxFlagX.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cboxFlagX.Text" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="cboxFlagN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="cboxFlagN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 19</value>
+  </data>
+  <data name="cboxFlagN.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="cboxFlagN.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cboxFlagN.Text" xml:space="preserve">
+    <value>N</value>
+  </data>
+  <data name="cboxFlagNP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="cboxFlagNP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 19</value>
+  </data>
+  <data name="cboxFlagNP.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="cboxFlagNP.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cboxFlagNP.Text" xml:space="preserve">
+    <value>NP</value>
+  </data>
+  <data name="cboxFlagO.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="cboxFlagO.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 19</value>
+  </data>
+  <data name="cboxFlagO.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="cboxFlagO.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cboxFlagO.Text" xml:space="preserve">
+    <value>O</value>
+  </data>
+  <data name="cboxFlagM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="cboxFlagM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 19</value>
+  </data>
+  <data name="cboxFlagM.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="cboxFlagM.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cboxFlagM.Text" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="cboxFlagR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="cboxFlagR.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 19</value>
+  </data>
+  <data name="cboxFlagR.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="cboxFlagR.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cboxFlagR.Text" xml:space="preserve">
+    <value>R</value>
+  </data>
+  <data name="cboxFlagL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="cboxFlagL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 19</value>
+  </data>
+  <data name="cboxFlagL.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="cboxFlagL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cboxFlagL.Text" xml:space="preserve">
+    <value>L</value>
+  </data>
+  <data name="lNote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 121</value>
+  </data>
+  <data name="lNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 15</value>
+  </data>
+  <data name="lNote.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lNote.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lNote.Text" xml:space="preserve">
+    <value>Poznámka:</value>
+  </data>
+  <data name="tbNote.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 117</value>
+  </data>
+  <data name="tbNote.Size" type="System.Drawing.Size, System.Drawing">
+    <value>534, 23</value>
+  </data>
+  <data name="tbNote.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="tbNote.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="calendarStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 153</value>
+  </data>
+  <data name="calendarStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>560, 60</value>
+  </data>
+  <data name="calendarStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="calendarStrip.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="dgvStops.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvStops.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvStops.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvStops.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cStation.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="cStation.HeaderText" xml:space="preserve">
+    <value>Stanica</value>
+  </data>
+  <data name="cStationName.Width" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
+  <data name="cStationName.HeaderText" xml:space="preserve">
+    <value>Názov stanice</value>
+  </data>
+  <data name="cArrival.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="cArrival.HeaderText" xml:space="preserve">
+    <value>Príchod</value>
+  </data>
+  <data name="cDeparture.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="cDeparture.HeaderText" xml:space="preserve">
+    <value>Odchod</value>
+  </data>
+  <data name="cPassing.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="cPassing.HeaderText" xml:space="preserve">
+    <value>Prejazd</value>
+  </data>
+  <data name="cTransfer.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="cTransfer.HeaderText" xml:space="preserve">
+    <value>Prestup</value>
+  </data>
+  <data name="cOperating.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="cOperating.HeaderText" xml:space="preserve">
+    <value>Dopr. bod</value>
+  </data>
+  <data name="cRequest.Width" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="cRequest.HeaderText" xml:space="preserve">
+    <value>Na znamenie</value>
+  </data>
+  <data name="cNumber.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="cNumber.HeaderText" xml:space="preserve">
+    <value>Číslo</value>
+  </data>
+  <data name="cDisplay.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="cDisplay.HeaderText" xml:space="preserve">
+    <value>Hlási sa</value>
+  </data>
+  <data name="cType.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="cType.HeaderText" xml:space="preserve">
+    <value>Druh</value>
+  </data>
+  <data name="cName.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="cName.HeaderText" xml:space="preserve">
+    <value>Názov</value>
+  </data>
+  <data name="cLine.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="cLine.HeaderText" xml:space="preserve">
+    <value>Linka IDS</value>
+  </data>
+  <data name="cReplacement.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="cReplacement.HeaderText" xml:space="preserve">
+    <value>Linka NAD</value>
+  </data>
+  <data name="tsStops.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsStops.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsStops.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsStops.Text" xml:space="preserve">
+    <value>tsStops</value>
+  </data>
+  <data name="tsbStopInsert.Text" xml:space="preserve">
+    <value>Vložiť bod pred vybraný</value>
+  </data>
+  <data name="tsbStopAppend.Text" xml:space="preserve">
+    <value>Pridať bod na koniec</value>
+  </data>
+  <data name="tsbStopDelete.Text" xml:space="preserve">
+    <value>Zmazať bod</value>
+  </data>
+  <data name="tslStopsHint.Text" xml:space="preserve">
+    <value>Kľúč Z a dni cez polnoc sa dopočítajú z časov a staníc grafikonu.</value>
+  </data>
+  <data name="flpPeriod.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flpPeriod.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="flpPeriod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="flpPeriod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1100, 29</value>
+  </data>
+  <data name="flpPeriod.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="flpPeriod.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="lFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 7</value>
+  </data>
+  <data name="lFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 15</value>
+  </data>
+  <data name="lFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lFrom.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lFrom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 7, 3, 0</value>
+  </data>
+  <data name="lFrom.Text" xml:space="preserve">
+    <value>Platí od:</value>
+  </data>
+  <data name="dtpFrom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 3</value>
+  </data>
+  <data name="dtpFrom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 23</value>
+  </data>
+  <data name="dtpFrom.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 7</value>
+  </data>
+  <data name="lTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>22, 15</value>
+  </data>
+  <data name="lTo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lTo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lTo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 7, 3, 0</value>
+  </data>
+  <data name="lTo.Text" xml:space="preserve">
+    <value>do:</value>
+  </data>
+  <data name="dtpTo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 3</value>
+  </data>
+  <data name="dtpTo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 23</value>
+  </data>
+  <data name="dtpTo.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="cboxNoEnd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 5</value>
+  </data>
+  <data name="cboxNoEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 19</value>
+  </data>
+  <data name="cboxNoEnd.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="cboxNoEnd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cboxNoEnd.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 5, 3, 0</value>
+  </data>
+  <data name="cboxNoEnd.Text" xml:space="preserve">
+    <value>bez konca</value>
+  </data>
+  <data name="tpStations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpStations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 562</value>
+  </data>
+  <data name="tpStations.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tpStations.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpStations.Text" xml:space="preserve">
+    <value>V staniciach</value>
+  </data>
+  <data name="tcStation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tcStation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 32</value>
+  </data>
+  <data name="tcStation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1086, 460</value>
+  </data>
+  <data name="tcStation.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tpPositions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpPositions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 480</value>
+  </data>
+  <data name="tpPositions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tpPositions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpPositions.Text" xml:space="preserve">
+    <value>Koľaje</value>
+  </data>
+  <data name="dgvPositions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvPositions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvPositions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvPositions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cPosValidity.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="cPosValidity.HeaderText" xml:space="preserve">
+    <value>Jazdí</value>
+  </data>
+  <data name="cPosArrival.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="cPosArrival.HeaderText" xml:space="preserve">
+    <value>Príchod</value>
+  </data>
+  <data name="cPosDeparture.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="cPosDeparture.HeaderText" xml:space="preserve">
+    <value>Odchod</value>
+  </data>
+  <data name="cPosTracks.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="cPosTracks.HeaderText" xml:space="preserve">
+    <value>Názvy koľají</value>
+  </data>
+  <data name="cPosDay.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="cPosDay.HeaderText" xml:space="preserve">
+    <value>Na deň</value>
+  </data>
+  <data name="tsPositions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsPositions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsPositions.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsPositions.Text" xml:space="preserve">
+    <value>tsPositions</value>
+  </data>
+  <data name="tsbPositionsAdd.Text" xml:space="preserve">
+    <value>Pridať záznam</value>
+  </data>
+  <data name="tsbPositionsDelete.Text" xml:space="preserve">
+    <value>Zmazať záznam</value>
+  </data>
+  <data name="tsbPositionsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbPositionsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="tpAdditions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpAdditions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 480</value>
+  </data>
+  <data name="tpAdditions.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tpAdditions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpAdditions.Text" xml:space="preserve">
+    <value>Dodatky</value>
+  </data>
+  <data name="dgvAdditions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvAdditions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvAdditions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvAdditions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cAddValidity.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="cAddValidity.HeaderText" xml:space="preserve">
+    <value>Jazdí</value>
+  </data>
+  <data name="cAddKey.Width" type="System.Int32, mscorlib">
+    <value>340</value>
+  </data>
+  <data name="cAddKey.HeaderText" xml:space="preserve">
+    <value>Dodatok</value>
+  </data>
+  <data name="cAddReports.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="cAddReports.HeaderText" xml:space="preserve">
+    <value>Hlásenia</value>
+  </data>
+  <data name="cAddDay.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="cAddDay.HeaderText" xml:space="preserve">
+    <value>Na deň</value>
+  </data>
+  <data name="tsAdditions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsAdditions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsAdditions.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsAdditions.Text" xml:space="preserve">
+    <value>tsAdditions</value>
+  </data>
+  <data name="tsbAdditionsAdd.Text" xml:space="preserve">
+    <value>Pridať záznam</value>
+  </data>
+  <data name="tsbAdditionsDelete.Text" xml:space="preserve">
+    <value>Zmazať záznam</value>
+  </data>
+  <data name="tsbAdditionsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbAdditionsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="tsbAdditionsNew.Text" xml:space="preserve">
+    <value>Nový dodatok v skripte hlásení...</value>
+  </data>
+  <data name="tpCompositions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpCompositions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 480</value>
+  </data>
+  <data name="tpCompositions.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tpCompositions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpCompositions.Text" xml:space="preserve">
+    <value>Radenie</value>
+  </data>
+  <data name="dgvCompositions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvCompositions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvCompositions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvCompositions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cCompValidity.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="cCompValidity.HeaderText" xml:space="preserve">
+    <value>Jazdí</value>
+  </data>
+  <data name="cCompEnd.Width" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
+  <data name="cCompEnd.HeaderText" xml:space="preserve">
+    <value>Cieľová stanica</value>
+  </data>
+  <data name="cCompReports.Width" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="cCompReports.HeaderText" xml:space="preserve">
+    <value>Hlásenia</value>
+  </data>
+  <data name="cCompSounds.Width" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
+  <data name="cCompSounds.HeaderText" xml:space="preserve">
+    <value>Zvuky</value>
+  </data>
+  <data name="cCompDay.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="cCompDay.HeaderText" xml:space="preserve">
+    <value>Na deň</value>
+  </data>
+  <data name="tsCompositions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsCompositions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsCompositions.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsCompositions.Text" xml:space="preserve">
+    <value>tsCompositions</value>
+  </data>
+  <data name="tsbCompositionsAdd.Text" xml:space="preserve">
+    <value>Pridať záznam</value>
+  </data>
+  <data name="tsbCompositionsDelete.Text" xml:space="preserve">
+    <value>Zmazať záznam</value>
+  </data>
+  <data name="tsbCompositionsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbCompositionsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="tpLanguages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpLanguages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 480</value>
+  </data>
+  <data name="tpLanguages.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tpLanguages.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpLanguages.Text" xml:space="preserve">
+    <value>Jazyky</value>
+  </data>
+  <data name="dgvLanguages.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvLanguages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvLanguages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvLanguages.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cLangValidity.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="cLangValidity.HeaderText" xml:space="preserve">
+    <value>Jazdí</value>
+  </data>
+  <data name="cLangLanguages.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="cLangLanguages.HeaderText" xml:space="preserve">
+    <value>Jazyky</value>
+  </data>
+  <data name="cLangDay.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="cLangDay.HeaderText" xml:space="preserve">
+    <value>Na deň</value>
+  </data>
+  <data name="tsLanguages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsLanguages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsLanguages.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsLanguages.Text" xml:space="preserve">
+    <value>tsLanguages</value>
+  </data>
+  <data name="tsbLanguagesAdd.Text" xml:space="preserve">
+    <value>Pridať záznam</value>
+  </data>
+  <data name="tsbLanguagesDelete.Text" xml:space="preserve">
+    <value>Zmazať záznam</value>
+  </data>
+  <data name="tsbLanguagesUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbLanguagesDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="tpReportStations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpReportStations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 480</value>
+  </data>
+  <data name="tpReportStations.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tpReportStations.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpReportStations.Text" xml:space="preserve">
+    <value>Stanice v hlásení</value>
+  </data>
+  <data name="dgvReportStations.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvReportStations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvReportStations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvReportStations.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cRepValidity.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="cRepValidity.HeaderText" xml:space="preserve">
+    <value>Jazdí</value>
+  </data>
+  <data name="cRepShortFrom.Width" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="cRepShortFrom.HeaderText" xml:space="preserve">
+    <value>Krátke zo smeru</value>
+  </data>
+  <data name="cRepLongFrom.Width" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="cRepLongFrom.HeaderText" xml:space="preserve">
+    <value>Dlhé zo smeru</value>
+  </data>
+  <data name="cRepShortTo.Width" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="cRepShortTo.HeaderText" xml:space="preserve">
+    <value>Krátke do smeru</value>
+  </data>
+  <data name="cRepLongTo.Width" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="cRepLongTo.HeaderText" xml:space="preserve">
+    <value>Dlhé do smeru</value>
+  </data>
+  <data name="cRepDay.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="cRepDay.HeaderText" xml:space="preserve">
+    <value>Na deň</value>
+  </data>
+  <data name="tsReportStations.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsReportStations.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsReportStations.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsReportStations.Text" xml:space="preserve">
+    <value>tsReportStations</value>
+  </data>
+  <data name="tsbReportStationsAdd.Text" xml:space="preserve">
+    <value>Pridať záznam</value>
+  </data>
+  <data name="tsbReportStationsDelete.Text" xml:space="preserve">
+    <value>Zmazať záznam</value>
+  </data>
+  <data name="tsbReportStationsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbReportStationsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="tpTexts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpTexts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 480</value>
+  </data>
+  <data name="tpTexts.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tpTexts.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpTexts.Text" xml:space="preserve">
+    <value>Texty tabúľ</value>
+  </data>
+  <data name="dgvTexts.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvTexts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvTexts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvTexts.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cTextSet.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="cTextSet.HeaderText" xml:space="preserve">
+    <value>Sada</value>
+  </data>
+  <data name="cTextValidity.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="cTextValidity.HeaderText" xml:space="preserve">
+    <value>Jazdí</value>
+  </data>
+  <data name="cTextText.Width" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
+  <data name="cTextText.HeaderText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="cTextFont.Width" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="cTextFont.HeaderText" xml:space="preserve">
+    <value>Písmo</value>
+  </data>
+  <data name="cTextDay.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="cTextDay.HeaderText" xml:space="preserve">
+    <value>Na deň</value>
+  </data>
+  <data name="tsTexts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsTexts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsTexts.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsTexts.Text" xml:space="preserve">
+    <value>tsTexts</value>
+  </data>
+  <data name="tsbTextsAdd.Text" xml:space="preserve">
+    <value>Pridať záznam</value>
+  </data>
+  <data name="tsbTextsDelete.Text" xml:space="preserve">
+    <value>Zmazať záznam</value>
+  </data>
+  <data name="tsbTextsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbTextsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="tpMos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpMos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 480</value>
+  </data>
+  <data name="tpMos.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="tpMos.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpMos.Text" xml:space="preserve">
+    <value>MOs</value>
+  </data>
+  <data name="dgvMos.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvMos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvMos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvMos.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cMosValidity.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="cMosValidity.HeaderText" xml:space="preserve">
+    <value>Jazdí</value>
+  </data>
+  <data name="tsMos.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsMos.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsMos.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsMos.Text" xml:space="preserve">
+    <value>tsMos</value>
+  </data>
+  <data name="tsbMosAdd.Text" xml:space="preserve">
+    <value>Pridať záznam</value>
+  </data>
+  <data name="tsbMosDelete.Text" xml:space="preserve">
+    <value>Zmazať záznam</value>
+  </data>
+  <data name="tsbMosUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbMosDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="flpStation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flpStation.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="flpStation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="flpStation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1086, 29</value>
+  </data>
+  <data name="flpStation.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lStation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 7</value>
+  </data>
+  <data name="lStation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 15</value>
+  </data>
+  <data name="lStation.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lStation.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lStation.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 7, 3, 0</value>
+  </data>
+  <data name="lStation.Text" xml:space="preserve">
+    <value>Stanica:</value>
+  </data>
+  <data name="cboStation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 3</value>
+  </data>
+  <data name="cboStation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>320, 23</value>
+  </data>
+  <data name="cboStation.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lStationInfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 7</value>
+  </data>
+  <data name="lStationInfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 15</value>
+  </data>
+  <data name="lStationInfo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lStationInfo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lStationInfo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 7, 3, 0</value>
+  </data>
+  <data name="lStationInfo.Text" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="tpNotices.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 24</value>
+  </data>
+  <data name="tpNotices.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1092, 562</value>
+  </data>
+  <data name="tpNotices.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tpNotices.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpNotices.Text" xml:space="preserve">
+    <value>Výluky a odklony</value>
+  </data>
+  <data name="splitNotices.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="splitNotices.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="splitNotices.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1100, 560</value>
+  </data>
+  <data name="splitNotices.SplitterDistance" type="System.Int32, mscorlib">
+    <value>240</value>
+  </data>
+  <data name="splitNotices.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="splitNotices.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;splitNotices.Panel1.Name" xml:space="preserve">
+    <value>splitNotices.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitNotices.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitNotices.Panel1.Parent" xml:space="preserve">
+    <value>splitNotices</value>
+  </data>
+  <data name="&gt;&gt;splitNotices.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitNotices.Panel2.Name" xml:space="preserve">
+    <value>splitNotices.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitNotices.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitNotices.Panel2.Parent" xml:space="preserve">
+    <value>splitNotices</value>
+  </data>
+  <data name="&gt;&gt;splitNotices.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dgvLockouts.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvLockouts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvLockouts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvLockouts.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cLockValidity.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="cLockValidity.HeaderText" xml:space="preserve">
+    <value>Jazdí</value>
+  </data>
+  <data name="cLockKey.Width" type="System.Int32, mscorlib">
+    <value>340</value>
+  </data>
+  <data name="cLockKey.HeaderText" xml:space="preserve">
+    <value>Výluka</value>
+  </data>
+  <data name="cLockFrom.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="cLockFrom.HeaderText" xml:space="preserve">
+    <value>Od</value>
+  </data>
+  <data name="cLockTo.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="cLockTo.HeaderText" xml:space="preserve">
+    <value>Do</value>
+  </data>
+  <data name="cLockDay.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="cLockDay.HeaderText" xml:space="preserve">
+    <value>Na deň</value>
+  </data>
+  <data name="tsLockouts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsLockouts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsLockouts.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsLockouts.Text" xml:space="preserve">
+    <value>tsLockouts</value>
+  </data>
+  <data name="tsbLockoutsAdd.Text" xml:space="preserve">
+    <value>Pridať záznam</value>
+  </data>
+  <data name="tsbLockoutsDelete.Text" xml:space="preserve">
+    <value>Zmazať záznam</value>
+  </data>
+  <data name="tsbLockoutsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbLockoutsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lLockouts.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lLockouts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lLockouts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1086, 24</value>
+  </data>
+  <data name="lLockouts.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lLockouts.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lLockouts.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lLockouts.Text" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="dgvDiversions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dgvDiversions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="dgvDiversions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 200</value>
+  </data>
+  <data name="dgvDiversions.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cDivStation.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="cDivStation.HeaderText" xml:space="preserve">
+    <value>Stanica</value>
+  </data>
+  <data name="cDivValidity.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="cDivValidity.HeaderText" xml:space="preserve">
+    <value>Jazdí</value>
+  </data>
+  <data name="cDivKey.Width" type="System.Int32, mscorlib">
+    <value>320</value>
+  </data>
+  <data name="cDivKey.HeaderText" xml:space="preserve">
+    <value>Odklon</value>
+  </data>
+  <data name="cDivFrom.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="cDivFrom.HeaderText" xml:space="preserve">
+    <value>Od</value>
+  </data>
+  <data name="cDivTo.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="cDivTo.HeaderText" xml:space="preserve">
+    <value>Do</value>
+  </data>
+  <data name="cDivDay.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="cDivDay.HeaderText" xml:space="preserve">
+    <value>Na deň</value>
+  </data>
+  <data name="tsDiversions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tsDiversions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>500, 27</value>
+  </data>
+  <data name="tsDiversions.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tsDiversions.Text" xml:space="preserve">
+    <value>tsDiversions</value>
+  </data>
+  <data name="tsbDiversionsAdd.Text" xml:space="preserve">
+    <value>Pridať záznam</value>
+  </data>
+  <data name="tsbDiversionsDelete.Text" xml:space="preserve">
+    <value>Zmazať záznam</value>
+  </data>
+  <data name="tsbDiversionsUp.Text" xml:space="preserve">
+    <value>Posunúť vyššie</value>
+  </data>
+  <data name="tsbDiversionsDown.Text" xml:space="preserve">
+    <value>Posunúť nižšie</value>
+  </data>
+  <data name="lDiversions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="lDiversions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lDiversions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1086, 24</value>
+  </data>
+  <data name="lDiversions.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lDiversions.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="lDiversions.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 0, 0</value>
+  </data>
+  <data name="lDiversions.Text" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="lbProblems.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="lbProblems.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 590</value>
+  </data>
+  <data name="lbProblems.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1100, 80</value>
+  </data>
+  <data name="lbProblems.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="flpButtons.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flpButtons.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="flpButtons.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 670</value>
+  </data>
+  <data name="flpButtons.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1100, 39</value>
+  </data>
+  <data name="flpButtons.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="flpButtons.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="bCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1009, 6</value>
+  </data>
+  <data name="bCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 27</value>
+  </data>
+  <data name="bCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="bCancel.Text" xml:space="preserve">
+    <value>Zrušiť</value>
+  </data>
+  <data name="bOk.Location" type="System.Drawing.Point, System.Drawing">
+    <value>915, 6</value>
+  </data>
+  <data name="bOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 27</value>
+  </data>
+  <data name="bOk.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="bOk.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Upraviť vlak</value>
+  </data>
+  <data name="&gt;&gt;tcMain.Name" xml:space="preserve">
+    <value>tcMain</value>
+  </data>
+  <data name="&gt;&gt;tcMain.Type" xml:space="preserve">
+    <value>ExControls.ExTabControl, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tcMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tcMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tpTrain.Name" xml:space="preserve">
+    <value>tpTrain</value>
+  </data>
+  <data name="&gt;&gt;tpTrain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpTrain.Parent" xml:space="preserve">
+    <value>tcMain</value>
+  </data>
+  <data name="&gt;&gt;tpTrain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Name" xml:space="preserve">
+    <value>splitMain</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitMain.Parent" xml:space="preserve">
+    <value>tpTrain</value>
+  </data>
+  <data name="&gt;&gt;splitMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitVariants.Name" xml:space="preserve">
+    <value>splitVariants</value>
+  </data>
+  <data name="&gt;&gt;splitVariants.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitVariants.Parent" xml:space="preserve">
+    <value>splitMain.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitVariants.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvVariants.Name" xml:space="preserve">
+    <value>dgvVariants</value>
+  </data>
+  <data name="&gt;&gt;dgvVariants.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvVariants.Parent" xml:space="preserve">
+    <value>splitVariants.Panel1</value>
+  </data>
+  <data name="&gt;&gt;dgvVariants.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cVarIndex.Name" xml:space="preserve">
+    <value>cVarIndex</value>
+  </data>
+  <data name="&gt;&gt;cVarIndex.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cVarValidity.Name" xml:space="preserve">
+    <value>cVarValidity</value>
+  </data>
+  <data name="&gt;&gt;cVarValidity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cVarDays.Name" xml:space="preserve">
+    <value>cVarDays</value>
+  </data>
+  <data name="&gt;&gt;cVarDays.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsVariants.Name" xml:space="preserve">
+    <value>tsVariants</value>
+  </data>
+  <data name="&gt;&gt;tsVariants.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsVariants.Parent" xml:space="preserve">
+    <value>splitVariants.Panel1</value>
+  </data>
+  <data name="&gt;&gt;tsVariants.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbVarAdd.Name" xml:space="preserve">
+    <value>tsbVarAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbVarAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbVarCopy.Name" xml:space="preserve">
+    <value>tsbVarCopy</value>
+  </data>
+  <data name="&gt;&gt;tsbVarCopy.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbVarDelete.Name" xml:space="preserve">
+    <value>tsbVarDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbVarDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssVar1.Name" xml:space="preserve">
+    <value>tssVar1</value>
+  </data>
+  <data name="&gt;&gt;tssVar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbVarUp.Name" xml:space="preserve">
+    <value>tsbVarUp</value>
+  </data>
+  <data name="&gt;&gt;tsbVarUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbVarDown.Name" xml:space="preserve">
+    <value>tsbVarDown</value>
+  </data>
+  <data name="&gt;&gt;tsbVarDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pVariant.Name" xml:space="preserve">
+    <value>pVariant</value>
+  </data>
+  <data name="&gt;&gt;pVariant.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pVariant.Parent" xml:space="preserve">
+    <value>splitVariants.Panel2</value>
+  </data>
+  <data name="&gt;&gt;pVariant.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lValidity.Name" xml:space="preserve">
+    <value>lValidity</value>
+  </data>
+  <data name="&gt;&gt;lValidity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lValidity.Parent" xml:space="preserve">
+    <value>pVariant</value>
+  </data>
+  <data name="&gt;&gt;lValidity.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tbValidity.Name" xml:space="preserve">
+    <value>tbValidity</value>
+  </data>
+  <data name="&gt;&gt;tbValidity.Type" xml:space="preserve">
+    <value>ExControls.ExTextBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbValidity.Parent" xml:space="preserve">
+    <value>pVariant</value>
+  </data>
+  <data name="&gt;&gt;tbValidity.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bValidity.Name" xml:space="preserve">
+    <value>bValidity</value>
+  </data>
+  <data name="&gt;&gt;bValidity.Type" xml:space="preserve">
+    <value>ExControls.ExButton, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bValidity.Parent" xml:space="preserve">
+    <value>pVariant</value>
+  </data>
+  <data name="&gt;&gt;bValidity.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lOperator.Name" xml:space="preserve">
+    <value>lOperator</value>
+  </data>
+  <data name="&gt;&gt;lOperator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lOperator.Parent" xml:space="preserve">
+    <value>pVariant</value>
+  </data>
+  <data name="&gt;&gt;lOperator.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;tbOperator.Name" xml:space="preserve">
+    <value>tbOperator</value>
+  </data>
+  <data name="&gt;&gt;tbOperator.Type" xml:space="preserve">
+    <value>ExControls.ExTextBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbOperator.Parent" xml:space="preserve">
+    <value>pVariant</value>
+  </data>
+  <data name="&gt;&gt;tbOperator.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lFlags.Name" xml:space="preserve">
+    <value>lFlags</value>
+  </data>
+  <data name="&gt;&gt;lFlags.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lFlags.Parent" xml:space="preserve">
+    <value>pVariant</value>
+  </data>
+  <data name="&gt;&gt;lFlags.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;flpFlags.Name" xml:space="preserve">
+    <value>flpFlags</value>
+  </data>
+  <data name="&gt;&gt;flpFlags.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flpFlags.Parent" xml:space="preserve">
+    <value>pVariant</value>
+  </data>
+  <data name="&gt;&gt;flpFlags.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagD.Name" xml:space="preserve">
+    <value>cboxFlagD</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagD.Type" xml:space="preserve">
+    <value>ExControls.ExCheckBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagD.Parent" xml:space="preserve">
+    <value>flpFlags</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagD.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagX.Name" xml:space="preserve">
+    <value>cboxFlagX</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagX.Type" xml:space="preserve">
+    <value>ExControls.ExCheckBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagX.Parent" xml:space="preserve">
+    <value>flpFlags</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagX.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagN.Name" xml:space="preserve">
+    <value>cboxFlagN</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagN.Type" xml:space="preserve">
+    <value>ExControls.ExCheckBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagN.Parent" xml:space="preserve">
+    <value>flpFlags</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagN.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagNP.Name" xml:space="preserve">
+    <value>cboxFlagNP</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagNP.Type" xml:space="preserve">
+    <value>ExControls.ExCheckBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagNP.Parent" xml:space="preserve">
+    <value>flpFlags</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagNP.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagO.Name" xml:space="preserve">
+    <value>cboxFlagO</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagO.Type" xml:space="preserve">
+    <value>ExControls.ExCheckBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagO.Parent" xml:space="preserve">
+    <value>flpFlags</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagO.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagM.Name" xml:space="preserve">
+    <value>cboxFlagM</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagM.Type" xml:space="preserve">
+    <value>ExControls.ExCheckBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagM.Parent" xml:space="preserve">
+    <value>flpFlags</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagM.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagR.Name" xml:space="preserve">
+    <value>cboxFlagR</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagR.Type" xml:space="preserve">
+    <value>ExControls.ExCheckBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagR.Parent" xml:space="preserve">
+    <value>flpFlags</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagR.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagL.Name" xml:space="preserve">
+    <value>cboxFlagL</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagL.Type" xml:space="preserve">
+    <value>ExControls.ExCheckBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagL.Parent" xml:space="preserve">
+    <value>flpFlags</value>
+  </data>
+  <data name="&gt;&gt;cboxFlagL.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lNote.Name" xml:space="preserve">
+    <value>lNote</value>
+  </data>
+  <data name="&gt;&gt;lNote.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lNote.Parent" xml:space="preserve">
+    <value>pVariant</value>
+  </data>
+  <data name="&gt;&gt;lNote.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;tbNote.Name" xml:space="preserve">
+    <value>tbNote</value>
+  </data>
+  <data name="&gt;&gt;tbNote.Type" xml:space="preserve">
+    <value>ExControls.ExTextBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tbNote.Parent" xml:space="preserve">
+    <value>pVariant</value>
+  </data>
+  <data name="&gt;&gt;tbNote.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;calendarStrip.Name" xml:space="preserve">
+    <value>calendarStrip</value>
+  </data>
+  <data name="&gt;&gt;calendarStrip.Type" xml:space="preserve">
+    <value>ToolsCore.Forms.Calendar.CalendarStrip, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;calendarStrip.Parent" xml:space="preserve">
+    <value>pVariant</value>
+  </data>
+  <data name="&gt;&gt;calendarStrip.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;dgvStops.Name" xml:space="preserve">
+    <value>dgvStops</value>
+  </data>
+  <data name="&gt;&gt;dgvStops.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvStops.Parent" xml:space="preserve">
+    <value>splitMain.Panel2</value>
+  </data>
+  <data name="&gt;&gt;dgvStops.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cStation.Name" xml:space="preserve">
+    <value>cStation</value>
+  </data>
+  <data name="&gt;&gt;cStation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cStationName.Name" xml:space="preserve">
+    <value>cStationName</value>
+  </data>
+  <data name="&gt;&gt;cStationName.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cArrival.Name" xml:space="preserve">
+    <value>cArrival</value>
+  </data>
+  <data name="&gt;&gt;cArrival.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cDeparture.Name" xml:space="preserve">
+    <value>cDeparture</value>
+  </data>
+  <data name="&gt;&gt;cDeparture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cPassing.Name" xml:space="preserve">
+    <value>cPassing</value>
+  </data>
+  <data name="&gt;&gt;cPassing.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTransfer.Name" xml:space="preserve">
+    <value>cTransfer</value>
+  </data>
+  <data name="&gt;&gt;cTransfer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cOperating.Name" xml:space="preserve">
+    <value>cOperating</value>
+  </data>
+  <data name="&gt;&gt;cOperating.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cRequest.Name" xml:space="preserve">
+    <value>cRequest</value>
+  </data>
+  <data name="&gt;&gt;cRequest.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cNumber.Name" xml:space="preserve">
+    <value>cNumber</value>
+  </data>
+  <data name="&gt;&gt;cNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cDisplay.Name" xml:space="preserve">
+    <value>cDisplay</value>
+  </data>
+  <data name="&gt;&gt;cDisplay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cType.Name" xml:space="preserve">
+    <value>cType</value>
+  </data>
+  <data name="&gt;&gt;cType.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cName.Name" xml:space="preserve">
+    <value>cName</value>
+  </data>
+  <data name="&gt;&gt;cName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cLine.Name" xml:space="preserve">
+    <value>cLine</value>
+  </data>
+  <data name="&gt;&gt;cLine.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cReplacement.Name" xml:space="preserve">
+    <value>cReplacement</value>
+  </data>
+  <data name="&gt;&gt;cReplacement.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsStops.Name" xml:space="preserve">
+    <value>tsStops</value>
+  </data>
+  <data name="&gt;&gt;tsStops.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsStops.Parent" xml:space="preserve">
+    <value>splitMain.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tsStops.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbStopInsert.Name" xml:space="preserve">
+    <value>tsbStopInsert</value>
+  </data>
+  <data name="&gt;&gt;tsbStopInsert.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbStopAppend.Name" xml:space="preserve">
+    <value>tsbStopAppend</value>
+  </data>
+  <data name="&gt;&gt;tsbStopAppend.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbStopDelete.Name" xml:space="preserve">
+    <value>tsbStopDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbStopDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssStop1.Name" xml:space="preserve">
+    <value>tssStop1</value>
+  </data>
+  <data name="&gt;&gt;tssStop1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tslStopsHint.Name" xml:space="preserve">
+    <value>tslStopsHint</value>
+  </data>
+  <data name="&gt;&gt;tslStopsHint.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flpPeriod.Name" xml:space="preserve">
+    <value>flpPeriod</value>
+  </data>
+  <data name="&gt;&gt;flpPeriod.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flpPeriod.Parent" xml:space="preserve">
+    <value>tpTrain</value>
+  </data>
+  <data name="&gt;&gt;flpPeriod.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lFrom.Name" xml:space="preserve">
+    <value>lFrom</value>
+  </data>
+  <data name="&gt;&gt;lFrom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lFrom.Parent" xml:space="preserve">
+    <value>flpPeriod</value>
+  </data>
+  <data name="&gt;&gt;lFrom.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dtpFrom.Name" xml:space="preserve">
+    <value>dtpFrom</value>
+  </data>
+  <data name="&gt;&gt;dtpFrom.Type" xml:space="preserve">
+    <value>ExControls.ExDateTimePicker, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dtpFrom.Parent" xml:space="preserve">
+    <value>flpPeriod</value>
+  </data>
+  <data name="&gt;&gt;dtpFrom.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lTo.Name" xml:space="preserve">
+    <value>lTo</value>
+  </data>
+  <data name="&gt;&gt;lTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lTo.Parent" xml:space="preserve">
+    <value>flpPeriod</value>
+  </data>
+  <data name="&gt;&gt;lTo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dtpTo.Name" xml:space="preserve">
+    <value>dtpTo</value>
+  </data>
+  <data name="&gt;&gt;dtpTo.Type" xml:space="preserve">
+    <value>ExControls.ExDateTimePicker, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dtpTo.Parent" xml:space="preserve">
+    <value>flpPeriod</value>
+  </data>
+  <data name="&gt;&gt;dtpTo.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cboxNoEnd.Name" xml:space="preserve">
+    <value>cboxNoEnd</value>
+  </data>
+  <data name="&gt;&gt;cboxNoEnd.Type" xml:space="preserve">
+    <value>ExControls.ExCheckBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboxNoEnd.Parent" xml:space="preserve">
+    <value>flpPeriod</value>
+  </data>
+  <data name="&gt;&gt;cboxNoEnd.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;tpStations.Name" xml:space="preserve">
+    <value>tpStations</value>
+  </data>
+  <data name="&gt;&gt;tpStations.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpStations.Parent" xml:space="preserve">
+    <value>tcMain</value>
+  </data>
+  <data name="&gt;&gt;tpStations.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tcStation.Name" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tcStation.Type" xml:space="preserve">
+    <value>ExControls.ExTabControl, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tcStation.Parent" xml:space="preserve">
+    <value>tpStations</value>
+  </data>
+  <data name="&gt;&gt;tcStation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tpPositions.Name" xml:space="preserve">
+    <value>tpPositions</value>
+  </data>
+  <data name="&gt;&gt;tpPositions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpPositions.Parent" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tpPositions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvPositions.Name" xml:space="preserve">
+    <value>dgvPositions</value>
+  </data>
+  <data name="&gt;&gt;dgvPositions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvPositions.Parent" xml:space="preserve">
+    <value>tpPositions</value>
+  </data>
+  <data name="&gt;&gt;dgvPositions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cPosValidity.Name" xml:space="preserve">
+    <value>cPosValidity</value>
+  </data>
+  <data name="&gt;&gt;cPosValidity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cPosArrival.Name" xml:space="preserve">
+    <value>cPosArrival</value>
+  </data>
+  <data name="&gt;&gt;cPosArrival.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cPosDeparture.Name" xml:space="preserve">
+    <value>cPosDeparture</value>
+  </data>
+  <data name="&gt;&gt;cPosDeparture.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cPosTracks.Name" xml:space="preserve">
+    <value>cPosTracks</value>
+  </data>
+  <data name="&gt;&gt;cPosTracks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cPosDay.Name" xml:space="preserve">
+    <value>cPosDay</value>
+  </data>
+  <data name="&gt;&gt;cPosDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsPositions.Name" xml:space="preserve">
+    <value>tsPositions</value>
+  </data>
+  <data name="&gt;&gt;tsPositions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsPositions.Parent" xml:space="preserve">
+    <value>tpPositions</value>
+  </data>
+  <data name="&gt;&gt;tsPositions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbPositionsAdd.Name" xml:space="preserve">
+    <value>tsbPositionsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbPositionsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbPositionsDelete.Name" xml:space="preserve">
+    <value>tsbPositionsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbPositionsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssPositions1.Name" xml:space="preserve">
+    <value>tssPositions1</value>
+  </data>
+  <data name="&gt;&gt;tssPositions1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbPositionsUp.Name" xml:space="preserve">
+    <value>tsbPositionsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbPositionsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbPositionsDown.Name" xml:space="preserve">
+    <value>tsbPositionsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbPositionsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tpAdditions.Name" xml:space="preserve">
+    <value>tpAdditions</value>
+  </data>
+  <data name="&gt;&gt;tpAdditions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpAdditions.Parent" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tpAdditions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dgvAdditions.Name" xml:space="preserve">
+    <value>dgvAdditions</value>
+  </data>
+  <data name="&gt;&gt;dgvAdditions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvAdditions.Parent" xml:space="preserve">
+    <value>tpAdditions</value>
+  </data>
+  <data name="&gt;&gt;dgvAdditions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cAddValidity.Name" xml:space="preserve">
+    <value>cAddValidity</value>
+  </data>
+  <data name="&gt;&gt;cAddValidity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cAddKey.Name" xml:space="preserve">
+    <value>cAddKey</value>
+  </data>
+  <data name="&gt;&gt;cAddKey.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cAddReports.Name" xml:space="preserve">
+    <value>cAddReports</value>
+  </data>
+  <data name="&gt;&gt;cAddReports.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cAddDay.Name" xml:space="preserve">
+    <value>cAddDay</value>
+  </data>
+  <data name="&gt;&gt;cAddDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsAdditions.Name" xml:space="preserve">
+    <value>tsAdditions</value>
+  </data>
+  <data name="&gt;&gt;tsAdditions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsAdditions.Parent" xml:space="preserve">
+    <value>tpAdditions</value>
+  </data>
+  <data name="&gt;&gt;tsAdditions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbAdditionsAdd.Name" xml:space="preserve">
+    <value>tsbAdditionsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbAdditionsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbAdditionsDelete.Name" xml:space="preserve">
+    <value>tsbAdditionsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbAdditionsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssAdditions1.Name" xml:space="preserve">
+    <value>tssAdditions1</value>
+  </data>
+  <data name="&gt;&gt;tssAdditions1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbAdditionsUp.Name" xml:space="preserve">
+    <value>tsbAdditionsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbAdditionsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbAdditionsDown.Name" xml:space="preserve">
+    <value>tsbAdditionsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbAdditionsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssAdditions2.Name" xml:space="preserve">
+    <value>tssAdditions2</value>
+  </data>
+  <data name="&gt;&gt;tssAdditions2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbAdditionsNew.Name" xml:space="preserve">
+    <value>tsbAdditionsNew</value>
+  </data>
+  <data name="&gt;&gt;tsbAdditionsNew.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tpCompositions.Name" xml:space="preserve">
+    <value>tpCompositions</value>
+  </data>
+  <data name="&gt;&gt;tpCompositions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpCompositions.Parent" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tpCompositions.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dgvCompositions.Name" xml:space="preserve">
+    <value>dgvCompositions</value>
+  </data>
+  <data name="&gt;&gt;dgvCompositions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvCompositions.Parent" xml:space="preserve">
+    <value>tpCompositions</value>
+  </data>
+  <data name="&gt;&gt;dgvCompositions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cCompValidity.Name" xml:space="preserve">
+    <value>cCompValidity</value>
+  </data>
+  <data name="&gt;&gt;cCompValidity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cCompEnd.Name" xml:space="preserve">
+    <value>cCompEnd</value>
+  </data>
+  <data name="&gt;&gt;cCompEnd.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cCompReports.Name" xml:space="preserve">
+    <value>cCompReports</value>
+  </data>
+  <data name="&gt;&gt;cCompReports.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cCompSounds.Name" xml:space="preserve">
+    <value>cCompSounds</value>
+  </data>
+  <data name="&gt;&gt;cCompSounds.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cCompDay.Name" xml:space="preserve">
+    <value>cCompDay</value>
+  </data>
+  <data name="&gt;&gt;cCompDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsCompositions.Name" xml:space="preserve">
+    <value>tsCompositions</value>
+  </data>
+  <data name="&gt;&gt;tsCompositions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsCompositions.Parent" xml:space="preserve">
+    <value>tpCompositions</value>
+  </data>
+  <data name="&gt;&gt;tsCompositions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbCompositionsAdd.Name" xml:space="preserve">
+    <value>tsbCompositionsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbCompositionsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbCompositionsDelete.Name" xml:space="preserve">
+    <value>tsbCompositionsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbCompositionsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssCompositions1.Name" xml:space="preserve">
+    <value>tssCompositions1</value>
+  </data>
+  <data name="&gt;&gt;tssCompositions1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbCompositionsUp.Name" xml:space="preserve">
+    <value>tsbCompositionsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbCompositionsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbCompositionsDown.Name" xml:space="preserve">
+    <value>tsbCompositionsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbCompositionsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tpLanguages.Name" xml:space="preserve">
+    <value>tpLanguages</value>
+  </data>
+  <data name="&gt;&gt;tpLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpLanguages.Parent" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tpLanguages.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dgvLanguages.Name" xml:space="preserve">
+    <value>dgvLanguages</value>
+  </data>
+  <data name="&gt;&gt;dgvLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvLanguages.Parent" xml:space="preserve">
+    <value>tpLanguages</value>
+  </data>
+  <data name="&gt;&gt;dgvLanguages.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cLangValidity.Name" xml:space="preserve">
+    <value>cLangValidity</value>
+  </data>
+  <data name="&gt;&gt;cLangValidity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cLangLanguages.Name" xml:space="preserve">
+    <value>cLangLanguages</value>
+  </data>
+  <data name="&gt;&gt;cLangLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cLangDay.Name" xml:space="preserve">
+    <value>cLangDay</value>
+  </data>
+  <data name="&gt;&gt;cLangDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsLanguages.Name" xml:space="preserve">
+    <value>tsLanguages</value>
+  </data>
+  <data name="&gt;&gt;tsLanguages.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsLanguages.Parent" xml:space="preserve">
+    <value>tpLanguages</value>
+  </data>
+  <data name="&gt;&gt;tsLanguages.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbLanguagesAdd.Name" xml:space="preserve">
+    <value>tsbLanguagesAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbLanguagesAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbLanguagesDelete.Name" xml:space="preserve">
+    <value>tsbLanguagesDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbLanguagesDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssLanguages1.Name" xml:space="preserve">
+    <value>tssLanguages1</value>
+  </data>
+  <data name="&gt;&gt;tssLanguages1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbLanguagesUp.Name" xml:space="preserve">
+    <value>tsbLanguagesUp</value>
+  </data>
+  <data name="&gt;&gt;tsbLanguagesUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbLanguagesDown.Name" xml:space="preserve">
+    <value>tsbLanguagesDown</value>
+  </data>
+  <data name="&gt;&gt;tsbLanguagesDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tpReportStations.Name" xml:space="preserve">
+    <value>tpReportStations</value>
+  </data>
+  <data name="&gt;&gt;tpReportStations.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpReportStations.Parent" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tpReportStations.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dgvReportStations.Name" xml:space="preserve">
+    <value>dgvReportStations</value>
+  </data>
+  <data name="&gt;&gt;dgvReportStations.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvReportStations.Parent" xml:space="preserve">
+    <value>tpReportStations</value>
+  </data>
+  <data name="&gt;&gt;dgvReportStations.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cRepValidity.Name" xml:space="preserve">
+    <value>cRepValidity</value>
+  </data>
+  <data name="&gt;&gt;cRepValidity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cRepShortFrom.Name" xml:space="preserve">
+    <value>cRepShortFrom</value>
+  </data>
+  <data name="&gt;&gt;cRepShortFrom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cRepLongFrom.Name" xml:space="preserve">
+    <value>cRepLongFrom</value>
+  </data>
+  <data name="&gt;&gt;cRepLongFrom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cRepShortTo.Name" xml:space="preserve">
+    <value>cRepShortTo</value>
+  </data>
+  <data name="&gt;&gt;cRepShortTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cRepLongTo.Name" xml:space="preserve">
+    <value>cRepLongTo</value>
+  </data>
+  <data name="&gt;&gt;cRepLongTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cRepDay.Name" xml:space="preserve">
+    <value>cRepDay</value>
+  </data>
+  <data name="&gt;&gt;cRepDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsReportStations.Name" xml:space="preserve">
+    <value>tsReportStations</value>
+  </data>
+  <data name="&gt;&gt;tsReportStations.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsReportStations.Parent" xml:space="preserve">
+    <value>tpReportStations</value>
+  </data>
+  <data name="&gt;&gt;tsReportStations.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbReportStationsAdd.Name" xml:space="preserve">
+    <value>tsbReportStationsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbReportStationsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbReportStationsDelete.Name" xml:space="preserve">
+    <value>tsbReportStationsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbReportStationsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssReportStations1.Name" xml:space="preserve">
+    <value>tssReportStations1</value>
+  </data>
+  <data name="&gt;&gt;tssReportStations1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbReportStationsUp.Name" xml:space="preserve">
+    <value>tsbReportStationsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbReportStationsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbReportStationsDown.Name" xml:space="preserve">
+    <value>tsbReportStationsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbReportStationsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tpTexts.Name" xml:space="preserve">
+    <value>tpTexts</value>
+  </data>
+  <data name="&gt;&gt;tpTexts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpTexts.Parent" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tpTexts.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;dgvTexts.Name" xml:space="preserve">
+    <value>dgvTexts</value>
+  </data>
+  <data name="&gt;&gt;dgvTexts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvTexts.Parent" xml:space="preserve">
+    <value>tpTexts</value>
+  </data>
+  <data name="&gt;&gt;dgvTexts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cTextSet.Name" xml:space="preserve">
+    <value>cTextSet</value>
+  </data>
+  <data name="&gt;&gt;cTextSet.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cTextValidity.Name" xml:space="preserve">
+    <value>cTextValidity</value>
+  </data>
+  <data name="&gt;&gt;cTextValidity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTextText.Name" xml:space="preserve">
+    <value>cTextText</value>
+  </data>
+  <data name="&gt;&gt;cTextText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTextFont.Name" xml:space="preserve">
+    <value>cTextFont</value>
+  </data>
+  <data name="&gt;&gt;cTextFont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cTextDay.Name" xml:space="preserve">
+    <value>cTextDay</value>
+  </data>
+  <data name="&gt;&gt;cTextDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsTexts.Name" xml:space="preserve">
+    <value>tsTexts</value>
+  </data>
+  <data name="&gt;&gt;tsTexts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsTexts.Parent" xml:space="preserve">
+    <value>tpTexts</value>
+  </data>
+  <data name="&gt;&gt;tsTexts.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbTextsAdd.Name" xml:space="preserve">
+    <value>tsbTextsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbTextsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbTextsDelete.Name" xml:space="preserve">
+    <value>tsbTextsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbTextsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssTexts1.Name" xml:space="preserve">
+    <value>tssTexts1</value>
+  </data>
+  <data name="&gt;&gt;tssTexts1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbTextsUp.Name" xml:space="preserve">
+    <value>tsbTextsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbTextsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbTextsDown.Name" xml:space="preserve">
+    <value>tsbTextsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbTextsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tpMos.Name" xml:space="preserve">
+    <value>tpMos</value>
+  </data>
+  <data name="&gt;&gt;tpMos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpMos.Parent" xml:space="preserve">
+    <value>tcStation</value>
+  </data>
+  <data name="&gt;&gt;tpMos.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;dgvMos.Name" xml:space="preserve">
+    <value>dgvMos</value>
+  </data>
+  <data name="&gt;&gt;dgvMos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvMos.Parent" xml:space="preserve">
+    <value>tpMos</value>
+  </data>
+  <data name="&gt;&gt;dgvMos.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cMosValidity.Name" xml:space="preserve">
+    <value>cMosValidity</value>
+  </data>
+  <data name="&gt;&gt;cMosValidity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsMos.Name" xml:space="preserve">
+    <value>tsMos</value>
+  </data>
+  <data name="&gt;&gt;tsMos.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsMos.Parent" xml:space="preserve">
+    <value>tpMos</value>
+  </data>
+  <data name="&gt;&gt;tsMos.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbMosAdd.Name" xml:space="preserve">
+    <value>tsbMosAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbMosAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbMosDelete.Name" xml:space="preserve">
+    <value>tsbMosDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbMosDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssMos1.Name" xml:space="preserve">
+    <value>tssMos1</value>
+  </data>
+  <data name="&gt;&gt;tssMos1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbMosUp.Name" xml:space="preserve">
+    <value>tsbMosUp</value>
+  </data>
+  <data name="&gt;&gt;tsbMosUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbMosDown.Name" xml:space="preserve">
+    <value>tsbMosDown</value>
+  </data>
+  <data name="&gt;&gt;tsbMosDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;flpStation.Name" xml:space="preserve">
+    <value>flpStation</value>
+  </data>
+  <data name="&gt;&gt;flpStation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flpStation.Parent" xml:space="preserve">
+    <value>tpStations</value>
+  </data>
+  <data name="&gt;&gt;flpStation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lStation.Name" xml:space="preserve">
+    <value>lStation</value>
+  </data>
+  <data name="&gt;&gt;lStation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lStation.Parent" xml:space="preserve">
+    <value>flpStation</value>
+  </data>
+  <data name="&gt;&gt;lStation.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cboStation.Name" xml:space="preserve">
+    <value>cboStation</value>
+  </data>
+  <data name="&gt;&gt;cboStation.Type" xml:space="preserve">
+    <value>ExControls.ExComboBox, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cboStation.Parent" xml:space="preserve">
+    <value>flpStation</value>
+  </data>
+  <data name="&gt;&gt;cboStation.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lStationInfo.Name" xml:space="preserve">
+    <value>lStationInfo</value>
+  </data>
+  <data name="&gt;&gt;lStationInfo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lStationInfo.Parent" xml:space="preserve">
+    <value>flpStation</value>
+  </data>
+  <data name="&gt;&gt;lStationInfo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tpNotices.Name" xml:space="preserve">
+    <value>tpNotices</value>
+  </data>
+  <data name="&gt;&gt;tpNotices.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpNotices.Parent" xml:space="preserve">
+    <value>tcMain</value>
+  </data>
+  <data name="&gt;&gt;tpNotices.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;splitNotices.Name" xml:space="preserve">
+    <value>splitNotices</value>
+  </data>
+  <data name="&gt;&gt;splitNotices.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitNotices.Parent" xml:space="preserve">
+    <value>tpNotices</value>
+  </data>
+  <data name="&gt;&gt;splitNotices.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dgvLockouts.Name" xml:space="preserve">
+    <value>dgvLockouts</value>
+  </data>
+  <data name="&gt;&gt;dgvLockouts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvLockouts.Parent" xml:space="preserve">
+    <value>splitNotices.Panel1</value>
+  </data>
+  <data name="&gt;&gt;dgvLockouts.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cLockValidity.Name" xml:space="preserve">
+    <value>cLockValidity</value>
+  </data>
+  <data name="&gt;&gt;cLockValidity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cLockKey.Name" xml:space="preserve">
+    <value>cLockKey</value>
+  </data>
+  <data name="&gt;&gt;cLockKey.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cLockFrom.Name" xml:space="preserve">
+    <value>cLockFrom</value>
+  </data>
+  <data name="&gt;&gt;cLockFrom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cLockTo.Name" xml:space="preserve">
+    <value>cLockTo</value>
+  </data>
+  <data name="&gt;&gt;cLockTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cLockDay.Name" xml:space="preserve">
+    <value>cLockDay</value>
+  </data>
+  <data name="&gt;&gt;cLockDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsLockouts.Name" xml:space="preserve">
+    <value>tsLockouts</value>
+  </data>
+  <data name="&gt;&gt;tsLockouts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsLockouts.Parent" xml:space="preserve">
+    <value>splitNotices.Panel1</value>
+  </data>
+  <data name="&gt;&gt;tsLockouts.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbLockoutsAdd.Name" xml:space="preserve">
+    <value>tsbLockoutsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbLockoutsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbLockoutsDelete.Name" xml:space="preserve">
+    <value>tsbLockoutsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbLockoutsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssLockouts1.Name" xml:space="preserve">
+    <value>tssLockouts1</value>
+  </data>
+  <data name="&gt;&gt;tssLockouts1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbLockoutsUp.Name" xml:space="preserve">
+    <value>tsbLockoutsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbLockoutsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbLockoutsDown.Name" xml:space="preserve">
+    <value>tsbLockoutsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbLockoutsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lLockouts.Name" xml:space="preserve">
+    <value>lLockouts</value>
+  </data>
+  <data name="&gt;&gt;lLockouts.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lLockouts.Parent" xml:space="preserve">
+    <value>splitNotices.Panel1</value>
+  </data>
+  <data name="&gt;&gt;lLockouts.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;dgvDiversions.Name" xml:space="preserve">
+    <value>dgvDiversions</value>
+  </data>
+  <data name="&gt;&gt;dgvDiversions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dgvDiversions.Parent" xml:space="preserve">
+    <value>splitNotices.Panel2</value>
+  </data>
+  <data name="&gt;&gt;dgvDiversions.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cDivStation.Name" xml:space="preserve">
+    <value>cDivStation</value>
+  </data>
+  <data name="&gt;&gt;cDivStation.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cDivValidity.Name" xml:space="preserve">
+    <value>cDivValidity</value>
+  </data>
+  <data name="&gt;&gt;cDivValidity.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cDivKey.Name" xml:space="preserve">
+    <value>cDivKey</value>
+  </data>
+  <data name="&gt;&gt;cDivKey.Type" xml:space="preserve">
+    <value>ExControls.DataGridViewExComboBoxColumn, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cDivFrom.Name" xml:space="preserve">
+    <value>cDivFrom</value>
+  </data>
+  <data name="&gt;&gt;cDivFrom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cDivTo.Name" xml:space="preserve">
+    <value>cDivTo</value>
+  </data>
+  <data name="&gt;&gt;cDivTo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cDivDay.Name" xml:space="preserve">
+    <value>cDivDay</value>
+  </data>
+  <data name="&gt;&gt;cDivDay.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsDiversions.Name" xml:space="preserve">
+    <value>tsDiversions</value>
+  </data>
+  <data name="&gt;&gt;tsDiversions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsDiversions.Parent" xml:space="preserve">
+    <value>splitNotices.Panel2</value>
+  </data>
+  <data name="&gt;&gt;tsDiversions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tsbDiversionsAdd.Name" xml:space="preserve">
+    <value>tsbDiversionsAdd</value>
+  </data>
+  <data name="&gt;&gt;tsbDiversionsAdd.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbDiversionsDelete.Name" xml:space="preserve">
+    <value>tsbDiversionsDelete</value>
+  </data>
+  <data name="&gt;&gt;tsbDiversionsDelete.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tssDiversions1.Name" xml:space="preserve">
+    <value>tssDiversions1</value>
+  </data>
+  <data name="&gt;&gt;tssDiversions1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tsbDiversionsUp.Name" xml:space="preserve">
+    <value>tsbDiversionsUp</value>
+  </data>
+  <data name="&gt;&gt;tsbDiversionsUp.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tsbDiversionsDown.Name" xml:space="preserve">
+    <value>tsbDiversionsDown</value>
+  </data>
+  <data name="&gt;&gt;tsbDiversionsDown.Type" xml:space="preserve">
+    <value>ToolsCore.Icons.IconToolStripButton, ToolsCore, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lDiversions.Name" xml:space="preserve">
+    <value>lDiversions</value>
+  </data>
+  <data name="&gt;&gt;lDiversions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lDiversions.Parent" xml:space="preserve">
+    <value>splitNotices.Panel2</value>
+  </data>
+  <data name="&gt;&gt;lDiversions.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lbProblems.Name" xml:space="preserve">
+    <value>lbProblems</value>
+  </data>
+  <data name="&gt;&gt;lbProblems.Type" xml:space="preserve">
+    <value>GVXEditor.UI.Controls.ProblemList, GVXEditor, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lbProblems.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbProblems.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;flpButtons.Name" xml:space="preserve">
+    <value>flpButtons</value>
+  </data>
+  <data name="&gt;&gt;flpButtons.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flpButtons.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flpButtons.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;bCancel.Name" xml:space="preserve">
+    <value>bCancel</value>
+  </data>
+  <data name="&gt;&gt;bCancel.Type" xml:space="preserve">
+    <value>ExControls.ExButton, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bCancel.Parent" xml:space="preserve">
+    <value>flpButtons</value>
+  </data>
+  <data name="&gt;&gt;bCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bOk.Name" xml:space="preserve">
+    <value>bOk</value>
+  </data>
+  <data name="&gt;&gt;bOk.Type" xml:space="preserve">
+    <value>ExControls.ExButton, ExControls, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bOk.Parent" xml:space="preserve">
+    <value>flpButtons</value>
+  </data>
+  <data name="&gt;&gt;bOk.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FEditTrain</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="cVarIndex.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cVarValidity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cVarDays.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cStation.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cStationName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cArrival.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDeparture.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cPassing.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTransfer.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cOperating.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRequest.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cNumber.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDisplay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cType.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cLine.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cReplacement.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cPosValidity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cPosArrival.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cPosDeparture.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cPosTracks.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cPosDay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cAddValidity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cAddKey.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cAddReports.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cAddDay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cCompValidity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cCompEnd.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cCompReports.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cCompSounds.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cCompDay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cLangValidity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cLangLanguages.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cLangDay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRepValidity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRepShortFrom.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRepLongFrom.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRepShortTo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRepLongTo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cRepDay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTextSet.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTextValidity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTextText.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTextFont.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cTextDay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cMosValidity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cLockValidity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cLockKey.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cLockFrom.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cLockTo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cLockDay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDivStation.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDivValidity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDivKey.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDivFrom.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDivTo.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cDivDay.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
