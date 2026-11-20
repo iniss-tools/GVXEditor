@@ -20,6 +20,14 @@ STRINGS = {
     'Settings_EditorFontHint': ('Editory kódu: stavový diagram, tabuľky TabTab a skript hlásení.',
                                 'Editory kódu: stavový diagram, tabulky TabTab a skript hlášení.'),
     'Settings_ReopenLast': ('Pri spustení otvoriť poslednú inštaláciu', 'Při spuštění otevřít poslední instalaci'),
+    'Settings_McpPage': ('Agenti (MCP)', 'Agenti (MCP)'),
+    'Settings_McpHint': ('Agent alebo iný nástroj s podporou MCP, napríklad Claude Code alebo chat vo VS Code, sa pripojí k otvorenej inštalácii INISS2 a číta ju aj s neuloženými zmenami. '
+                         'Server beží len na tomto počítači a vyžaduje prístupový kľúč.',
+                         'Agent nebo jiný nástroj s podporou MCP, například Claude Code nebo chat ve VS Code, se připojí k otevřené instalaci INISS2 a čte ji i s neuloženými změnami. '
+                         'Server běží jen na tomto počítači a vyžaduje přístupový klíč.'),
+    'Settings_McpWrites': ('Povoliť zmeny inštalácie cez agenta', 'Povolit změny instalace přes agenta'),
+    'Settings_McpWritesHint': ('Agent mení len otvorenú inštaláciu v programe a nikdy ju neuloží. Každú jeho zmenu vrátite príkazom Späť.',
+                               'Agent mění jen otevřenou instalaci v programu a nikdy ji neuloží. Každou jeho změnu vrátíte příkazem Zpět.'),
     'Main_OpenFolder': ('Vyberte priečinok inštalácie INISS2, servera alebo dát.', 'Vyberte složku instalace INISS2, serveru nebo dat.'),
     'Main_NotIniss2': ('Priečinok {0} nie je inštalácia INISS2.', 'Složka {0} není instalace INISS2.'),
     'Main_OpenFailed': ('Inštaláciu {0} sa nepodarilo otvoriť.', 'Instalaci {0} se nepodařilo otevřít.'),
@@ -91,6 +99,7 @@ STRINGS = {
     'Main_ReloadDirty': ('Obnovenie zahodí neuložené zmeny. Pokračovať?', 'Obnovení zahodí neuložené změny. Pokračovat?'),
     'History_Edit': ('úprava vlaku {0}', 'úprava vlaku {0}'),
     'History_New': ('nový vlak {0}', 'nový vlak {0}'),
+    'History_Agent': ('{0} (agent)', '{0} (agent)'),
     'History_Copy': ('kópia vlaku {0}', 'kopie vlaku {0}'),
     'History_Delete': ('zmazanie vlaku {0}', 'smazání vlaku {0}'),
     'History_Shift': ('posun platnosti o {0} dní', 'posun platnosti o {0} dní'),

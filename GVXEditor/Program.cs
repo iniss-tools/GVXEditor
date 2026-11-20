@@ -1,4 +1,5 @@
 using GVXEditor.Config;
+using GVXEditor.Mcp;
 using GVXEditor.UI.Main;
 using ToolsCore;
 using ToolsCore.Iniss.Calendar;
@@ -20,6 +21,7 @@ internal static class Program
         // pise rovnako bez ohladu na jazyk programu; slovenske slova poznamok cita server aj DateLimit tiez
         DateLimit.Loc = DateLimit.Locale.Cz;
 
-        AppInit.Run(() => new FMain(context));
+        using var mcp = new GvxMcpServer();
+        AppInit.Run(() => new FMain(context, mcp));
     }
 }

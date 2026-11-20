@@ -29,8 +29,29 @@ namespace GVXEditor.UI.Settings
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FAppSettings));
+            ExControls.OptionsNode optionsNodeMcp = new ExControls.OptionsNode();
+            this.pMcp = new ExControls.ExOptionsPanel(this.optionsView);
+            this.mcpPage = new ToolsCore.Mcp.McpSettingsPage();
             ((System.ComponentModel.ISupportInitialize)(this.optionsView)).BeginInit();
+            this.pMcp.SuspendLayout();
             this.SuspendLayout();
+            this.optionsView.Panels.Add(this.pMcp);
+            //
+            // pMcp
+            //
+            this.pMcp.Controls.Add(this.mcpPage);
+            this.pMcp.Name = "pMcp";
+            optionsNodeMcp.Name = "";
+            optionsNodeMcp.Text = resources.GetString("optionsNodeMcp.Text");
+            this.pMcp.Node = optionsNodeMcp;
+            this.pMcp.NodeText = resources.GetString("pMcp.NodeText");
+            this.pMcp.ParentNode = null;
+            //
+            // mcpPage
+            //
+            resources.ApplyResources(this.mcpPage, "mcpPage");
+            this.mcpPage.Name = "mcpPage";
             //
             // FAppSettings
             //
@@ -39,10 +60,14 @@ namespace GVXEditor.UI.Settings
             this.ClientSize = new System.Drawing.Size(800, 475);
             this.Name = "FAppSettings";
             ((System.ComponentModel.ISupportInitialize)(this.optionsView)).EndInit();
+            this.pMcp.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private ExControls.ExOptionsPanel pMcp;
+        private ToolsCore.Mcp.McpSettingsPage mcpPage;
     }
 }

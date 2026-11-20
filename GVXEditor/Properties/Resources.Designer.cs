@@ -1937,6 +1937,15 @@ namespace GVXEditor.Properties {
         }
 
         /// <summary>
+        ///   Looks up a localized string similar to {0} (agent).
+        /// </summary>
+        internal static string History_Agent {
+            get {
+                return ResourceManager.GetString("History_Agent", resourceCulture);
+            }
+        }
+
+        /// <summary>
         ///   Looks up a localized string similar to tabule grafikonu {0}.
         /// </summary>
         internal static string History_Boards {
@@ -4381,6 +4390,42 @@ namespace GVXEditor.Properties {
         internal static string Settings_EditorFontHint {
             get {
                 return ResourceManager.GetString("Settings_EditorFontHint", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Agent alebo iný nástroj s podporou MCP, napríklad Claude Code alebo chat vo VS Code, sa pripojí k otvorenej inštalácii INISS2 a číta ju aj s neuloženými zmenami. Server beží len na tomto počítači a vyžaduje prístupový kľúč..
+        /// </summary>
+        internal static string Settings_McpHint {
+            get {
+                return ResourceManager.GetString("Settings_McpHint", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Agenti (MCP).
+        /// </summary>
+        internal static string Settings_McpPage {
+            get {
+                return ResourceManager.GetString("Settings_McpPage", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Povoliť zmeny inštalácie cez agenta.
+        /// </summary>
+        internal static string Settings_McpWrites {
+            get {
+                return ResourceManager.GetString("Settings_McpWrites", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Agent mení len otvorenú inštaláciu v programe a nikdy ju neuloží. Každú jeho zmenu vrátite príkazom Späť..
+        /// </summary>
+        internal static string Settings_McpWritesHint {
+            get {
+                return ResourceManager.GetString("Settings_McpWritesHint", resourceCulture);
             }
         }
 

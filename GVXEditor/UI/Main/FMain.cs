@@ -1,4 +1,5 @@
 using ExControls;
+using GVXEditor.Mcp;
 using GVXEditor.Properties;
 using GVXEditor.UI.Analysis;
 using GVXEditor.UI.Settings;
@@ -20,14 +21,17 @@ internal partial class FMain : ExForm
 {
     private readonly EditorContext _ctx;
     private readonly CommandSet _commands = new();
+    private readonly GvxMcpServer? _mcp;
 
     // stav servera sa meni mimo programu - zistuje sa pravidelne
     private readonly System.Windows.Forms.Timer _serverTimer = new() { Interval = 3000 };
 
     /// <param name="context">kontext editora</param>
-    public FMain(EditorContext context)
+    /// <param name="mcp">server MCP pre agentov; null = bez servera (testy, harness snimok)</param>
+    public FMain(EditorContext context, GvxMcpServer? mcp = null)
     {
         _ctx = context;
+        _mcp = mcp;
         InitializeComponent();
         components?.Add(_serverTimer);
         _analysisView = new AnalysisView(_ctx, Navigate);
@@ -109,10 +113,27 @@ internal partial class FMain : ExForm
 
     private void ShowAppSettings()
     {
-        using var form = new FAppSettings(_ctx, _commands);
-        // po kazdom ulozeni (aj tlacidlom Pouzit pri otvorenom okne)
-        form.Applied += (_, _) => UpdateMainUi();
+        var mcp = _ctx.Config.McpServer;
+        using var form = new FAppSettings(_ctx, _commands, _mcp);
+        // po kazdom ulozeni (aj tlacidlom Pouzit pri otvorenom okne); server sa spusti znova len pri zmene jeho nastavenia
+        form.Applied += (_, _) =>
+        {
+            UpdateMainUi();
+            if (!mcp.SameAs(_ctx.Config.McpServer))
+                StartMcp();
+            mcp = _ctx.Config.McpServer;
+        };
         form.ShowDialog(this);
+    }
+
+    /// <summary>
+    /// Server MCP podla nastavenia programu - pri starte a po zmene nastavenia; chyba (obsadeny port) je v jeho stave
+    /// a v logu, GVXEditor funguje dalej.
+    /// </summary>
+    private async void StartMcp()
+    {
+        if (_mcp is not null)
+            await _mcp.ApplyAsync(new EditorAccess(_ctx, this, this), _ctx.Config.McpServer);
     }
 
     private void UpdateMainUi()
@@ -134,6 +155,7 @@ internal partial class FMain : ExForm
     {
         AppRegistry.RegisterJumpList(GlobalResources.RRecentFiles);
         AppUpdates.CheckOnStartup(this, _ctx.Config);
+        StartMcp();
 
         // cesta zadana ako argument ma prednost pred poslednou otvorenou instalaciou
         var path = ToolsCore.Tools.Utils.GetProjectPathFromArgs();

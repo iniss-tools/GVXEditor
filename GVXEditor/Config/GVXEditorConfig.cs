@@ -25,9 +25,16 @@ public record GVXEditorConfig : ConfigBase
     }
 
     /// <summary>
+    /// Server MCP pre agentov (Claude Code, VS Code).
+    /// </summary>
+    [XmlElement("McpServer")]
+    public GvxMcpSettings McpServer { get; set; } = new();
+
+    /// <summary>
     /// Kopia nastaveni (okno Nastavenia programu) - skratky a stlpce sa nesmu zdielat s povodnymi.
     /// </summary>
     protected GVXEditorConfig(GVXEditorConfig original) : base(original)
     {
+        McpServer = (GvxMcpSettings)original.McpServer.Clone();
     }
 }

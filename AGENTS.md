@@ -135,6 +135,23 @@ ikony SVG) a logovania (Serilog) sú v `../ToolsCore/AGENTS.md` – platia aj tu
   server ukázal niečo iné, doplnenie neprekryje text podľa trasy alebo stanice a prázdny text sa nezapisuje.
 - Zoznam zistení na spodku okien je `UI/Controls/ProblemList` (ikona závažnosti pred textom, chyby prvé so stabilným
   poradím – okná podľa indexu riadka skáču na miesto zistenia); plní sa cez `ShowProblems`.
+- Server MCP pre agentov `Mcp/` beží v procese editora (spoločný `ToolsCore.Mcp` `McpServerHost`): `GvxMcpServer` dodá pokyny
+  pre agenta a `ApplyAsync` podľa `Config/GvxMcpSettings` (port 5491, kľúč `gvx_`; stránka Agenti (MCP) v `FAppSettings`, štart
+  v `FMain_Load` a znova po zmene nastavenia). Nástroje sú statické metódy `Mcp/<Oblast>Tools.cs` nad `EditorAccess` (čítanie na
+  vlákne okna, bez okna priamo – testy), parametre agenta overuje `McpGuards` (grafikon podľa názvu, stanica podľa čísla, priečinka
+  alebo názvu, vlak podľa poradia v GV.XML; chyby `McpException("kod: popis")` s radou), výsledky sú záznamy `Mcp/Results/`
+  s popismi pre agenta anglicky. Súbor dát s neuloženými zmenami dá `Iniss2Workspace.CurrentText` (zápis do dočasnej kópie
+  súboru tými istými zápismi ako uloženie), zoznam `UnsavedFiles`; overenie kódom servera beží mimo vlákna okna. Náhľad
+  generovania textov je spoločný s oknom (`TrainTextGenerating.Preview`, zmena `GeneratedTextChange`). Zmeny (len s povolením
+  zmien – nástroje s `ReadOnly = false` sa inak neregistrujú) idú cez `EditorAccess.WriteAsync`: z aktuálneho nemenného stavu
+  vypočíta nový (stav bez zmeny = ten istý objekt), jedno volanie = jeden krok späť „… (agent)“ (`History_Agent`), nič sa
+  neukladá, `dryRun` vráti rovnaký výsledok bez zmeny. Hlavné okno je `IAgentHost` (`FMain.Agent.cs`): pri otvorenom okne,
+  dialógu alebo overovaní (`!CanFocus`, `UseWaitCursor`) odmietne zmenu kódom `editor.busy` – rozpísaná úprava v okne by ju inak
+  prepísala. Nástroje zmien používajú pravidlá okien: vlak `TrainRules` (chyba odmietne, upozornenia vráti; `set_train` berie
+  varianty v tvare `get_train` – príznaky ako kľúče súboru, `Z` a dni cez polnoc dopočíta `TrainDraft.ToTrain`), hlásenia obsluhy
+  `SetupRules` (zmena nesmie pridať chybu, staršiu znesie), premenovanie `TrainNumbers.Rename`, texty `TrainTextGenerating.Apply`.
+  Záznamy vlaku v staniciach, kód, tabule a nastavenie agent len číta. Testy `GVXEditor.Tests/Mcp` – každý nástroj cez klienta
+  voči `outputSchema` (nový nástroj tam pridať) a snímka `Mcp/mcp-tools.json`.
 - Okná testovať bez zobrazenia na STA vlákne (`EditTrainFormTests`: `CreateControl` + `OnLoad` reflexiou).
 
 ## Príkazy
@@ -143,6 +160,7 @@ ikony SVG) a logovania (Serilog) sú v `../ToolsCore/AGENTS.md` – platia aj tu
 dotnet build GVXEditor.slnx -nologo -v q
 dotnet test GVXEditor.slnx
 dotnet run --project GVXEditor.DocScreenshots -- --theme=both   # snimky do docs; --only=hlavne-okno
+GVXEDITOR_UPDATE_MCP=1 dotnet test GVXEditor.Tests --filter Nastroje_ZodpovedajuSnimke   # nova snimka nastrojov MCP
 "/c/Program Files/Inno Setup 7/ISCC.exe" GVXEditorInstaller.iss   # instalator do Output/; najprv Release build
 ```
 

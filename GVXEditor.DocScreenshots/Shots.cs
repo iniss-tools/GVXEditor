@@ -249,6 +249,14 @@ internal sealed class Shots(Program.Options options, string theme, List<string> 
 
             Shot("nastavenia-programu/nastavenia-programu", () => new FAppSettings(context));
 
+            // server MCP pre agentov (bez beziaceho servera - stav Vypnuty)
+            Shot("nastavenia-programu/agenti", () =>
+            {
+                var form = new FAppSettings(context);
+                form.PreselectMenuItem("pMcp");
+                return form;
+            });
+
             // farebna schema: editor kodu VB.NET s vybranym klucovym slovom
             Shot("nastavenia-programu/farebna-schema", () =>
             {

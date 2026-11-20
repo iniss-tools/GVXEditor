@@ -1,0 +1,2574 @@
+{
+  "instructions": "GVXEditor edits the data of an INISS2 server (IniSrv) installation - the station information system of Slovak and Czech railways (departure boards and announcements). An installation has timetable groups (grafikon) from DirList.xml, each with one GV.XML (trains with variants and routes) and station folders with station files; the server reads all files only when it starts. Tools read the installation open in the running editor including unsaved changes: get_installation first, then list_trains and get_train (a train is identified by its index in GV.XML), station_day for the trains a station has on a day as the server sees them, get_file for any data file with the editor's changes. File formats are documented at https://iniss-tools.fvat.sk/docs/category/iniss2-formaty-suborov - read them instead of guessing. Validity texts are Czech date remarks like 'jede v 6,7' (explain_validity expands them to days). check_installation and verify_with_server find problems that would stop the server or make it use the data differently. Tools that change data (trains of GV.XML, operator reports, generated board texts) work in the editor's memory only: each call is one undo step the user can revert in GVXEditor and nothing is saved - the user reviews the changes and saves them while the server is stopped. They apply the checks of the editor's windows: errors refuse the change, warnings are returned. Call a change with dryRun first when its effect is not obvious; when the editor has a window open the change is refused with editor.busy.",
+  "instructionsWithoutChanges": "GVXEditor edits the data of an INISS2 server (IniSrv) installation - the station information system of Slovak and Czech railways (departure boards and announcements). An installation has timetable groups (grafikon) from DirList.xml, each with one GV.XML (trains with variants and routes) and station folders with station files; the server reads all files only when it starts. Tools read the installation open in the running editor including unsaved changes: get_installation first, then list_trains and get_train (a train is identified by its index in GV.XML), station_day for the trains a station has on a day as the server sees them, get_file for any data file with the editor's changes. File formats are documented at https://iniss-tools.fvat.sk/docs/category/iniss2-formaty-suborov - read them instead of guessing. Validity texts are Czech date remarks like 'jede v 6,7' (explain_validity expands them to days). check_installation and verify_with_server find problems that would stop the server or make it use the data differently. Changes are made by the user in GVXEditor, which writes the files only while the server is stopped.",
+  "tools": [
+    {
+      "name": "check_installation",
+      "title": "Check installation",
+      "description": "The installation check of GVXEditor over the open installation including unsaved changes: errors that would stop the server or a file from loading, warnings where the server uses the data differently than expected and information such as station records no train uses. Fast; it does not compile the VB.NET code - use verify_with_server for that.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "description": "Errors - the server would not start or not read a file.",
+            "type": "integer"
+          },
+          "warnings": {
+            "description": "Warnings - the server would use the data differently than expected.",
+            "type": "integer"
+          },
+          "infos": {
+            "description": "Information, e.g. records no train uses.",
+            "type": "integer"
+          },
+          "findings": {
+            "description": "Findings, errors first.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "severity": {
+                  "description": "error, warning or info.",
+                  "type": "string"
+                },
+                "place": {
+                  "description": "Where: group, station, train or file.",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Description in the language of the program.",
+                  "type": "string"
+                },
+                "group": {
+                  "description": "Timetable group; null = the whole installation.",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "train": {
+                  "description": "Train index in GV.XML; null = not a train.",
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "severity",
+                "place",
+                "message",
+                "group",
+                "train"
+              ]
+            }
+          }
+        },
+        "required": [
+          "errors",
+          "warnings",
+          "infos",
+          "findings"
+        ]
+      },
+      "annotations": {
+        "title": "Check installation",
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "copy_train",
+      "title": "Copy trains",
+      "description": "Copies trains of GV.XML; each copy goes right after its original, like Copy train in GVXEditor. Station records stay shared through the train number, so change the number of the copy with set_train or rename_train_number.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "trains": {
+            "description": "Train indexes in GV.XML from list_trains.",
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "group": {
+            "description": "Timetable group from get_installation; empty = the first group.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "dryRun": {
+            "description": "Only report the result; the installation stays as it is.",
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "trains"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "description": "Timetable group.",
+            "type": "string"
+          },
+          "trains": {
+            "description": "Train indexes in GV.XML after the change: copies, shifted trains; empty after deleting.",
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "removedRecords": {
+            "description": "Station, lockout and diversion records removed with deleted trains.",
+            "type": "integer"
+          },
+          "change": {
+            "type": "object",
+            "properties": {
+              "dryRun": {
+                "description": "Only a dry run; the installation stays as it is.",
+                "type": "boolean"
+              },
+              "changed": {
+                "description": "The change changes the installation (in a dry run: would change it).",
+                "type": "boolean"
+              },
+              "step": {
+                "description": "Undo step in GVXEditor, e.g. 'edit train 611 (agent)'; null = no step (dry run or nothing changed).",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "dryRun",
+              "changed",
+              "step"
+            ]
+          }
+        },
+        "required": [
+          "group",
+          "trains",
+          "removedRecords",
+          "change"
+        ]
+      },
+      "annotations": {
+        "title": "Copy trains",
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false,
+        "readOnlyHint": false
+      }
+    },
+    {
+      "name": "delete_const_report",
+      "title": "Delete operator report",
+      "description": "Deletes an operator report from ConstReports.xml. A warning tells when supplements, lockouts or diversions of trains still refer to its number - the server would then fail to compose that announcement.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "description": "Report number.",
+            "type": "integer"
+          },
+          "dryRun": {
+            "description": "Only report the result; the installation stays as it is.",
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "number"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "description": "Operator report number.",
+            "type": "integer"
+          },
+          "warnings": {
+            "description": "Warnings of the check, e.g. a pattern missing in LogText.vb or a deleted report still referenced by trains.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "severity": {
+                  "description": "error or warning.",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Description in the language of the program.",
+                  "type": "string"
+                },
+                "variant": {
+                  "description": "Variant position from 1; null = the whole train.",
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "stop": {
+                  "description": "Route point from 1; null = the whole variant.",
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "severity",
+                "message",
+                "variant",
+                "stop"
+              ]
+            }
+          },
+          "change": {
+            "type": "object",
+            "properties": {
+              "dryRun": {
+                "description": "Only a dry run; the installation stays as it is.",
+                "type": "boolean"
+              },
+              "changed": {
+                "description": "The change changes the installation (in a dry run: would change it).",
+                "type": "boolean"
+              },
+              "step": {
+                "description": "Undo step in GVXEditor, e.g. 'edit train 611 (agent)'; null = no step (dry run or nothing changed).",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "dryRun",
+              "changed",
+              "step"
+            ]
+          }
+        },
+        "required": [
+          "number",
+          "warnings",
+          "change"
+        ]
+      },
+      "annotations": {
+        "title": "Delete operator report",
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": false
+      }
+    },
+    {
+      "name": "delete_train",
+      "title": "Delete trains",
+      "description": "Deletes trains from GV.XML like Delete train in GVXEditor. With removeUnusedRecords it also removes their station records, lockouts and diversions that no other train of the group uses any more. Indexes of later trains shift.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "trains": {
+            "description": "Train indexes in GV.XML from list_trains.",
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "removeUnusedRecords": {
+            "description": "Also remove records of the deleted trains that no other train uses.",
+            "type": "boolean",
+            "default": false
+          },
+          "group": {
+            "description": "Timetable group from get_installation; empty = the first group.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "dryRun": {
+            "description": "Only report the result; the installation stays as it is.",
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "trains"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "description": "Timetable group.",
+            "type": "string"
+          },
+          "trains": {
+            "description": "Train indexes in GV.XML after the change: copies, shifted trains; empty after deleting.",
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "removedRecords": {
+            "description": "Station, lockout and diversion records removed with deleted trains.",
+            "type": "integer"
+          },
+          "change": {
+            "type": "object",
+            "properties": {
+              "dryRun": {
+                "description": "Only a dry run; the installation stays as it is.",
+                "type": "boolean"
+              },
+              "changed": {
+                "description": "The change changes the installation (in a dry run: would change it).",
+                "type": "boolean"
+              },
+              "step": {
+                "description": "Undo step in GVXEditor, e.g. 'edit train 611 (agent)'; null = no step (dry run or nothing changed).",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "dryRun",
+              "changed",
+              "step"
+            ]
+          }
+        },
+        "required": [
+          "group",
+          "trains",
+          "removedRecords",
+          "change"
+        ]
+      },
+      "annotations": {
+        "title": "Delete trains",
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false,
+        "readOnlyHint": false
+      }
+    },
+    {
+      "name": "explain_validity",
+      "title": "Explain validity text",
+      "description": "Expands a date remark of INISS2 (Czech, e.g. 'jede v 6,7', 'nejede 24.XII.'; Slovak words are read too) to the days it means in a period, the way the server does. Holidays are always Czech. Without a period the period of the train is used, without a train the period of all trains of the group.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "description": "Date remark; empty = every day.",
+            "type": "string"
+          },
+          "from": {
+            "description": "First day of the period.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date",
+            "default": null
+          },
+          "to": {
+            "description": "Last day of the period.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date",
+            "default": null
+          },
+          "train": {
+            "description": "Train index in GV.XML whose period is used.",
+            "type": [
+              "integer",
+              "null"
+            ],
+            "default": null
+          },
+          "group": {
+            "description": "Timetable group from get_installation; empty = the first group.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "text"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "description": "Date remark.",
+            "type": "string"
+          },
+          "from": {
+            "description": "First day of the period.",
+            "type": "string",
+            "format": "date"
+          },
+          "to": {
+            "description": "Last day of the period.",
+            "type": "string",
+            "format": "date"
+          },
+          "count": {
+            "description": "Number of days.",
+            "type": "integer"
+          },
+          "days": {
+            "description": "Days as continuous ranges.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "from": {
+                  "description": "First day.",
+                  "type": "string",
+                  "format": "date"
+                },
+                "to": {
+                  "description": "Last day.",
+                  "type": "string",
+                  "format": "date"
+                }
+              },
+              "required": [
+                "from",
+                "to"
+              ]
+            }
+          },
+          "problem": {
+            "description": "How the server treats the remark differently than expected; null = no problem.",
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "text",
+          "from",
+          "to",
+          "count",
+          "days",
+          "problem"
+        ]
+      },
+      "annotations": {
+        "title": "Explain validity text",
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "generate_board_texts",
+      "title": "Generate board texts",
+      "description": "Generates board texts at the trains of a station into a TTVlaky.xml set exactly as preview_board_texts shows them (call it first) and as the window Generate board texts writes them: a new set for a board field is created, empty texts are never written, records edited for one day stay.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "station": {
+            "description": "Station: SR70 number, folder or name.",
+            "type": "string"
+          },
+          "set": {
+            "description": "Text set name from preview_board_texts; empty = the first set whose board field supports generating.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "kind": {
+            "description": "destination, origin, stationsTo or stationsFrom; empty = what the field of the set shows.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "longReport": {
+            "description": "Stations of the long announcement instead of the short one (stationsTo, stationsFrom).",
+            "type": "boolean",
+            "default": false
+          },
+          "all": {
+            "description": "Replace the texts of all trains of the station instead of adding missing ones.",
+            "type": "boolean",
+            "default": false
+          },
+          "group": {
+            "description": "Timetable group from get_installation; empty = the first group.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "dryRun": {
+            "description": "Only report the result; the installation stays as it is.",
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "station"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "description": "Timetable group.",
+            "type": "string"
+          },
+          "station": {
+            "description": "Station number SR70.",
+            "type": "integer"
+          },
+          "set": {
+            "description": "Text set the texts were written to.",
+            "type": "string"
+          },
+          "kind": {
+            "description": "What was generated: destination, origin, stationsTo or stationsFrom.",
+            "type": "string"
+          },
+          "written": {
+            "description": "Number of texts written.",
+            "type": "integer"
+          },
+          "change": {
+            "type": "object",
+            "properties": {
+              "dryRun": {
+                "description": "Only a dry run; the installation stays as it is.",
+                "type": "boolean"
+              },
+              "changed": {
+                "description": "The change changes the installation (in a dry run: would change it).",
+                "type": "boolean"
+              },
+              "step": {
+                "description": "Undo step in GVXEditor, e.g. 'edit train 611 (agent)'; null = no step (dry run or nothing changed).",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "dryRun",
+              "changed",
+              "step"
+            ]
+          }
+        },
+        "required": [
+          "group",
+          "station",
+          "set",
+          "kind",
+          "written",
+          "change"
+        ]
+      },
+      "annotations": {
+        "title": "Generate board texts",
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": false
+      }
+    },
+    {
+      "name": "get_file",
+      "title": "Data file",
+      "description": "Text of a data file of the installation as GVXEditor would save it now - with the editor's unsaved changes; files without changes are read from disk. The path is relative to the data folder, e.g. 'ConstReports.xml', 'LogText.vb', '2030/GV.XML', '2030/Default.Stations.xml' or '2030/01 Lipovec/statedgm.xml' (group and station folders from get_installation). Long files are returned in pages of lines.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "description": "Path relative to the data folder.",
+            "type": "string"
+          },
+          "offset": {
+            "description": "First line to return, from 0.",
+            "type": "integer",
+            "default": 0
+          },
+          "limit": {
+            "description": "Most lines to return, 1-5000.",
+            "type": "integer",
+            "default": 1000
+          }
+        },
+        "required": [
+          "path"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "description": "Path relative to the data folder.",
+            "type": "string"
+          },
+          "exists": {
+            "description": "The file exists or saving would create it.",
+            "type": "boolean"
+          },
+          "unsaved": {
+            "description": "The text contains changes not saved yet.",
+            "type": "boolean"
+          },
+          "totalLines": {
+            "description": "Number of lines of the file.",
+            "type": "integer"
+          },
+          "offset": {
+            "description": "First returned line from 0.",
+            "type": "integer"
+          },
+          "text": {
+            "description": "Returned lines.",
+            "type": "string"
+          }
+        },
+        "required": [
+          "path",
+          "exists",
+          "unsaved",
+          "totalLines",
+          "offset",
+          "text"
+        ]
+      },
+      "annotations": {
+        "title": "Data file",
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "get_installation",
+      "title": "Installation",
+      "description": "The INISS2 installation open in GVXEditor: data folder, whether its server runs, unsaved files, timetable groups with their stations. Call it first - group and station names are parameters of the other tools.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "dataDirectory": {
+            "description": "Data folder of the INISS2 server installation.",
+            "type": "string"
+          },
+          "server": {
+            "description": "Server of this installation: running, stopped or stoppedOtherRunning (a server of another installation runs). GVXEditor saves only while it is stopped.",
+            "type": "string"
+          },
+          "unsavedChanges": {
+            "description": "The editor has changes that are not saved yet.",
+            "type": "boolean"
+          },
+          "unsavedFiles": {
+            "description": "Data files (relative to the data folder) that saving would write.",
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "lastStep": {
+            "description": "Last step the user can undo; null = none.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "serverVerification": {
+            "description": "verify_with_server is available (the installation has IniSrv.exe).",
+            "type": "boolean"
+          },
+          "groups": {
+            "description": "Timetable groups in DirList.xml order.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "Group name (folder), the group parameter of other tools.",
+                  "type": "string"
+                },
+                "trains": {
+                  "description": "Number of trains in GV.XML.",
+                  "type": "integer"
+                },
+                "error": {
+                  "description": "Why GV.XML could not be read; null = read.",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "stations": {
+                  "description": "Stations of the group in DirList.xml order.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "number": {
+                        "description": "Station number SR70.",
+                        "type": "integer"
+                      },
+                      "name": {
+                        "description": "Station name.",
+                        "type": "string"
+                      },
+                      "directory": {
+                        "description": "Station folder in the group.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "number",
+                      "name",
+                      "directory"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "name",
+                "trains",
+                "error",
+                "stations"
+              ]
+            }
+          }
+        },
+        "required": [
+          "dataDirectory",
+          "server",
+          "unsavedChanges",
+          "unsavedFiles",
+          "lastStep",
+          "serverVerification",
+          "groups"
+        ]
+      },
+      "annotations": {
+        "title": "Installation",
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "get_train",
+      "title": "Train",
+      "description": "One train with everything that belongs to it: validity period, variants with date remarks and routes, its records in the station files (tracks, supplements, composition, languages, stations in announcements, board texts, MOs) looked up by the number when leaving each station, and its lockouts and diversions.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "train": {
+            "description": "Train index in GV.XML from list_trains.",
+            "type": "integer"
+          },
+          "group": {
+            "description": "Timetable group from get_installation; empty = the first group.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "train"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "description": "Timetable group.",
+            "type": "string"
+          },
+          "index": {
+            "description": "Train index in GV.XML.",
+            "type": "integer"
+          },
+          "numbers": {
+            "description": "All train numbers.",
+            "type": "string"
+          },
+          "from": {
+            "description": "First day of the validity period.",
+            "type": "string",
+            "format": "date"
+          },
+          "to": {
+            "description": "Last day of the validity period; null = no end.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "variants": {
+            "description": "Variants in order; on a day the first variant running that day applies.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "position": {
+                  "description": "Variant position from 1.",
+                  "type": "integer"
+                },
+                "validity": {
+                  "description": "Date remark; empty = every day of the period.",
+                  "type": "string"
+                },
+                "days": {
+                  "description": "Days on which exactly this variant applies (earlier variants take precedence).",
+                  "type": "integer"
+                },
+                "operator": {
+                  "description": "Operator.",
+                  "type": "string"
+                },
+                "flags": {
+                  "description": "Variant flags as keys of the file separated by spaces: D, X, N, NP, O, M, R, L.",
+                  "type": "string"
+                },
+                "note": {
+                  "description": "Note.",
+                  "type": "string"
+                },
+                "route": {
+                  "description": "Route points in running order.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "station": {
+                        "description": "Station number SR70.",
+                        "type": "integer"
+                      },
+                      "name": {
+                        "description": "Station name.",
+                        "type": "string"
+                      },
+                      "arrival": {
+                        "description": "Arrival; +1 = next day.",
+                        "type": "string"
+                      },
+                      "departure": {
+                        "description": "Departure; +1 = next day.",
+                        "type": "string"
+                      },
+                      "flags": {
+                        "description": "Point flags as keys of the file: P passing, Z station controlled by INISS (computed), PR transfer, DB operating point, X request stop.",
+                        "type": "string"
+                      },
+                      "number": {
+                        "description": "Train number from this point; empty = as before.",
+                        "type": "string"
+                      },
+                      "reportedNumber": {
+                        "description": "Announced number from this point.",
+                        "type": "string"
+                      },
+                      "type": {
+                        "description": "Train type from this point.",
+                        "type": "string"
+                      },
+                      "trainName": {
+                        "description": "Train name from this point.",
+                        "type": "string"
+                      },
+                      "idsLine": {
+                        "description": "IDS line.",
+                        "type": "string"
+                      },
+                      "nadLine": {
+                        "description": "Replacement bus line.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "station",
+                      "name",
+                      "arrival",
+                      "departure",
+                      "flags",
+                      "number",
+                      "reportedNumber",
+                      "type",
+                      "trainName",
+                      "idsLine",
+                      "nadLine"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "position",
+                "validity",
+                "days",
+                "operator",
+                "flags",
+                "note",
+                "route"
+              ]
+            }
+          },
+          "stations": {
+            "description": "Records of the train in the station files of the group.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "station": {
+                  "description": "Station number SR70.",
+                  "type": "integer"
+                },
+                "directory": {
+                  "description": "Station folder.",
+                  "type": "string"
+                },
+                "number": {
+                  "description": "Train number the server looks the records up by (number when leaving the station).",
+                  "type": "string"
+                },
+                "tracks": {
+                  "description": "Tracks (Positions.xml); the first record valid on the day applies.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "train": {
+                        "type": "string"
+                      },
+                      "arrivalTrack": {
+                        "type": "string"
+                      },
+                      "departureTrack": {
+                        "type": "string"
+                      },
+                      "validity": {
+                        "type": "string"
+                      },
+                      "editedForDay": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "train",
+                      "arrivalTrack",
+                      "departureTrack",
+                      "validity"
+                    ]
+                  }
+                },
+                "additions": {
+                  "description": "Supplementary announcements (Dodatky.xml); all valid ones apply.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "number": {
+                        "type": "string"
+                      },
+                      "key": {
+                        "type": "string"
+                      },
+                      "reports": {
+                        "type": "string"
+                      },
+                      "validity": {
+                        "type": "string"
+                      },
+                      "editedForDay": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "number",
+                      "key",
+                      "reports",
+                      "validity"
+                    ]
+                  }
+                },
+                "compositions": {
+                  "description": "Train composition announcements (Razeni.xml).",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "number": {
+                        "type": "string"
+                      },
+                      "endStation": {
+                        "type": "integer"
+                      },
+                      "reports": {
+                        "type": "string"
+                      },
+                      "validity": {
+                        "type": "string"
+                      },
+                      "sounds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "editedForDay": {
+                        "type": "boolean"
+                      },
+                      "origin": {
+                        "type": [
+                          "object",
+                          "null"
+                        ],
+                        "properties": {
+                          "source": {
+                            "type": "string"
+                          },
+                          "texts": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            }
+                          }
+                        },
+                        "required": [
+                          "source",
+                          "texts"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "number",
+                      "endStation",
+                      "reports",
+                      "validity",
+                      "sounds"
+                    ]
+                  }
+                },
+                "languages": {
+                  "description": "Announcement languages (Foreign.xml); 1 = all languages of the sound bank.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "number": {
+                        "type": "string"
+                      },
+                      "validity": {
+                        "type": "string"
+                      },
+                      "languages": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "editedForDay": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "number",
+                      "validity",
+                      "languages"
+                    ]
+                  }
+                },
+                "reportStations": {
+                  "description": "Stations said in announcements (StaHlasVl.xml), SR70 numbers.",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "number": {
+                        "type": "string"
+                      },
+                      "validity": {
+                        "type": "string"
+                      },
+                      "editedForDay": {
+                        "type": "boolean"
+                      },
+                      "shortFrom": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        }
+                      },
+                      "longFrom": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        }
+                      },
+                      "shortTo": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        }
+                      },
+                      "longTo": {
+                        "type": "array",
+                        "items": {
+                          "type": "integer"
+                        }
+                      }
+                    },
+                    "required": [
+                      "number",
+                      "validity"
+                    ]
+                  }
+                },
+                "texts": {
+                  "description": "Board texts at the train (TTVlaky.xml).",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "set": {
+                        "description": "Text set.",
+                        "type": "string"
+                      },
+                      "validity": {
+                        "description": "Date remark.",
+                        "type": "string"
+                      },
+                      "text": {
+                        "description": "Text, parts separated by #.",
+                        "type": "string"
+                      },
+                      "font": {
+                        "description": "Font; -1 = font of the board template.",
+                        "type": "integer"
+                      }
+                    },
+                    "required": [
+                      "set",
+                      "validity",
+                      "text",
+                      "font"
+                    ]
+                  }
+                },
+                "mos": {
+                  "description": "Days with train type MOs (MOS.xml).",
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "number": {
+                        "type": "string"
+                      },
+                      "validity": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "number",
+                      "validity"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "station",
+                "directory",
+                "number",
+                "tracks",
+                "additions",
+                "compositions",
+                "languages",
+                "reportStations",
+                "texts",
+                "mos"
+              ]
+            }
+          },
+          "lockoutNumber": {
+            "description": "Train number used for lockouts in the group.",
+            "type": "string"
+          },
+          "lockouts": {
+            "description": "Lockouts of the train (Vyluky.xml); Key is a LogText function or an operator report number.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "type": "string"
+                },
+                "key": {
+                  "type": "string"
+                },
+                "from": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "to": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "validity": {
+                  "type": "string"
+                },
+                "editedForDay": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "number",
+                "key",
+                "from",
+                "to",
+                "validity"
+              ]
+            }
+          },
+          "diversions": {
+            "description": "Diversions of the train (Odklony.xml).",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "type": "string"
+                },
+                "station": {
+                  "type": "integer"
+                },
+                "key": {
+                  "type": "string"
+                },
+                "from": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "to": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "validity": {
+                  "type": "string"
+                },
+                "editedForDay": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "number",
+                "station",
+                "key",
+                "from",
+                "to",
+                "validity"
+              ]
+            }
+          }
+        },
+        "required": [
+          "group",
+          "index",
+          "numbers",
+          "from",
+          "to",
+          "variants",
+          "stations",
+          "lockoutNumber",
+          "lockouts",
+          "diversions"
+        ]
+      },
+      "annotations": {
+        "title": "Train",
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "list_script_functions",
+      "title": "Announcement script functions",
+      "description": "Functions of class LogText in the announcement script LogText.vb (with unsaved changes): names, attributes such as Dodatek or VzorVyluky with their descriptions and line ranges. Read a function with get_file('LogText.vb', offset, limit).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "totalLines": {
+            "description": "Number of lines of LogText.vb.",
+            "type": "integer"
+          },
+          "functions": {
+            "description": "Functions of class LogText in script order.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "Name; reports, supplements and operator report patterns refer to it.",
+                  "type": "string"
+                },
+                "kind": {
+                  "description": "Sub or Function.",
+                  "type": "string"
+                },
+                "attributes": {
+                  "description": "Attributes, e.g. Dodatek, VzorVyluky.",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "description": {
+                  "description": "Description from the first attribute with text.",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "startLine": {
+                  "description": "First line including attributes, from 1.",
+                  "type": "integer"
+                },
+                "endLine": {
+                  "description": "Last line, from 1.",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "name",
+                "kind",
+                "attributes",
+                "description",
+                "startLine",
+                "endLine"
+              ]
+            }
+          }
+        },
+        "required": [
+          "totalLines",
+          "functions"
+        ]
+      },
+      "annotations": {
+        "title": "Announcement script functions",
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "list_trains",
+      "title": "Trains",
+      "description": "Trains of a timetable group (GV.XML with unsaved changes) in file order. Filters are optional and combine: text in the numbers or name, train type key, station on the route and a day the train runs on.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "description": "Timetable group from get_installation; empty = the first group.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "text": {
+            "description": "Text in the train numbers or name.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "type": {
+            "description": "Train type key, e.g. Os, R, Ex.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "station": {
+            "description": "Station on the route: SR70 number or text in the name.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "day": {
+            "description": "Only trains running on this day.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date",
+            "default": null
+          },
+          "offset": {
+            "description": "Trains to skip.",
+            "type": "integer",
+            "default": 0
+          },
+          "limit": {
+            "description": "Most trains to return, 1-500.",
+            "type": "integer",
+            "default": 100
+          }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "total": {
+            "description": "Number of trains matching the filter.",
+            "type": "integer"
+          },
+          "trains": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "index": {
+                  "description": "Train index in GV.XML from 0, the train parameter of other tools.",
+                  "type": "integer"
+                },
+                "numbers": {
+                  "description": "All train numbers along the routes of all variants.",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Train type key, e.g. Os, R, Ex.",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "Train name.",
+                  "type": "string"
+                },
+                "from": {
+                  "description": "Origin station.",
+                  "type": "string"
+                },
+                "departure": {
+                  "description": "Departure from the origin.",
+                  "type": "string"
+                },
+                "to": {
+                  "description": "Destination station.",
+                  "type": "string"
+                },
+                "arrival": {
+                  "description": "Arrival at the destination; +1 = next day.",
+                  "type": "string"
+                },
+                "period": {
+                  "description": "Validity period of the train.",
+                  "type": "string"
+                },
+                "variants": {
+                  "description": "Number of variants.",
+                  "type": "integer"
+                },
+                "operator": {
+                  "description": "Operator.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "index",
+                "numbers",
+                "type",
+                "name",
+                "from",
+                "departure",
+                "to",
+                "arrival",
+                "period",
+                "variants",
+                "operator"
+              ]
+            }
+          }
+        },
+        "required": [
+          "total",
+          "trains"
+        ]
+      },
+      "annotations": {
+        "title": "Trains",
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "preview_board_texts",
+      "title": "Preview generated board texts",
+      "description": "Preview of generating board texts at the trains of a station into a TTVlaky.xml set, as the window Generate board texts does: destination or origin station, or stations to or from the direction taken from the announcement stations the way the server selects them. A text at the train overrides route and station texts on the server, so only texts the server would show differently are written. Nothing changes.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "station": {
+            "description": "Station: SR70 number, folder or name.",
+            "type": "string"
+          },
+          "set": {
+            "description": "Text set name from preview_board_texts; empty = the first set whose board field supports generating.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "kind": {
+            "description": "destination, origin, stationsTo or stationsFrom; empty = what the field of the set shows.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "longReport": {
+            "description": "Stations of the long announcement instead of the short one (stationsTo, stationsFrom).",
+            "type": "boolean",
+            "default": false
+          },
+          "all": {
+            "description": "Replace the texts of all trains of the station instead of adding missing ones.",
+            "type": "boolean",
+            "default": false
+          },
+          "group": {
+            "description": "Timetable group from get_installation; empty = the first group.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "station"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "description": "Timetable group.",
+            "type": "string"
+          },
+          "station": {
+            "description": "Station number SR70.",
+            "type": "integer"
+          },
+          "sets": {
+            "description": "Text sets the texts can be generated into.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "description": "Set name.",
+                  "type": "string"
+                },
+                "targets": {
+                  "description": "Board fields (template / field) where the texts appear.",
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "kind": {
+                  "description": "What the field content generates; null = generating is not supported for it.",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "isNew": {
+                  "description": "A new set for a template field, not yet in any text file of the station.",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "name",
+                "targets",
+                "kind",
+                "isNew"
+              ]
+            }
+          },
+          "set": {
+            "description": "Set of the preview; null = the station has no set or board field to generate into.",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "kind": {
+            "description": "What is generated: destination, origin, stationsTo or stationsFrom.",
+            "type": "string"
+          },
+          "changes": {
+            "description": "Number of texts generating would change.",
+            "type": "integer"
+          },
+          "trains": {
+            "description": "Trains of the station.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "number": {
+                  "description": "Train number when leaving the station.",
+                  "type": "string"
+                },
+                "validity": {
+                  "description": "Date remark of the text.",
+                  "type": "string"
+                },
+                "text": {
+                  "description": "Generated text.",
+                  "type": "string"
+                },
+                "current": {
+                  "description": "Text of the train in the set, otherwise the text the server would show without it.",
+                  "type": "string"
+                },
+                "change": {
+                  "description": "add, replace, keep, routeOrStationText (a route or station text stays), sameWithout (the server shows it anyway) or empty.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "number",
+                "validity",
+                "text",
+                "current",
+                "change"
+              ]
+            }
+          }
+        },
+        "required": [
+          "group",
+          "station",
+          "sets",
+          "set",
+          "kind",
+          "changes",
+          "trains"
+        ]
+      },
+      "annotations": {
+        "title": "Preview generated board texts",
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "rename_train_number",
+      "title": "Rename train number",
+      "description": "Renames a number of a train in GV.XML (number and announced number) and in all records of the group - station files, lockouts and diversions - like Rename train number in GVXEditor. Other trains with the old number keep their records and the renamed train gets a copy, unless allTrains renames them too.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "train": {
+            "description": "Train index in GV.XML from list_trains.",
+            "type": "integer"
+          },
+          "from": {
+            "description": "Old number - one of the numbers of the train.",
+            "type": "string"
+          },
+          "to": {
+            "description": "New number.",
+            "type": "string"
+          },
+          "allTrains": {
+            "description": "Also rename the other trains of the group that use the old number.",
+            "type": "boolean",
+            "default": false
+          },
+          "mergeExisting": {
+            "description": "Allow a new number another train already has - station records of both trains then merge.",
+            "type": "boolean",
+            "default": false
+          },
+          "group": {
+            "description": "Timetable group from get_installation; empty = the first group.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "dryRun": {
+            "description": "Only report the result; the installation stays as it is.",
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "train",
+          "from",
+          "to"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "description": "Timetable group.",
+            "type": "string"
+          },
+          "from": {
+            "description": "Old number.",
+            "type": "string"
+          },
+          "to": {
+            "description": "New number.",
+            "type": "string"
+          },
+          "trains": {
+            "description": "Indexes of trains renamed.",
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "records": {
+            "description": "Records of the old number in station files, lockouts and diversions of the group.",
+            "type": "integer"
+          },
+          "change": {
+            "type": "object",
+            "properties": {
+              "dryRun": {
+                "description": "Only a dry run; the installation stays as it is.",
+                "type": "boolean"
+              },
+              "changed": {
+                "description": "The change changes the installation (in a dry run: would change it).",
+                "type": "boolean"
+              },
+              "step": {
+                "description": "Undo step in GVXEditor, e.g. 'edit train 611 (agent)'; null = no step (dry run or nothing changed).",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "dryRun",
+              "changed",
+              "step"
+            ]
+          }
+        },
+        "required": [
+          "group",
+          "from",
+          "to",
+          "trains",
+          "records",
+          "change"
+        ]
+      },
+      "annotations": {
+        "title": "Rename train number",
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false,
+        "readOnlyHint": false
+      }
+    },
+    {
+      "name": "set_const_report",
+      "title": "Set operator report",
+      "description": "Changes or adds an operator report of ConstReports.xml (shared by the installation, read it with get_file). Supplements, lockouts and diversions of trains refer to it by number. The pattern is a function of LogText.vb, usually with attribute VzorDodatku, VzorOdklonu or VzorVyluky (list_script_functions); stations are passed to the pattern, for a lockout they are its section. A change that would add an error of the Operator reports window is refused, warnings are returned.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "description": "Report name for the operator.",
+            "type": "string"
+          },
+          "function": {
+            "description": "Pattern: function name in LogText.vb.",
+            "type": "string"
+          },
+          "stations": {
+            "description": "Station numbers SR70 passed to the pattern, in order.",
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "integer"
+            },
+            "default": null
+          },
+          "number": {
+            "description": "Report number; null = a new report after the highest number, like the server adds it.",
+            "type": [
+              "integer",
+              "null"
+            ],
+            "default": null
+          },
+          "dryRun": {
+            "description": "Only report the result; the installation stays as it is.",
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "name",
+          "function"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "number": {
+            "description": "Operator report number.",
+            "type": "integer"
+          },
+          "warnings": {
+            "description": "Warnings of the check, e.g. a pattern missing in LogText.vb or a deleted report still referenced by trains.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "severity": {
+                  "description": "error or warning.",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Description in the language of the program.",
+                  "type": "string"
+                },
+                "variant": {
+                  "description": "Variant position from 1; null = the whole train.",
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "stop": {
+                  "description": "Route point from 1; null = the whole variant.",
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "severity",
+                "message",
+                "variant",
+                "stop"
+              ]
+            }
+          },
+          "change": {
+            "type": "object",
+            "properties": {
+              "dryRun": {
+                "description": "Only a dry run; the installation stays as it is.",
+                "type": "boolean"
+              },
+              "changed": {
+                "description": "The change changes the installation (in a dry run: would change it).",
+                "type": "boolean"
+              },
+              "step": {
+                "description": "Undo step in GVXEditor, e.g. 'edit train 611 (agent)'; null = no step (dry run or nothing changed).",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "dryRun",
+              "changed",
+              "step"
+            ]
+          }
+        },
+        "required": [
+          "number",
+          "warnings",
+          "change"
+        ]
+      },
+      "annotations": {
+        "title": "Set operator report",
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": false
+      }
+    },
+    {
+      "name": "set_train",
+      "title": "Set train",
+      "description": "Changes a train of GV.XML or adds a new one at the end, with the checks of the Edit train window: errors refuse the change, warnings are returned. Only the given values change; variants replace all variants of the train (get_train gives the current ones in the same shape). Key Z and days after midnight are computed like the INISS2 client does. Station records, lockouts and diversions of the train stay - records of a changed train number stay at the old number.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "train": {
+            "description": "Train index in GV.XML from list_trains; null = a new train.",
+            "type": [
+              "integer",
+              "null"
+            ],
+            "default": null
+          },
+          "from": {
+            "description": "First day of the validity period; a new train without it takes the period of the first train of the group.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date",
+            "default": null
+          },
+          "to": {
+            "description": "Last day of the validity period.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date",
+            "default": null
+          },
+          "noEnd": {
+            "description": "The train has no last day (the server uses 31.12.9999); a date remark then never applies.",
+            "type": [
+              "boolean",
+              "null"
+            ],
+            "default": null
+          },
+          "variants": {
+            "description": "All variants in order - on a day the first variant running that day applies. Required for a new train.",
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": [
+                "object",
+                "null"
+              ],
+              "properties": {
+                "route": {
+                  "description": "Route points in running order, at least two.",
+                  "type": [
+                    "array",
+                    "null"
+                  ],
+                  "items": {
+                    "type": [
+                      "object",
+                      "null"
+                    ],
+                    "properties": {
+                      "station": {
+                        "description": "Station number SR70.",
+                        "type": "integer"
+                      },
+                      "arrival": {
+                        "description": "Arrival as 8:15, 08:15 or 815; empty = no arrival. A day suffix like +1 is ignored, days after midnight are computed from the times.",
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "default": ""
+                      },
+                      "departure": {
+                        "description": "Departure; empty = no departure.",
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "default": ""
+                      },
+                      "flags": {
+                        "description": "Point flags separated by spaces: P passing, PR transfer, DB operating point, X request stop. Z (station controlled by INISS) is computed.",
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "default": ""
+                      },
+                      "number": {
+                        "description": "Train number from this point; empty = as before. The first point needs one.",
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "default": ""
+                      },
+                      "reportedNumber": {
+                        "description": "Announced number from this point.",
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "default": ""
+                      },
+                      "type": {
+                        "description": "Train type key from this point, e.g. Os, R (TrTypes.xml).",
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "default": ""
+                      },
+                      "trainName": {
+                        "description": "Train name from this point.",
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "default": ""
+                      },
+                      "idsLine": {
+                        "description": "IDS line.",
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "default": ""
+                      },
+                      "nadLine": {
+                        "description": "Replacement bus line.",
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "default": ""
+                      }
+                    },
+                    "required": [
+                      "station"
+                    ]
+                  }
+                },
+                "validity": {
+                  "description": "Date remark in Czech, e.g. 'jede v 6,7'; empty = every day of the period.",
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "default": ""
+                },
+                "operator": {
+                  "description": "Operator.",
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "default": ""
+                },
+                "flags": {
+                  "description": "Variant flags as keys of the file separated by spaces: D, X, N, NP, O, M, R, L.",
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "default": ""
+                },
+                "note": {
+                  "description": "Note.",
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "default": ""
+                }
+              },
+              "required": [
+                "route"
+              ]
+            },
+            "default": null
+          },
+          "group": {
+            "description": "Timetable group from get_installation; empty = the first group.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "dryRun": {
+            "description": "Only report the result; the installation stays as it is.",
+            "type": "boolean",
+            "default": false
+          }
+        }
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "description": "Timetable group.",
+            "type": "string"
+          },
+          "train": {
+            "description": "Train index in GV.XML (a new train is the last one).",
+            "type": "integer"
+          },
+          "numbers": {
+            "description": "All train numbers.",
+            "type": "string"
+          },
+          "warnings": {
+            "description": "Warnings of the train check; they do not prevent the change.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "severity": {
+                  "description": "error or warning.",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Description in the language of the program.",
+                  "type": "string"
+                },
+                "variant": {
+                  "description": "Variant position from 1; null = the whole train.",
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                },
+                "stop": {
+                  "description": "Route point from 1; null = the whole variant.",
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "severity",
+                "message",
+                "variant",
+                "stop"
+              ]
+            }
+          },
+          "change": {
+            "type": "object",
+            "properties": {
+              "dryRun": {
+                "description": "Only a dry run; the installation stays as it is.",
+                "type": "boolean"
+              },
+              "changed": {
+                "description": "The change changes the installation (in a dry run: would change it).",
+                "type": "boolean"
+              },
+              "step": {
+                "description": "Undo step in GVXEditor, e.g. 'edit train 611 (agent)'; null = no step (dry run or nothing changed).",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "dryRun",
+              "changed",
+              "step"
+            ]
+          }
+        },
+        "required": [
+          "group",
+          "train",
+          "numbers",
+          "warnings",
+          "change"
+        ]
+      },
+      "annotations": {
+        "title": "Set train",
+        "destructiveHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": false
+      }
+    },
+    {
+      "name": "shift_validity",
+      "title": "Shift validity",
+      "description": "Shifts the validity periods of all trains of the group (or the given trains) by days, like Shift timetable validity in GVXEditor; 364 days = 52 weeks keeps weekdays. Date remarks stay - weekdays, holidays and dates without a year move with the period, a date with a year must be changed by hand. A train without end keeps no end.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "days": {
+            "description": "Days to shift, negative = back.",
+            "type": "integer"
+          },
+          "trains": {
+            "description": "Train indexes in GV.XML; empty = all trains of the group.",
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "integer"
+            },
+            "default": null
+          },
+          "group": {
+            "description": "Timetable group from get_installation; empty = the first group.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "dryRun": {
+            "description": "Only report the result; the installation stays as it is.",
+            "type": "boolean",
+            "default": false
+          }
+        },
+        "required": [
+          "days"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "description": "Timetable group.",
+            "type": "string"
+          },
+          "trains": {
+            "description": "Train indexes in GV.XML after the change: copies, shifted trains; empty after deleting.",
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "removedRecords": {
+            "description": "Station, lockout and diversion records removed with deleted trains.",
+            "type": "integer"
+          },
+          "change": {
+            "type": "object",
+            "properties": {
+              "dryRun": {
+                "description": "Only a dry run; the installation stays as it is.",
+                "type": "boolean"
+              },
+              "changed": {
+                "description": "The change changes the installation (in a dry run: would change it).",
+                "type": "boolean"
+              },
+              "step": {
+                "description": "Undo step in GVXEditor, e.g. 'edit train 611 (agent)'; null = no step (dry run or nothing changed).",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "dryRun",
+              "changed",
+              "step"
+            ]
+          }
+        },
+        "required": [
+          "group",
+          "trains",
+          "removedRecords",
+          "change"
+        ]
+      },
+      "annotations": {
+        "title": "Shift validity",
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false,
+        "readOnlyHint": false
+      }
+    },
+    {
+      "name": "station_day",
+      "title": "Station on a day",
+      "description": "Trains a station has on a day as the server sees them: the variant that applies that day, train numbers on arrival and departure and the track from Positions.xml. A night train appears at a station after midnight on the next day.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "station": {
+            "description": "Station: SR70 number, folder or name.",
+            "type": "string"
+          },
+          "day": {
+            "description": "Day.",
+            "type": "string",
+            "format": "date"
+          },
+          "group": {
+            "description": "Timetable group from get_installation; empty = the first group.",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "station",
+          "day"
+        ]
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "description": "Timetable group.",
+            "type": "string"
+          },
+          "station": {
+            "description": "Station number SR70.",
+            "type": "integer"
+          },
+          "name": {
+            "description": "Station name.",
+            "type": "string"
+          },
+          "day": {
+            "description": "Day.",
+            "type": "string",
+            "format": "date"
+          },
+          "trains": {
+            "description": "Stops of trains on that day by time.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "arrival": {
+                  "description": "Arrival on the station day.",
+                  "type": "string"
+                },
+                "departure": {
+                  "description": "Departure; after midnight with the day count.",
+                  "type": "string"
+                },
+                "arrivalNumber": {
+                  "description": "Train number on arrival.",
+                  "type": "string"
+                },
+                "departureNumber": {
+                  "description": "Train number on departure; station records are looked up by it.",
+                  "type": "string"
+                },
+                "type": {
+                  "description": "Train type.",
+                  "type": "string"
+                },
+                "name": {
+                  "description": "Train name.",
+                  "type": "string"
+                },
+                "from": {
+                  "description": "Origin station.",
+                  "type": "string"
+                },
+                "to": {
+                  "description": "Destination station.",
+                  "type": "string"
+                },
+                "track": {
+                  "description": "Track the server uses that day (arrival and departure).",
+                  "type": "string"
+                },
+                "variant": {
+                  "description": "Variant that applies that day, from 1.",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "arrival",
+                "departure",
+                "arrivalNumber",
+                "departureNumber",
+                "type",
+                "name",
+                "from",
+                "to",
+                "track",
+                "variant"
+              ]
+            }
+          }
+        },
+        "required": [
+          "group",
+          "station",
+          "name",
+          "day",
+          "trains"
+        ]
+      },
+      "annotations": {
+        "title": "Station on a day",
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": true
+      }
+    },
+    {
+      "name": "verify_with_server",
+      "title": "Verify with server code",
+      "description": "Loads a temporary copy of the installation with unsaved changes using the IniSrv.exe of the installation, exactly as the server does when it starts: every file by the server's reader and the VB.NET code (state diagrams, LogText.vb, TabTab, board conditions) by its compiler. Returns errors that would stop the server (with the line and place of compile errors) and warnings the server writes to Error.log. Takes a few seconds; never writes to the installation.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "errors": {
+            "description": "Errors - the server would not start or not read a file.",
+            "type": "integer"
+          },
+          "warnings": {
+            "description": "Warnings - the server would use the data differently than expected.",
+            "type": "integer"
+          },
+          "infos": {
+            "description": "Information, e.g. records no train uses.",
+            "type": "integer"
+          },
+          "findings": {
+            "description": "Findings, errors first.",
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "severity": {
+                  "description": "error, warning or info.",
+                  "type": "string"
+                },
+                "place": {
+                  "description": "Where: group, station, train or file.",
+                  "type": "string"
+                },
+                "message": {
+                  "description": "Description in the language of the program.",
+                  "type": "string"
+                },
+                "group": {
+                  "description": "Timetable group; null = the whole installation.",
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "train": {
+                  "description": "Train index in GV.XML; null = not a train.",
+                  "type": [
+                    "integer",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "severity",
+                "place",
+                "message",
+                "group",
+                "train"
+              ]
+            }
+          }
+        },
+        "required": [
+          "errors",
+          "warnings",
+          "infos",
+          "findings"
+        ]
+      },
+      "annotations": {
+        "title": "Verify with server code",
+        "idempotentHint": true,
+        "openWorldHint": false,
+        "readOnlyHint": true
+      }
+    }
+  ]
+}

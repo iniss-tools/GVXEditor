@@ -36,6 +36,8 @@
 		<ProjectReference Include="..\..\ExControls\ExControls\ExControls.csproj" />
 		<ProjectReference Include="..\..\ToolsCore\ToolsCore\ToolsCore.csproj" />
 		<ProjectReference Include="..\..\ToolsCore\ToolsCore.CodeEditor\ToolsCore.CodeEditor.csproj" />
+		<!-- server MCP pre agentov v procese editora (ASP.NET Core, ModelContextProtocol) a stranka nastaveni -->
+		<ProjectReference Include="..\..\ToolsCore\ToolsCore.Mcp\ToolsCore.Mcp.csproj" />
 		<ProjectReference Include="..\..\ToolsCore\ToolsCore.Iniss2\ToolsCore.Iniss2.csproj" />
 	</ItemGroup>
 	<!-- spolocne vlastnosti vydavanych programov: vyrobca, verzia a index aktualizacii z vydania -->

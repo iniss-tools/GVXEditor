@@ -1,3 +1,4 @@
+using System.Text;
 using System.Xml;
 using GVXEditor.Domain.Boards;
 using GVXEditor.Domain.Code;
@@ -402,6 +403,71 @@ internal sealed class Iniss2Workspace
                 continue;
             foreach (var write in state.Groups[i].Changes(dataDir, _saved.Groups[i]).Where(write => write.IsNeeded))
                 write.Write();
+        }
+    }
+
+    /// <summary>
+    /// Subory dat, ktore by ulozenie zapisalo (cesty relativne k priecinku dat).
+    /// </summary>
+    public List<string> UnsavedFiles() =>
+        [.. PendingWrites(DataDir, History.Current).Select(write => Path.GetRelativePath(DataDir, write.Path))];
+
+    /// <summary>
+    /// Text suboru dat tak, ako by ho program teraz ulozil - s neulozenymi zmenami (zapis do docasnej kopie suboru, upravy
+    /// na mieste ako pri ulozeni). Subor bez zmeny sa precita z disku.
+    /// </summary>
+    /// <param name="relativePath">cesta relativne k priecinku dat</param>
+    /// <returns>text (null = subor nie je a ulozenie ho nevytvori) a ci ho zmeny menia</returns>
+    public (string? Text, bool Changed) CurrentText(string relativePath)
+    {
+        var original = Path.Combine(DataDir, relativePath);
+        var temp = Path.Combine(Path.GetTempPath(), "GVXEditor", "file-" + Guid.NewGuid().ToString("N"));
+        try
+        {
+            var target = Path.GetFullPath(Path.Combine(temp, relativePath));
+            var write = PendingWrites(temp, History.Current)
+                .FirstOrDefault(item => string.Equals(Path.GetFullPath(item.Path), target, StringComparison.OrdinalIgnoreCase));
+            if (write is null)
+                return (File.Exists(original) ? ReadData(original) : null, false);
+
+            Directory.CreateDirectory(Path.GetDirectoryName(target)!);
+            if (File.Exists(original))
+                File.Copy(original, target);
+            write.Write();
+            return (File.Exists(target) ? ReadData(target) : null, true);
+        }
+        finally
+        {
+            try
+            {
+                if (Directory.Exists(temp))
+                    Directory.Delete(temp, true);
+            }
+            catch (IOException e)
+            {
+                Log.Warning(e, "Docasny priecinok {Directory} sa nepodarilo zmazat", temp);
+            }
+        }
+    }
+
+    // subory dat su CP1250, subor s BOM UTF-8 (napr. zapisany inym nastrojom) podla neho
+    private static string ReadData(string file)
+    {
+        var bytes = File.ReadAllBytes(file);
+        return bytes is [0xEF, 0xBB, 0xBF, ..] ? Encoding.UTF8.GetString(bytes, 3, bytes.Length - 3) : Encodings.Win1250.GetString(bytes);
+    }
+
+    // zapisy, ktore by ulozenie stavu vykonalo, s cestami v priecinku dat dataDir
+    private IEnumerable<FileWrite> PendingWrites(string dataDir, WorkspaceState state)
+    {
+        foreach (var write in InstallationWrites(dataDir, state))
+            yield return write;
+        for (var i = 0; i < state.Groups.Count; i++)
+        {
+            if (ReferenceEquals(state.Groups[i], _saved.Groups[i]))
+                continue;
+            foreach (var write in state.Groups[i].Changes(dataDir, _saved.Groups[i]).Where(write => write.IsNeeded))
+                yield return write;
         }
     }
 

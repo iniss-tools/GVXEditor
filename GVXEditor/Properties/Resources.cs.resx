@@ -744,6 +744,9 @@
   <data name="Flag_VariantTip_X" xml:space="preserve">
     <value>Výrazy v datech podle něj mění ohlášení druhu a nepřipojují linku.</value>
   </data>
+  <data name="History_Agent" xml:space="preserve">
+    <value>{0} (agent)</value>
+  </data>
   <data name="History_Boards" xml:space="preserve">
     <value>tabule grafikonu {0}</value>
   </data>
@@ -1562,6 +1565,18 @@ Přepsat je změnami z GVXEditoru? Při Ne zůstanou beze změny.</value>
   </data>
   <data name="Settings_EditorFontHint" xml:space="preserve">
     <value>Editory kódu: stavový diagram, tabulky TabTab a skript hlášení.</value>
+  </data>
+  <data name="Settings_McpHint" xml:space="preserve">
+    <value>Agent nebo jiný nástroj s podporou MCP, například Claude Code nebo chat ve VS Code, se připojí k otevřené instalaci INISS2 a čte ji i s neuloženými změnami. Server běží jen na tomto počítači a vyžaduje přístupový klíč.</value>
+  </data>
+  <data name="Settings_McpPage" xml:space="preserve">
+    <value>Agenti (MCP)</value>
+  </data>
+  <data name="Settings_McpWrites" xml:space="preserve">
+    <value>Povolit změny instalace přes agenta</value>
+  </data>
+  <data name="Settings_McpWritesHint" xml:space="preserve">
+    <value>Agent mění jen otevřenou instalaci v programu a nikdy ji neuloží. Každou jeho změnu vrátíte příkazem Zpět.</value>
   </data>
   <data name="Settings_ReopenLast" xml:space="preserve">
     <value>Při spuštění otevřít poslední instalaci</value>
