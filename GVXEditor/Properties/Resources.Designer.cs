@@ -1433,6 +1433,24 @@ namespace GVXEditor.Properties {
         }
 
         /// <summary>
+        ///   Looks up a localized string similar to Stav odchodu.
+        /// </summary>
+        internal static string Flag_Node_ISODJEZD {
+            get {
+                return ResourceManager.GetString("Flag_Node_ISODJEZD", resourceCulture);
+            }
+        }
+
+        /// <summary>
+        ///   Looks up a localized string similar to Stav príchodu.
+        /// </summary>
+        internal static string Flag_Node_ISPRIJEZD {
+            get {
+                return ResourceManager.GetString("Flag_Node_ISPRIJEZD", resourceCulture);
+            }
+        }
+
+        /// <summary>
         ///   Looks up a localized string similar to Na odchodových tabuliach.
         /// </summary>
         internal static string Flag_Node_JENAODJEZDOVE {

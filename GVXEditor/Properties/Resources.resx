@@ -576,6 +576,12 @@
   <data name="Flag_Node_BLIKA" xml:space="preserve">
     <value>Bliká</value>
   </data>
+  <data name="Flag_Node_ISODJEZD" xml:space="preserve">
+    <value>Stav odchodu</value>
+  </data>
+  <data name="Flag_Node_ISPRIJEZD" xml:space="preserve">
+    <value>Stav príchodu</value>
+  </data>
   <data name="Flag_Node_JENAODJEZDOVE" xml:space="preserve">
     <value>Na odchodových tabuliach</value>
   </data>

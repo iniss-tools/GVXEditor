@@ -632,6 +632,8 @@ STRINGS = {
     'Flag_Node_NENASTUPOVAT': ('Nenastupovať', 'Nenastupovat'),
     'Flag_Node_NEAKTIVNIPRONENASTUPOVAT': ('Bez automatiky pri nenastupovať', 'Bez automatiky při nenastupovat'),
     'Flag_Node_JENPRONENASTUPOVAT': ('Len pre nenastupovať', 'Jen pro nenastupovat'),
+    'Flag_Node_ISPRIJEZD': ('Stav príchodu', 'Stav příjezdu'),
+    'Flag_Node_ISODJEZD': ('Stav odchodu', 'Stav odjezdu'),
     'Flag_Node_NEVYPINATBEZKLIENTA': ('Beží aj bez klienta', 'Běží i bez klienta'),
     'Flag_Node_NEVYPINATPOSTARTU': ('Nevypínať po štarte', 'Nevypínat po startu'),
     'Value_Kind_NODEF': ('Bez vlakov', 'Bez vlaků'),
