@@ -36,7 +36,7 @@ internal partial class FMain
 
     private StationTimetable? _timetable;
 
-    private void OpenInstallation()
+    private async void OpenInstallation()
     {
         if (!ConfirmClose())
             return;
@@ -45,7 +45,7 @@ internal partial class FMain
         if (_ctx.Workspace is { } workspace)
             dialog.InitialDirectory = workspace.DataDir;
 
-        if (dialog.ShowDialog(this) == DialogResult.OK)
+        if (await dialog.ShowDialogAsync(this) == DialogResult.OK && !IsDisposed)
             Open(dialog.SelectedPath);
     }
 
