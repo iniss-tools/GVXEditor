@@ -141,36 +141,25 @@ internal partial class FGenerateTexts : Form
         // porovnanie s textom servera len pri udaji, ktoreho obsah zodpoveda generovanemu textu
         var target = set.Kind == Kind ? set.Target : null;
         _generated = TrainTextGenerating.Generate(_group, StationIndex, Kind, target, rbLong.Checked, _defaultsFile, _stationName);
-        var existing = _group.Stations[StationIndex].Files?.TextSets.FirstOrDefault(item => item.Name == set.Name)?.Trains ?? [];
-        var changed = 0;
-        var rows = _generated.Select(text =>
-        {
-            var current = existing.Where(record => record.Number == text.Number && !record.EditedForDay).Select(record => record.Text).ToList();
-            var (change, changes) = Change(text, current, rbAll.Checked);
-            if (changes)
-                changed++;
-            return new TextPreviewRow(text.Number, text.Validity, text.Text, current.Count > 0 ? string.Join(" | ", current) : text.ServerText ?? "", change);
-        }).ToList();
-        dgvPreview.DataSource = rows;
+        var lines = TrainTextGenerating.Preview(_generated, _group.Stations[StationIndex].Files?.TextSets ?? [], set.Name, rbAll.Checked);
+        dgvPreview.DataSource = lines
+            .Select(line => new TextPreviewRow(line.Text.Number, line.Text.Validity, line.Text.Text, line.Current, ChangeText(line.Change)))
+            .ToList();
 
+        var changed = lines.Count(line => line.Changes);
         lSummary.Text = string.Format(CultureInfo.CurrentCulture, Resources.Texts_Summary, changed);
         bOk.Enabled = changed > 0;
     }
 
-    // co sa so zaznamom vlaku stane (rovnako ako TrainTextGenerating.Apply) a ci to meni sadu
-    private static (string Change, bool Changes) Change(GeneratedText text, List<string> current, bool all)
+    private static string ChangeText(GeneratedTextChange change) => change switch
     {
-        if (text.Text.Length == 0)
-            return (Resources.Texts_ChangeEmpty, false);
-        if (TrainTextGenerating.WillWrite(text, current.Count > 0, all))
-            return current.Count > 0 ? (Resources.Texts_ChangeReplace, current.Any(item => item != text.Text)) : (Resources.Texts_ChangeAdd, true);
-        // text, ktory server ukaze aj bez zaznamu: pri nahradeni vsetkych sa zaznam zmaze
-        if (all && current.Count > 0)
-            return (Resources.Texts_ChangeReplace, true);
-        if (current.Count == 0 && text.IsRedundant)
-            return (Resources.Texts_ChangeSame, false);
-        return current.Count == 0 && text.HasFileText ? (Resources.Texts_ChangeFileText, false) : (Resources.Texts_ChangeKeep, false);
-    }
+        GeneratedTextChange.Add => Resources.Texts_ChangeAdd,
+        GeneratedTextChange.Replace => Resources.Texts_ChangeReplace,
+        GeneratedTextChange.RouteOrStationText => Resources.Texts_ChangeFileText,
+        GeneratedTextChange.SameWithout => Resources.Texts_ChangeSame,
+        GeneratedTextChange.Empty => Resources.Texts_ChangeEmpty,
+        _ => Resources.Texts_ChangeKeep
+    };
 
     private void bOk_Click(object? sender, EventArgs e) => DialogResult = DialogResult.OK;
 

@@ -238,6 +238,45 @@ internal static class TrainTextGenerating
     }
 
     /// <summary>
+    /// Nahlad generovania do sady: vygenerovane texty vlakov stanice so sucasnym textom a zmenou, ako ju urobi
+    /// <see cref="Apply" /> (okno Generovat texty tabul aj agent).
+    /// </summary>
+    /// <param name="generated">texty z <see cref="Generate" /></param>
+    /// <param name="sets">sady TTVlaky.xml stanice</param>
+    /// <param name="set">nazov sady, do ktorej sa generuje</param>
+    /// <param name="all">nahradit aj existujuce texty</param>
+    public static List<TextPreviewLine> Preview(IReadOnlyList<GeneratedText> generated, IReadOnlyList<TrainTextSet> sets, string set, bool all)
+    {
+        ArgumentNullException.ThrowIfNull(generated);
+        ArgumentNullException.ThrowIfNull(sets);
+        var existing = sets.FirstOrDefault(item => item.Name == set)?.Trains ?? [];
+        return
+        [
+            .. generated.Select(text =>
+            {
+                var current = existing.Where(record => record.Number == text.Number && !record.EditedForDay).Select(record => record.Text).ToList();
+                var (change, changes) = ChangeOf(text, current, all);
+                return new TextPreviewLine(text, current.Count > 0 ? string.Join(" | ", current) : text.ServerText ?? "", change, changes);
+            })
+        ];
+    }
+
+    // co sa so zaznamom vlaku stane (rovnako ako Apply) a ci to meni sadu
+    private static (GeneratedTextChange Change, bool Changes) ChangeOf(GeneratedText text, List<string> current, bool all)
+    {
+        if (text.Text.Length == 0)
+            return (GeneratedTextChange.Empty, false);
+        if (WillWrite(text, current.Count > 0, all))
+            return current.Count > 0 ? (GeneratedTextChange.Replace, current.Any(item => item != text.Text)) : (GeneratedTextChange.Add, true);
+        // text, ktory server ukaze aj bez zaznamu: pri nahradeni vsetkych sa zaznam zmaze
+        if (all && current.Count > 0)
+            return (GeneratedTextChange.Replace, true);
+        if (current.Count == 0 && text.IsRedundant)
+            return (GeneratedTextChange.SameWithout, false);
+        return current.Count == 0 && text.HasFileText ? (GeneratedTextChange.RouteOrStationText, false) : (GeneratedTextChange.Keep, false);
+    }
+
+    /// <summary>
     /// Zapise vygenerovane texty do sady. Pri <paramref name="all" /> nahradi texty vlakov stanice s vygenerovanym textom (okrem
     /// zaznamov upravenych na den; zaznam s textom, ktory server ukaze aj bez neho, sa len zmaze), inak prida len vlakom, ktore
     /// v sade text nemaju (<see cref="WillWrite" />). Vlak s prazdnym vygenerovanym textom si svoj zaznam ponecha.
