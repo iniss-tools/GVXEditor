@@ -152,6 +152,8 @@
             this.tsmimInfoApp = new ToolsCore.Icons.IconToolStripMenuItem();
             this.tsmimCheckUpdates = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmimShowLogs = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmimReportBug = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmimSuggestFeature = new System.Windows.Forms.ToolStripMenuItem();
             this.cmsTrains = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmicNewTrain = new ToolsCore.Icons.IconToolStripMenuItem();
             this.tsmicEditTrain = new ToolsCore.Icons.IconToolStripMenuItem();
@@ -866,7 +868,9 @@
             this.tsmiHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsmimInfoApp,
             this.tsmimCheckUpdates,
-            this.tsmimShowLogs});
+            this.tsmimShowLogs,
+            this.tsmimReportBug,
+            this.tsmimSuggestFeature});
             resources.ApplyResources(this.tsmiHelp, "tsmiHelp");
             this.tsmiHelp.Name = "tsmiHelp";
             // 
@@ -885,6 +889,16 @@
             // 
             resources.ApplyResources(this.tsmimShowLogs, "tsmimShowLogs");
             this.tsmimShowLogs.Name = "tsmimShowLogs";
+            // 
+            // tsmimReportBug
+            // 
+            resources.ApplyResources(this.tsmimReportBug, "tsmimReportBug");
+            this.tsmimReportBug.Name = "tsmimReportBug";
+            // 
+            // tsmimSuggestFeature
+            // 
+            resources.ApplyResources(this.tsmimSuggestFeature, "tsmimSuggestFeature");
+            this.tsmimSuggestFeature.Name = "tsmimSuggestFeature";
             // 
             // cmsTrains
             // 
@@ -1460,6 +1474,8 @@
         private ToolsCore.Icons.IconToolStripMenuItem tsmimInfoApp;
         private System.Windows.Forms.ToolStripMenuItem tsmimCheckUpdates;
         private System.Windows.Forms.ToolStripMenuItem tsmimShowLogs;
+        private System.Windows.Forms.ToolStripMenuItem tsmimReportBug;
+        private System.Windows.Forms.ToolStripMenuItem tsmimSuggestFeature;
         private System.Windows.Forms.ContextMenuStrip cmsTrains;
         private ToolsCore.Icons.IconToolStripMenuItem tsmicNewTrain;
         private ToolsCore.Icons.IconToolStripMenuItem tsmicEditTrain;

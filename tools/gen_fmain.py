@@ -123,6 +123,8 @@ help_menu = menu('tsmiHelp', ('&Pomocník', '&Nápověda'), children=[
     menu('tsmimInfoApp', ('&O programe', '&O programu'), 'info'),
     menu('tsmimCheckUpdates', ('&Skontrolovať aktualizácie...', '&Zkontrolovat aktualizace...')),
     menu('tsmimShowLogs', ('Otvoriť priečinok s logmi', 'Otevřít složku s logy')),
+    menu('tsmimReportBug', ('&Nahlásiť chybu...', '&Nahlásit chybu...')),
+    menu('tsmimSuggestFeature', ('Navrhnúť &funkciu...', 'Navrhnout &funkci...')),
 ])
 menu_strip = control('System.Windows.Forms.MenuStrip', 'menuStripMain', items=[file_menu, edit_menu, view_menu, group_menu, settings_menu, help_menu],
                      code=['BackColor = System.Drawing.SystemColors.Control;', 'ImageScalingSize = new System.Drawing.Size(20, 20);',

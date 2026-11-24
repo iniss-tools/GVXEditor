@@ -17,7 +17,7 @@ public class GvxCommandsTests
         {
             "Open", "Save", "Check", "VerifyServer", "Reload", "Undo", "Redo", "AddTrain", "EditTrain", "CopyTrain", "DeleteTrain", "RenameNumber", "ShiftValidity", "ViewInstallation", "ViewAnalysis", "ResetLayout", "GroupSetup", "ConstReports",
             "StateDiagram", "TabTab", "Reports", "LogText", "Boards", "GenerateTexts", "NewGroup", "AddStation", "AppSettings", "InfoApp",
-            "CheckUpdates", "ShowLogs"
+            "CheckUpdates", "ShowLogs", "ReportBug", "SuggestFeature"
         }, ids);
 
         var shortcuts = GvxCommands.All.Where(command => command.DefaultKeys != Keys.None).Select(command => command.DefaultKeys).ToList();

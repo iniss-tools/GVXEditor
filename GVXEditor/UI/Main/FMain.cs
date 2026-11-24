@@ -70,6 +70,8 @@ internal partial class FMain : ExForm
         _commands.Add(GvxCommands.InfoApp, ShowInfoApp).Bind(tsmimInfoApp, tsbInfoApp);
         _commands.Add(GvxCommands.CheckUpdates, () => AppUpdates.CheckNow(this), () => AppUpdates.Available).Bind(tsmimCheckUpdates);
         _commands.Add(GvxCommands.ShowLogs, ErrorReport.OpenLogFolder).Bind(tsmimShowLogs);
+        _commands.Add(GvxCommands.ReportBug, () => IssueReport.ReportBug()).Bind(tsmimReportBug);
+        _commands.Add(GvxCommands.SuggestFeature, IssueReport.SuggestFeature).Bind(tsmimSuggestFeature);
     }
 
     private void UpdateCommandStates() => _commands.UpdateStates();
